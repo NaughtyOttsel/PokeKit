@@ -1,6 +1,6 @@
 
 /// Conditions which affect what pokémon might appear in the wild, e.g., day or night.
-public struct EncounterConditions: LocalizableEntity, Decodable {
+public struct EncounterCondition: LocalizableEntity, Decodable {
     public let id: Int
     public let name: String
     public let names: [Name]

@@ -4,6 +4,6 @@ public struct EncounterConditionValue: LocalizableEntity, Decodable {
     public let id: Int
     public let name: String
     /// The condition this encounter condition value pertains to
-    public let condition: [NamedAPIResource]
+    public let condition: NamedAPIResource
     public let names: [Name]
 }

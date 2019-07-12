@@ -12,23 +12,23 @@ public struct Item: LocalizableEntity, Decodable {
     /// A list of attributes this item has.
     public let attributes: [NamedAPIResource]
     /// The category of items this item falls into.
-    public let category: ItemCategory
+    public let category: NamedAPIResource
     /// The effect of this ability listed in different languages
     public let effectEntries: [VerboseEffect]
     /// The flavor text of this ability listed in different languages
     public let flavorTextEntries: [VersionGroupFlavorText]
     /// A list of game indices relevent to this item by generation
-    public let gameIndicies: [GenerationGameIndex]
+    public let gameIndicies: [GenerationGameIndex]?
     /// The name of this item listed in different languages
     public let names: [Name]
     /// A set of sprites used to depict this item in the game
-    public let sprites: ItemSprites
+    public let sprites: ItemSprites?
     /// A list of Pokémon that might be found in the wild holding this item.
     public let heldByPokemon: [ItemHolderPokemon]
     /// An evolution chain this item requires to produce a bay during mating
-    public let babyTriggerFor: NamedAPIResource
+    public let babyTriggerFor: APIResource
     /// A list of the machines related to this item
-    public let machines: [MachineVersionDetail]
+    public let machines: [MachineVersionDetail]?
 
     private enum CodingKeys: String, CodingKey {
         case id, name, cost, attributes, category, names, sprites, machines
@@ -53,9 +53,9 @@ public struct ItemSprites: Decodable {
 
 public struct ItemHolderPokemon: Decodable {
     /// The Pokémon that holds this item
-    public let pokemon: String
+    public let pokemon: NamedAPIResource
     /// The details for the version that this item is held in by the Pokémon
-    public let versionDetails: ItemHolderPokemonVersionDetail
+    public let versionDetails: [ItemHolderPokemonVersionDetail]
 
     private enum CodingKeys: String, CodingKey {
         case pokemon
@@ -66,7 +66,7 @@ public struct ItemHolderPokemon: Decodable {
 /// The details for the version that an item is held in by a Pokémon
 public struct ItemHolderPokemonVersionDetail: Decodable {
     /// How often this Pokémon holds this item in this version
-    public let rarity: String
+    public let rarity: Int
     /// The version that this item is held in by the Pokémon
     public let version: NamedAPIResource
 }

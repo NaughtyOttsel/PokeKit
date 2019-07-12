@@ -117,6 +117,118 @@ class DecodingTests: XCTestCase {
         }
     }
 
+    func testDecodingEncounterConditionValue() {
+        let encounterConditionValueJSON = #"{"id":1,"name":"swarm-yes","condition":{"name":"swarm","url":"http://pokeapi.co/api/v2/encounter-condition/1/"},"names":[{"name":"WÃ¤hrend eines Schwarms","language":{"name":"de","url":"http://pokeapi.co/api/v2/language/6/"}}]}"#
+
+        guard let encounterConditionValueData = encounterConditionValueJSON.data(using: .utf8) else {
+            XCTFail("Failed to convert JSON Text into Data")
+            return
+        }
+
+        do {
+            let encounterConditionValue = try decoder.decode(EncounterConditionValue.self, from: encounterConditionValueData)
+            XCTAssertNotNil(encounterConditionValue)
+        } catch {
+            XCTFail("Failed to Decode JSON Data into \(EncounterConditionValue.self) Object, \(error.localizedDescription)")
+        }
+    }
+
+    func testDecodingEncounterCondition() {
+        let encounterConditionJSON = #"{"id":1,"name":"swarm","values":[{"name":"swarm-yes","url":"http://pokeapi.co/api/v2/encounter-condition-value/1/"},{"name":"swarm-no","url":"http://pokeapi.co/api/v2/encounter-condition-value/2/"}],"names":[{"name":"Schwarm","language":{"name":"de","url":"http://pokeapi.co/api/v2/language/6/"}}]}"#
+
+        guard let encounterConditionData = encounterConditionJSON.data(using: .utf8) else {
+            XCTFail("Failed to convert JSON Text into Data")
+            return
+        }
+
+        do {
+            let encounterCondition = try decoder.decode(EncounterCondition.self, from: encounterConditionData)
+            XCTAssertNotNil(encounterCondition)
+        } catch {
+            XCTFail("Failed to Decode JSON Data into \(EncounterCondition.self) Object, \(error.localizedDescription)")
+        }
+    }
+
+    func testDecodingGeneration() {
+        let generationJSON = #"{"id":1,"name":"generation-i","abilities":[],"main_region":{"name":"kanto","url":"http://pokeapi.co/api/v2/region/1/"},"moves":[{"name":"pound","url":"http://pokeapi.co/api/v2/move/1/"}],"names":[{"name":"Generation I","language":{"name":"de","url":"http://pokeapi.co/api/v2/language/6/"}}],"pokemon_species":[{"name":"bulbasaur","url":"http://pokeapi.co/api/v2/pokemon-species/1/"}],"types":[{"name":"normal","url":"http://pokeapi.co/api/v2/type/1/"}],"version_groups":[{"name":"red-blue","url":"http://pokeapi.co/api/v2/version-group/1/"}]}"#
+
+        guard let generationData = generationJSON.data(using: .utf8) else {
+            XCTFail("Failed to convert JSON Text into Data")
+            return
+        }
+
+        do {
+            let generation = try decoder.decode(Generation.self, from: generationData)
+            XCTAssertNotNil(generation)
+        } catch {
+            XCTFail("Failed to Decode JSON Data into \(Generation.self) Object, \(error.localizedDescription)")
+        }
+    }
+
+    func testDecodingPokedex() {
+        let pokedexJSON = #"{"id":2,"name":"kanto","is_main_series":true,"descriptions":[{"description":"Rot/Blau/Gelb Kanto Dex","language":{"name":"de","url":"http://pokeapi.co/api/v2/language/6/"}}],"names":[{"name":"Kanto","language":{"name":"de","url":"http://pokeapi.co/api/v2/language/6/"}}],"pokemon_entries":[{"entry_number":1,"pokemon_species":{"name":"bulbasaur","url":"http://pokeapi.co/api/v2/pokemon-species/1/"}}],"region":{"name":"kanto","url":"http://pokeapi.co/api/v2/region/1/"},"version_groups":[{"name":"red-blue","url":"http://pokeapi.co/api/v2/version-group/1/"}]}"#
+
+        guard let pokedexData = pokedexJSON.data(using: .utf8) else {
+            XCTFail("Failed to convert JSON Text into Data")
+            return
+        }
+
+        do {
+            let pokedex = try decoder.decode(Pokedex.self, from: pokedexData)
+            XCTAssertNotNil(pokedex)
+        } catch {
+            XCTFail("Failed to Decode JSON Data into \(Pokedex.self) Object, \(error.localizedDescription)")
+        }
+    }
+
+    func testDecodingVersion() {
+        let versionJSON = #"{"id":1,"name":"red","names":[{"name":"Rot","language":{"name":"de","url":"http://pokeapi.co/api/v2/language/6/"}}],"version_group":{"name":"red-blue","url":"http://pokeapi.co/api/v2/version-group/1/"}}"#
+
+        guard let versionData = versionJSON.data(using: .utf8) else {
+            XCTFail("Failed to convert JSON Text into Data")
+            return
+        }
+
+        do {
+            let version = try decoder.decode(Version.self, from: versionData)
+            XCTAssertNotNil(version)
+        } catch {
+            XCTFail("Failed to Decode JSON Data into \(Version.self) Object, \(error.localizedDescription)")
+        }
+    }
+
+    func testDecodingVersionGroups() {
+        let versionGroupJSON = #"{"id":1,"name":"red-blue","order":1,"generation":{"name":"generation-i","url":"http://pokeapi.co/api/v2/generation/1/"},"move_learn_methods":[{"name":"level-up","url":"http://pokeapi.co/api/v2/move-learn-method/1/"}],"pokedexes":[{"name":"kanto","url":"http://pokeapi.co/api/v2/pokedex/2/"}],"regions":[{"name":"kanto","url":"http://pokeapi.co/api/v2/region/1/"}],"versions":[{"name":"red","url":"http://pokeapi.co/api/v2/version/1/"}]}"#
+
+        guard let versionGroupData = versionGroupJSON.data(using: .utf8) else {
+            XCTFail("Failed to convert JSON Text into Data")
+            return
+        }
+
+        do {
+            let versionGroup = try decoder.decode(VersionGroup.self, from: versionGroupData)
+            XCTAssertNotNil(versionGroup)
+        } catch {
+            XCTFail("Failed to Decode JSON Data into \(VersionGroup.self) Object, \(error.localizedDescription)")
+        }
+    }
+
+    func testDecodingItem() {
+        let itemJSON = #"{"id":1,"name":"master-ball","cost":0,"fling_power":10,"fling_effect":{"name":"flinch","url":"http://pokeapi.co/api/v2/item-fling-effect/7/"},"attributes":[{"name":"holdable","url":"http://pokeapi.co/api/v2/item-attribute/5/"}],"category":{"name":"standard-balls","url":"http://pokeapi.co/api/v2/item-category/34/"},"effect_entries":[{"effect":"Used in battle\n:   [Catches]{mechanic:catch} a wild Pokémon without fail.\n\n    If used in a trainer battle, nothing happens and the ball is lost.","short_effect":"Catches a wild Pokémon every time.","language":{"name":"en","url":"http://pokeapi.co/api/v2/language/9/"}}],"flavor_text_entries":[{"text":"é‡Žç”Ÿã�®ã€€ãƒ�ã‚±ãƒ¢ãƒ³ã‚’ã€€å¿…ã�š\næ�•ã�¾ã�ˆã‚‹ã�“ã�¨ã�Œã€€ã�§ã��ã‚‹\næœ€é«˜ã€€æ€§èƒ½ã�®ã€€ãƒœãƒ¼ãƒ«ã€‚","version_group":{"name":"x-y","url":"http://pokeapi.co/api/v2/version-group/15/"},"language":{"name":"ja-kanji","url":"http://pokeapi.co/api/v2/language/11/"}}],"game_indices":[{"game_index":1,"generation":{"name":"generation-vi","url":"http://pokeapi.co/api/v2/generation/6/"}}],"names":[{"name":"Master Ball","language":{"name":"en","url":"http://pokeapi.co/api/v2/language/9/"}}],"held_by_pokemon":[{"pokemon":{"name":"chansey","url":"http://pokeapi.co/api/v2/pokemon/113/"},"version_details":[{"rarity":50,"version":{"name":"soulsilver","url":"http://pokeapi.co/api/v2/version/16/"}}]}],"baby_trigger_for":{"url":"http://pokeapi.co/api/v2/evolution-chain/1/"}}"#
+
+        guard let itemData = itemJSON.data(using: .utf8) else {
+            XCTFail("Failed to convert JSON Text into Data")
+            return
+        }
+
+        do {
+            let item = try decoder.decode(Item.self, from: itemData)
+            XCTAssertNotNil(item)
+        } catch {
+            XCTFail("Failed to Decode JSON Data into \(Item.self) Object, \(error.localizedDescription)")
+        }
+    }
+
     func testDecodingLanguage() {
         let languageJSON = ##"{"id":1,"iso3166":"jp","iso639":"ja","name":"ja-Hrkt","names":[{"language":{"name":"ja-Hrkt","url":"https://pokeapi.co/api/v2/language/1/"},"name":"日本語"},{"language":{"name":"fr","url":"https://pokeapi.co/api/v2/language/5/"},"name":"Japonais"},{"language":{"name":"de","url":"https://pokeapi.co/api/v2/language/6/"},"name":"Japanisch"},{"language":{"name":"en","url":"https://pokeapi.co/api/v2/language/9/"},"name":"Japanese"}],"official":true}"##
 
