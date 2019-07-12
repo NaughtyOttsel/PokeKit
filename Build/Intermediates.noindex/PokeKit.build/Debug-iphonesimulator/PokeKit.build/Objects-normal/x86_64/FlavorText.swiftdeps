@@ -67,6 +67,7 @@ depends-member:
 - !private ["Se", "flavorText"]
 - ["Se", "init"]
 - ["Se", "language"]
+- !private ["Se", "versionGroup"]
 - !private ["s7DecoderP", "container"]
 - ["SQ", "=="]
 - ["SQ", "RawValue"]
@@ -91,6 +92,7 @@ depends-member:
 - ["7PokeKit10FlavorTextV", "flavorText"]
 - ["7PokeKit10FlavorTextV", "init"]
 - ["7PokeKit10FlavorTextV", "language"]
+- ["7PokeKit10FlavorTextV", "versionGroup"]
 - ["SH", "=="]
 - ["SH", "RawValue"]
 - !private ["SH", ""]
@@ -106,12 +108,15 @@ depends-member:
 - ["SH", "rawValue"]
 - ["SH", "stringValue"]
 - !private ["s22KeyedDecodingContainerV", "decode"]
+- !private ["s22KeyedDecodingContainerV", "decodeIfPresent"]
 - !private ["s30KeyedDecodingContainerProtocolP", "decode"]
+- !private ["s30KeyedDecodingContainerProtocolP", "decodeIfPresent"]
 - ["7PokeKit12MultilingualP", ""]
 - !private ["7PokeKit12MultilingualP", "_findStringSwitchCase"]
 - !private ["7PokeKit12MultilingualP", "flavorText"]
 - ["7PokeKit12MultilingualP", "init"]
 - ["7PokeKit12MultilingualP", "language"]
+- !private ["7PokeKit12MultilingualP", "versionGroup"]
 - ["7PokeKit16NamedAPIResourceV", "deinit"]
 - ["SY", "=="]
 - ["SY", "RawValue"]
@@ -145,4 +150,4 @@ depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Swift.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
-interface-hash: "ef05591c42964c4912d44c1242d7d867"
+interface-hash: "db2e9944717d349245de84f00e97b6c0"
