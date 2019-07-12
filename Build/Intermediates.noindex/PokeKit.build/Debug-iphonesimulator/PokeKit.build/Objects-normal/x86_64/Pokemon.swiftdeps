@@ -1,0 +1,414 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Pokemon"
+- "PokemonAbility"
+- "PokemonType"
+- "PokemonHeldItem"
+- "PokemonHeldItemVersion"
+- "PokemonMove"
+- "PokemonMoveVersion"
+- "PokemonStat"
+- "PokemonSprites"
+- "LocationAreaEncounter"
+provides-nominal:
+- "7PokeKit7PokemonV"
+- "7PokeKit14PokemonAbilityV"
+- "7PokeKit11PokemonTypeV"
+- "7PokeKit15PokemonHeldItemV"
+- "7PokeKit22PokemonHeldItemVersionV"
+- "7PokeKit11PokemonMoveV"
+- "7PokeKit18PokemonMoveVersionV"
+- "7PokeKit11PokemonStatV"
+- "7PokeKit14PokemonSpritesV"
+- "7PokeKit21LocationAreaEncounterV"
+provides-member:
+- ["7PokeKit7PokemonV", ""]
+- ["7PokeKit14PokemonAbilityV", ""]
+- ["7PokeKit11PokemonTypeV", ""]
+- ["7PokeKit15PokemonHeldItemV", ""]
+- ["7PokeKit22PokemonHeldItemVersionV", ""]
+- ["7PokeKit11PokemonMoveV", ""]
+- ["7PokeKit18PokemonMoveVersionV", ""]
+- ["7PokeKit11PokemonStatV", ""]
+- ["7PokeKit14PokemonSpritesV", ""]
+- ["7PokeKit21LocationAreaEncounterV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- "Bool"
+- "CodingKey"
+- "Decodable"
+- "Entity"
+- !private "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- "LocationAreaEncounter"
+- "NamedAPIResource"
+- "Pokemon"
+- "PokemonAbility"
+- "PokemonHeldItem"
+- "PokemonHeldItemVersion"
+- "PokemonMove"
+- "PokemonMoveVersion"
+- "PokemonSprites"
+- "PokemonStat"
+- "PokemonType"
+- "String"
+- "StringLiteralType"
+- "VersionEncounterDetail"
+- "VersionGameIndex"
+- !private "_findStringSwitchCase"
+- !private "~="
+depends-member:
+- ["s9CodingKeyP", "=="]
+- ["s9CodingKeyP", "RawValue"]
+- !private ["s9CodingKeyP", ""]
+- ["s9CodingKeyP", "_Default_RawValue"]
+- !private ["s9CodingKeyP", "_findStringSwitchCase"]
+- ["s9CodingKeyP", "_rawHashValue"]
+- ["s9CodingKeyP", "debugDescription"]
+- ["s9CodingKeyP", "description"]
+- ["s9CodingKeyP", "hash"]
+- ["s9CodingKeyP", "hashValue"]
+- ["s9CodingKeyP", "init"]
+- ["s9CodingKeyP", "intValue"]
+- ["s9CodingKeyP", "rawValue"]
+- ["s9CodingKeyP", "stringValue"]
+- ["s28CustomDebugStringConvertibleP", "=="]
+- ["s28CustomDebugStringConvertibleP", "RawValue"]
+- !private ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "_Default_RawValue"]
+- !private ["s28CustomDebugStringConvertibleP", "_findStringSwitchCase"]
+- ["s28CustomDebugStringConvertibleP", "_rawHashValue"]
+- ["s28CustomDebugStringConvertibleP", "debugDescription"]
+- ["s28CustomDebugStringConvertibleP", "description"]
+- ["s28CustomDebugStringConvertibleP", "hash"]
+- ["s28CustomDebugStringConvertibleP", "hashValue"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "intValue"]
+- ["s28CustomDebugStringConvertibleP", "rawValue"]
+- ["s28CustomDebugStringConvertibleP", "stringValue"]
+- ["s23CustomStringConvertibleP", "=="]
+- ["s23CustomStringConvertibleP", "RawValue"]
+- !private ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_Default_RawValue"]
+- !private ["s23CustomStringConvertibleP", "_findStringSwitchCase"]
+- ["s23CustomStringConvertibleP", "_rawHashValue"]
+- ["s23CustomStringConvertibleP", "debugDescription"]
+- ["s23CustomStringConvertibleP", "description"]
+- ["s23CustomStringConvertibleP", "hash"]
+- ["s23CustomStringConvertibleP", "hashValue"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "intValue"]
+- ["s23CustomStringConvertibleP", "rawValue"]
+- ["s23CustomStringConvertibleP", "stringValue"]
+- ["Se", ""]
+- !private ["Se", "_findStringSwitchCase"]
+- !private ["Se", "abilities"]
+- !private ["Se", "ability"]
+- !private ["Se", "backDefault"]
+- !private ["Se", "backFemale"]
+- !private ["Se", "backShiny"]
+- !private ["Se", "backShinyFemale"]
+- !private ["Se", "baseExperience"]
+- !private ["Se", "baseStatValue"]
+- !private ["Se", "effort"]
+- !private ["Se", "forms"]
+- !private ["Se", "frontDefault"]
+- !private ["Se", "frontFemale"]
+- !private ["Se", "frontShiny"]
+- !private ["Se", "frontShinyFemale"]
+- !private ["Se", "gameIndicies"]
+- !private ["Se", "height"]
+- !private ["Se", "heldItems"]
+- ["Se", "id"]
+- ["Se", "init"]
+- !private ["Se", "isDefault"]
+- !private ["Se", "isHidden"]
+- !private ["Se", "item"]
+- !private ["Se", "levelLearnedAt"]
+- !private ["Se", "locationArea"]
+- !private ["Se", "locationAreaEncounters"]
+- !private ["Se", "move"]
+- !private ["Se", "moveLearnMethod"]
+- !private ["Se", "moves"]
+- ["Se", "name"]
+- !private ["Se", "order"]
+- !private ["Se", "rarity"]
+- !private ["Se", "slot"]
+- !private ["Se", "species"]
+- !private ["Se", "sprites"]
+- !private ["Se", "stat"]
+- !private ["Se", "stats"]
+- !private ["Se", "type"]
+- !private ["Se", "types"]
+- !private ["Se", "version"]
+- !private ["Se", "versionDetails"]
+- !private ["Se", "versionGroup"]
+- !private ["Se", "versionGroupDetails"]
+- !private ["Se", "weight"]
+- !private ["s7DecoderP", "container"]
+- ["7PokeKit6EntityP", ""]
+- !private ["7PokeKit6EntityP", "_findStringSwitchCase"]
+- !private ["7PokeKit6EntityP", "abilities"]
+- !private ["7PokeKit6EntityP", "baseExperience"]
+- !private ["7PokeKit6EntityP", "forms"]
+- !private ["7PokeKit6EntityP", "gameIndicies"]
+- !private ["7PokeKit6EntityP", "height"]
+- !private ["7PokeKit6EntityP", "heldItems"]
+- ["7PokeKit6EntityP", "id"]
+- ["7PokeKit6EntityP", "init"]
+- !private ["7PokeKit6EntityP", "isDefault"]
+- !private ["7PokeKit6EntityP", "locationAreaEncounters"]
+- !private ["7PokeKit6EntityP", "moves"]
+- ["7PokeKit6EntityP", "name"]
+- !private ["7PokeKit6EntityP", "order"]
+- !private ["7PokeKit6EntityP", "species"]
+- !private ["7PokeKit6EntityP", "sprites"]
+- !private ["7PokeKit6EntityP", "stats"]
+- !private ["7PokeKit6EntityP", "types"]
+- !private ["7PokeKit6EntityP", "weight"]
+- ["SQ", "=="]
+- ["SQ", "RawValue"]
+- !private ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- ["SQ", "_rawHashValue"]
+- ["SQ", "debugDescription"]
+- ["SQ", "description"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- ["SQ", "intValue"]
+- ["SQ", "rawValue"]
+- ["SQ", "stringValue"]
+- ["SH", "=="]
+- ["SH", "RawValue"]
+- !private ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- ["SH", "_rawHashValue"]
+- ["SH", "debugDescription"]
+- ["SH", "description"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- ["SH", "intValue"]
+- ["SH", "rawValue"]
+- ["SH", "stringValue"]
+- !private ["s6HasherV", "combine"]
+- ["7PokeKit12IdentifiableP", ""]
+- !private ["7PokeKit12IdentifiableP", "_findStringSwitchCase"]
+- !private ["7PokeKit12IdentifiableP", "abilities"]
+- !private ["7PokeKit12IdentifiableP", "baseExperience"]
+- !private ["7PokeKit12IdentifiableP", "forms"]
+- !private ["7PokeKit12IdentifiableP", "gameIndicies"]
+- !private ["7PokeKit12IdentifiableP", "height"]
+- !private ["7PokeKit12IdentifiableP", "heldItems"]
+- ["7PokeKit12IdentifiableP", "id"]
+- ["7PokeKit12IdentifiableP", "init"]
+- !private ["7PokeKit12IdentifiableP", "isDefault"]
+- !private ["7PokeKit12IdentifiableP", "locationAreaEncounters"]
+- !private ["7PokeKit12IdentifiableP", "moves"]
+- ["7PokeKit12IdentifiableP", "name"]
+- !private ["7PokeKit12IdentifiableP", "order"]
+- !private ["7PokeKit12IdentifiableP", "species"]
+- !private ["7PokeKit12IdentifiableP", "sprites"]
+- !private ["7PokeKit12IdentifiableP", "stats"]
+- !private ["7PokeKit12IdentifiableP", "types"]
+- !private ["7PokeKit12IdentifiableP", "weight"]
+- !private ["s22KeyedDecodingContainerV", "decode"]
+- !private ["s30KeyedDecodingContainerProtocolP", "decode"]
+- ["7PokeKit21LocationAreaEncounterV", "CodingKey"]
+- !private ["7PokeKit21LocationAreaEncounterV", "CodingKeys"]
+- ["7PokeKit21LocationAreaEncounterV", "NamedAPIResource"]
+- ["7PokeKit21LocationAreaEncounterV", "String"]
+- ["7PokeKit21LocationAreaEncounterV", "VersionEncounterDetail"]
+- !private ["7PokeKit21LocationAreaEncounterV", "_findStringSwitchCase"]
+- ["7PokeKit21LocationAreaEncounterV", "deinit"]
+- ["7PokeKit21LocationAreaEncounterV", "init"]
+- ["7PokeKit21LocationAreaEncounterV", "locationArea"]
+- ["7PokeKit21LocationAreaEncounterV", "versionDetails"]
+- ["7PokeKit5NamedP", ""]
+- !private ["7PokeKit5NamedP", "_findStringSwitchCase"]
+- !private ["7PokeKit5NamedP", "abilities"]
+- !private ["7PokeKit5NamedP", "baseExperience"]
+- !private ["7PokeKit5NamedP", "forms"]
+- !private ["7PokeKit5NamedP", "gameIndicies"]
+- !private ["7PokeKit5NamedP", "height"]
+- !private ["7PokeKit5NamedP", "heldItems"]
+- ["7PokeKit5NamedP", "id"]
+- ["7PokeKit5NamedP", "init"]
+- !private ["7PokeKit5NamedP", "isDefault"]
+- !private ["7PokeKit5NamedP", "locationAreaEncounters"]
+- !private ["7PokeKit5NamedP", "moves"]
+- ["7PokeKit5NamedP", "name"]
+- !private ["7PokeKit5NamedP", "order"]
+- !private ["7PokeKit5NamedP", "species"]
+- !private ["7PokeKit5NamedP", "sprites"]
+- !private ["7PokeKit5NamedP", "stats"]
+- !private ["7PokeKit5NamedP", "types"]
+- !private ["7PokeKit5NamedP", "weight"]
+- ["7PokeKit16NamedAPIResourceV", "deinit"]
+- ["7PokeKit7PokemonV", "Bool"]
+- ["7PokeKit7PokemonV", "CodingKey"]
+- !private ["7PokeKit7PokemonV", "CodingKeys"]
+- ["7PokeKit7PokemonV", "Int"]
+- ["7PokeKit7PokemonV", "NamedAPIResource"]
+- ["7PokeKit7PokemonV", "PokemonAbility"]
+- ["7PokeKit7PokemonV", "PokemonHeldItem"]
+- ["7PokeKit7PokemonV", "PokemonMove"]
+- ["7PokeKit7PokemonV", "PokemonSprites"]
+- ["7PokeKit7PokemonV", "PokemonStat"]
+- ["7PokeKit7PokemonV", "PokemonType"]
+- ["7PokeKit7PokemonV", "String"]
+- ["7PokeKit7PokemonV", "VersionGameIndex"]
+- !private ["7PokeKit7PokemonV", "_findStringSwitchCase"]
+- ["7PokeKit7PokemonV", "abilities"]
+- ["7PokeKit7PokemonV", "baseExperience"]
+- ["7PokeKit7PokemonV", "deinit"]
+- ["7PokeKit7PokemonV", "forms"]
+- ["7PokeKit7PokemonV", "gameIndicies"]
+- ["7PokeKit7PokemonV", "height"]
+- ["7PokeKit7PokemonV", "heldItems"]
+- ["7PokeKit7PokemonV", "id"]
+- ["7PokeKit7PokemonV", "init"]
+- ["7PokeKit7PokemonV", "isDefault"]
+- ["7PokeKit7PokemonV", "locationAreaEncounters"]
+- ["7PokeKit7PokemonV", "moves"]
+- ["7PokeKit7PokemonV", "name"]
+- ["7PokeKit7PokemonV", "order"]
+- ["7PokeKit7PokemonV", "species"]
+- ["7PokeKit7PokemonV", "sprites"]
+- ["7PokeKit7PokemonV", "stats"]
+- ["7PokeKit7PokemonV", "types"]
+- ["7PokeKit7PokemonV", "weight"]
+- ["7PokeKit14PokemonAbilityV", "Bool"]
+- ["7PokeKit14PokemonAbilityV", "CodingKey"]
+- !private ["7PokeKit14PokemonAbilityV", "CodingKeys"]
+- ["7PokeKit14PokemonAbilityV", "Int"]
+- ["7PokeKit14PokemonAbilityV", "NamedAPIResource"]
+- ["7PokeKit14PokemonAbilityV", "String"]
+- !private ["7PokeKit14PokemonAbilityV", "_findStringSwitchCase"]
+- ["7PokeKit14PokemonAbilityV", "ability"]
+- ["7PokeKit14PokemonAbilityV", "deinit"]
+- ["7PokeKit14PokemonAbilityV", "init"]
+- ["7PokeKit14PokemonAbilityV", "isHidden"]
+- ["7PokeKit14PokemonAbilityV", "slot"]
+- ["7PokeKit15PokemonHeldItemV", "CodingKey"]
+- !private ["7PokeKit15PokemonHeldItemV", "CodingKeys"]
+- ["7PokeKit15PokemonHeldItemV", "NamedAPIResource"]
+- ["7PokeKit15PokemonHeldItemV", "PokemonHeldItemVersion"]
+- ["7PokeKit15PokemonHeldItemV", "String"]
+- !private ["7PokeKit15PokemonHeldItemV", "_findStringSwitchCase"]
+- ["7PokeKit15PokemonHeldItemV", "deinit"]
+- ["7PokeKit15PokemonHeldItemV", "init"]
+- ["7PokeKit15PokemonHeldItemV", "item"]
+- ["7PokeKit15PokemonHeldItemV", "versionDetails"]
+- ["7PokeKit22PokemonHeldItemVersionV", "Int"]
+- ["7PokeKit22PokemonHeldItemVersionV", "NamedAPIResource"]
+- ["7PokeKit22PokemonHeldItemVersionV", "deinit"]
+- ["7PokeKit22PokemonHeldItemVersionV", "init"]
+- ["7PokeKit22PokemonHeldItemVersionV", "rarity"]
+- ["7PokeKit22PokemonHeldItemVersionV", "version"]
+- ["7PokeKit11PokemonMoveV", "CodingKey"]
+- !private ["7PokeKit11PokemonMoveV", "CodingKeys"]
+- ["7PokeKit11PokemonMoveV", "NamedAPIResource"]
+- ["7PokeKit11PokemonMoveV", "PokemonMoveVersion"]
+- ["7PokeKit11PokemonMoveV", "String"]
+- !private ["7PokeKit11PokemonMoveV", "_findStringSwitchCase"]
+- ["7PokeKit11PokemonMoveV", "deinit"]
+- ["7PokeKit11PokemonMoveV", "init"]
+- ["7PokeKit11PokemonMoveV", "move"]
+- ["7PokeKit11PokemonMoveV", "versionGroupDetails"]
+- ["7PokeKit18PokemonMoveVersionV", "CodingKey"]
+- !private ["7PokeKit18PokemonMoveVersionV", "CodingKeys"]
+- ["7PokeKit18PokemonMoveVersionV", "Int"]
+- ["7PokeKit18PokemonMoveVersionV", "NamedAPIResource"]
+- ["7PokeKit18PokemonMoveVersionV", "String"]
+- !private ["7PokeKit18PokemonMoveVersionV", "_findStringSwitchCase"]
+- ["7PokeKit18PokemonMoveVersionV", "deinit"]
+- ["7PokeKit18PokemonMoveVersionV", "init"]
+- ["7PokeKit18PokemonMoveVersionV", "levelLearnedAt"]
+- ["7PokeKit18PokemonMoveVersionV", "moveLearnMethod"]
+- ["7PokeKit18PokemonMoveVersionV", "versionGroup"]
+- ["7PokeKit14PokemonSpritesV", "CodingKey"]
+- !private ["7PokeKit14PokemonSpritesV", "CodingKeys"]
+- ["7PokeKit14PokemonSpritesV", "String"]
+- !private ["7PokeKit14PokemonSpritesV", "_findStringSwitchCase"]
+- ["7PokeKit14PokemonSpritesV", "backDefault"]
+- ["7PokeKit14PokemonSpritesV", "backFemale"]
+- ["7PokeKit14PokemonSpritesV", "backShiny"]
+- ["7PokeKit14PokemonSpritesV", "backShinyFemale"]
+- ["7PokeKit14PokemonSpritesV", "deinit"]
+- ["7PokeKit14PokemonSpritesV", "frontDefault"]
+- ["7PokeKit14PokemonSpritesV", "frontFemale"]
+- ["7PokeKit14PokemonSpritesV", "frontShiny"]
+- ["7PokeKit14PokemonSpritesV", "frontShinyFemale"]
+- ["7PokeKit14PokemonSpritesV", "init"]
+- ["7PokeKit11PokemonStatV", "CodingKey"]
+- !private ["7PokeKit11PokemonStatV", "CodingKeys"]
+- ["7PokeKit11PokemonStatV", "Int"]
+- ["7PokeKit11PokemonStatV", "NamedAPIResource"]
+- ["7PokeKit11PokemonStatV", "String"]
+- !private ["7PokeKit11PokemonStatV", "_findStringSwitchCase"]
+- ["7PokeKit11PokemonStatV", "baseStatValue"]
+- ["7PokeKit11PokemonStatV", "deinit"]
+- ["7PokeKit11PokemonStatV", "effort"]
+- ["7PokeKit11PokemonStatV", "init"]
+- ["7PokeKit11PokemonStatV", "stat"]
+- ["7PokeKit11PokemonTypeV", "Int"]
+- ["7PokeKit11PokemonTypeV", "NamedAPIResource"]
+- ["7PokeKit11PokemonTypeV", "deinit"]
+- ["7PokeKit11PokemonTypeV", "init"]
+- ["7PokeKit11PokemonTypeV", "slot"]
+- ["7PokeKit11PokemonTypeV", "type"]
+- ["SY", "=="]
+- ["SY", "RawValue"]
+- !private ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- ["SY", "_rawHashValue"]
+- ["SY", "debugDescription"]
+- ["SY", "description"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "init"]
+- ["SY", "intValue"]
+- ["SY", "rawValue"]
+- ["SY", "stringValue"]
+- ["7PokeKit22VersionEncounterDetailV", "deinit"]
+- ["7PokeKit16VersionGameIndexV", "deinit"]
+depends-nominal:
+- "s9CodingKeyP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- !private "s7DecoderP"
+- "7PokeKit6EntityP"
+- "SQ"
+- "SH"
+- !private "s6HasherV"
+- "7PokeKit12IdentifiableP"
+- !private "s22KeyedDecodingContainerV"
+- !private "s30KeyedDecodingContainerProtocolP"
+- "7PokeKit21LocationAreaEncounterV"
+- "7PokeKit5NamedP"
+- "7PokeKit16NamedAPIResourceV"
+- "7PokeKit7PokemonV"
+- "7PokeKit14PokemonAbilityV"
+- "7PokeKit15PokemonHeldItemV"
+- "7PokeKit22PokemonHeldItemVersionV"
+- "7PokeKit11PokemonMoveV"
+- "7PokeKit18PokemonMoveVersionV"
+- "7PokeKit14PokemonSpritesV"
+- "7PokeKit11PokemonStatV"
+- "7PokeKit11PokemonTypeV"
+- "SY"
+- "7PokeKit22VersionEncounterDetailV"
+- "7PokeKit16VersionGameIndexV"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+interface-hash: "a62788b8ff73f75238e8f238e7f14f64"
