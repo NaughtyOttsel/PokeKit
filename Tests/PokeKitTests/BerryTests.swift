@@ -4,7 +4,7 @@ import XCTest
 
 class BerryTests: XCTestCase {
     private let decoder = JSONDecoder()
-    let berryJson = #"
+    let berryJson = ##"""
     {
         "id": 1,
         "name": "cheri",
@@ -36,7 +36,7 @@ class BerryTests: XCTestCase {
         "url": "https://pokeapi.co/api/v2/type/10/"
         }
     }
-    "#
+    """##
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
