@@ -1,9 +1,3 @@
-//
-//  BerryTests.swift
-//  PokeKitTests
-//
-//  Created by James Lee on 08/07/2019.
-//
 
 import XCTest
 @testable import PokeKit

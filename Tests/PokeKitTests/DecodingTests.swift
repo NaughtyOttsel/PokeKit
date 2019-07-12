@@ -1,9 +1,3 @@
-//
-//  DecodingTests.swift
-//  PokeKitTests
-//
-//  Created by James Lee on 09/07/2019.
-//
 
 import XCTest
 @testable import PokeKit
