@@ -3,11 +3,11 @@
 public struct ContestType: LocalizableEntity, Decodable {
     public let id: Int
     public let name: String
-    ///The berry flavor that correlates with this contest type.
+    /// The berry flavor that correlates with this contest type.
     public let berryFlavor: NamedAPIResource
-    ///The name of this contest type listed in different languages.
+    /// The name of this contest type listed in different languages.
     public let names: [ContestName]
-    
+
     private enum CodingKeys: String, CodingKey {
         case id, name, names
         case berryFlavor = "berry_flavor"
@@ -16,8 +16,8 @@ public struct ContestType: LocalizableEntity, Decodable {
 
 public struct ContestName: Named, Multilingual, Decodable {
     public let name: String
-    ///The color associated with this contest's name.
+    /// The color associated with this contest's name.
     public let color: String
-    ///The language that this name is in.
+    /// The language that this name is in.
     public let language: NamedAPIResource
 }

@@ -1,7 +1,6 @@
 
 /// Berries are small fruits that can provide HP and status condition restoration, stat enhancement, and even damage negation when eaten by pokemon
 public struct Berry: Entity, Decodable {
-
     public let id: Int
     public let name: String
     /// Time it takes the tree to grow one stage, in hours. Berry trees go through four of these growth stages before they can be picked.
@@ -24,7 +23,7 @@ public struct Berry: Entity, Decodable {
     public let item: NamedAPIResource
     /// The type inherited by "Natural Gift" when used with this Berry.
     public let naturalGiftType: NamedAPIResource
-    
+
     private enum CodingKeys: String, CodingKey {
         case id, name, size, smoothness, firmness, flavors, item
         case growthTime = "growth_time"

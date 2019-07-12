@@ -1,7 +1,6 @@
 
 /// Types are properties for Pokémon and their moves. Each type has three properties: which types of Pokémon it is super effective against, which types of Pokémon it is not very effective against, and which types of Pokémon it is completely ineffective against
 public struct Type: LocalizableEntity, Decodable {
-    
     public let id: Int
     public let name: String
     /// A detail of how effective this type is toward others and vice versa
@@ -17,7 +16,7 @@ public struct Type: LocalizableEntity, Decodable {
     public let pokemon: [TypePokemon]
     /// A list of moves that have this type
     public let moves: [NamedAPIResource]
-    
+
     private enum CodingKeys: String, CodingKey {
         case id, name, names, pokemon, moves
         case damageRelations = "damage_relations"
@@ -28,7 +27,6 @@ public struct Type: LocalizableEntity, Decodable {
 }
 
 public struct TypePokemon: Decodable {
-    
     /// The order the Pokémon's types are listed in
     public let slot: Int
     /// The Pokémon that has the referenced type
@@ -36,7 +34,6 @@ public struct TypePokemon: Decodable {
 }
 
 public struct TypeRelations: Decodable {
-    
     /// A list of types this type has no effect on
     public let noDamageTo: [NamedAPIResource]
     /// A list of types this type is not very effect against
@@ -49,7 +46,7 @@ public struct TypeRelations: Decodable {
     public let halfDamageFrom: [NamedAPIResource]
     /// A list of types that are very effective against this type.
     public let doubleDamageFrom: [NamedAPIResource]
-    
+
     private enum CodingKeys: String, CodingKey {
         case noDamageTo = "no_damage_to"
         case halfDamageTo = "half_damage_to"

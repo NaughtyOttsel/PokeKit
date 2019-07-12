@@ -5,9 +5,8 @@ public protocol Multilingual: Decodable {
 }
 
 public protocol Localizable: Decodable {
-    
-    associatedtype NamedMultilingual: Named&Multilingual
-    
+    associatedtype NamedMultilingual: Named & Multilingual
+
     /// The name of this resource listed in different languages
     var names: [NamedMultilingual] { get }
 }

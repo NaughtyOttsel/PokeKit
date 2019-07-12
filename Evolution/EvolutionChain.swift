@@ -1,13 +1,12 @@
 
 /// Evolution chains are essentially family trees. They start with the lowest stage within a family and detail evolution conditions for each as well as pokémon they can evolve into up through the hierarchy.
 public struct EvolutionChain: Identifiable, Decodable {
-    
     public let id: Int
     /// The item that a pokémon would be holding when mating that would trigger the egg hatching a baby pokémon rather than a basic pokémon
     public let babyTriggerItem: NamedAPIResource?
     /// The base chain link object. Each link contains evolution details for a pokémon in the chain. Each link references the next pokémon in the natural evolution order.
     public let chain: ChainLink
-    
+
     private enum CodingKeys: String, CodingKey {
         case id, chain
         case babyTriggerItem = "baby_trigger_item"
@@ -15,7 +14,6 @@ public struct EvolutionChain: Identifiable, Decodable {
 }
 
 public struct ChainLink: Decodable {
-    
     /// Whether or not this link is for a baby pokémon. This would only ever be true on the base link.
     public let isBaby: Bool
     /// The pokemon species at this point in the evolution chain
@@ -24,7 +22,7 @@ public struct ChainLink: Decodable {
     public let evolutionDetails: [EvolutionDetail]?
     /// A List of chain objects
     public let evolvesTo: [ChainLink]
-    
+
     private enum CodingKeys: String, CodingKey {
         case species
         case isBaby = "is_baby"
@@ -34,7 +32,6 @@ public struct ChainLink: Decodable {
 }
 
 public struct EvolutionDetail: Decodable {
-    
     /// The item required to cause evolution this into pokémon species
     public let item: NamedAPIResource?
     /// The type of event that triggers evolution into this pokémon species
@@ -71,7 +68,7 @@ public struct EvolutionDetail: Decodable {
     public let tradeSpecies: NamedAPIResource?
     /// Whether or not the 3DS needs to be turned upside-down as this Pokémon levels up
     public let turnUpsideDown: Bool
-    
+
     private enum CodingKeys: String, CodingKey {
         case item, trigger, gender, location
         case heldItem = "held_item"
@@ -93,7 +90,6 @@ public struct EvolutionDetail: Decodable {
 
 /// The required relation between the Pokémon's Attack and Defense stats
 public enum RelativeStats: Int, Decodable {
-    
     /// Attack > Defense
     case AttackGreaterDefence = 1
     /// Attack = Defense

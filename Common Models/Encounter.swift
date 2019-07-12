@@ -2,7 +2,6 @@
 
 /// Details on an Encounter
 public struct Encounter: Decodable {
-    
     /// The lowest level the Pokémon could be encountered at.
     public let minimumLevel: Int
     /// The highest level the Pokémon could be encountered at.
@@ -13,7 +12,7 @@ public struct Encounter: Decodable {
     public let chance: Int
     /// The method by which this encounter happens.
     public let method: NamedAPIResource
-    
+
     private enum CodingKeys: String, CodingKey {
         case minimumLevel = "min_level"
         case maximumLevel = "max_level"

@@ -10,7 +10,7 @@ public struct ContestEffect: Identifiable, Decodable {
     public let effectEntries: [Effect]
     /// The flavor text of this contest effect listed in different languages
     public let flavorTextEntries: [FlavorText]
-    
+
     private enum CodingKeys: String, CodingKey {
         case id, appeal, jam
         case effectEntries = "effect_entries"

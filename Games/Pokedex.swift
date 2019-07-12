@@ -15,7 +15,7 @@ public struct Pokedex: LocalizableEntity, Decodable {
     public let region: NamedAPIResource
     /// A list of version groups this Pokédex is relevant to.
     public let versionGroups: [NamedAPIResource]
-    
+
     private enum CodingKeys: String, CodingKey {
         case id, name, descriptions, names, region
         case isMainSeries = "is_main_series"
@@ -25,12 +25,11 @@ public struct Pokedex: LocalizableEntity, Decodable {
 }
 
 public struct PokemonEntry: Decodable {
-    
     /// The index of this Pokémon species entry within the Pokédex.
     public let entryNumber: Int
     /// The Pokémon species this entry relates to.
     public let pokemonSpecies: NamedAPIResource
-    
+
     private enum CodingKeys: String, CodingKey {
         case entryNumber = "entry_number"
         case pokemonSpecies = "pokemon_species"

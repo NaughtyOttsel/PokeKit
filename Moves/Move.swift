@@ -1,7 +1,6 @@
 
 /// Moves are the skills of pokémon in battle. In battle, a Pokémon uses one move each turn. Some moves (including those learned by Hidden Machine) can be used outside of battle as well, usually for the purpose of removing obstacles or exploring new areas.
 public struct Move: LocalizableEntity, Decodable {
-    
     public let id: Int
     public let name: String
     /// The percent value of how likely this move is to be successful
@@ -43,7 +42,7 @@ public struct Move: LocalizableEntity, Decodable {
     public let target: NamedAPIResource
     /// The elemental type of this move
     public let type: NamedAPIResource
-    
+
     private enum CodingKeys: String, CodingKey {
         case id, name, accuracy, priority, power, generation, machines, names, target, type
         case effectChance = "effect_chance"
@@ -60,16 +59,14 @@ public struct Move: LocalizableEntity, Decodable {
         case statChanges = "stat_changes"
         case superContestEffect = "super_contest_effect"
     }
-    
 }
 
 public struct ContestComboSets: Decodable {
-    
     /// A detail of moves this move can be used before or after, granting additional appeal points in contests
     public let normal: ContestComboDetail
     /// A detail of moves this move can be used before or after, granting additional appeal points in super contests
     public let `super`: ContestComboDetail
-    
+
     private enum CodingKeys: String, CodingKey {
         case normal
         case `super` = "super"
@@ -77,12 +74,11 @@ public struct ContestComboSets: Decodable {
 }
 
 public struct ContestComboDetail: Decodable {
-    
     /// A list of moves to use before this move
     public let useBefore: [NamedAPIResource]
     /// A list of moves to use after this move
     public let useAfter: [NamedAPIResource]
-    
+
     private enum CodingKeys: String, CodingKey {
         case useBefore = "use_before"
         case useAfter = "use_after"
@@ -90,11 +86,10 @@ public struct ContestComboDetail: Decodable {
 }
 
 public struct MoveFlavorText: Multilingual, Decodable {
-    
     public let flavorText: String
     public let language: NamedAPIResource
     public let versionGroup: NamedAPIResource
-    
+
     private enum CodingKeys: String, CodingKey {
         case language
         case flavorText = "flavor_text"
@@ -103,7 +98,6 @@ public struct MoveFlavorText: Multilingual, Decodable {
 }
 
 public struct MoveMetaData: Decodable {
-    
     /// The status ailment this move inflicts on its target
     public let moveAilment: NamedAPIResource
     /// The category of move this move falls under, e.g. damage or ailment
@@ -128,7 +122,7 @@ public struct MoveMetaData: Decodable {
     public let flinchChance: Int
     /// The likelyhood this attack will cause a stat change in the target pokémon
     public let statChangeChance: Int
-    
+
     private enum CodingKeys: String, CodingKey {
         case category, drain, healing
         case moveAilment = "move_ailment"
@@ -144,7 +138,6 @@ public struct MoveMetaData: Decodable {
 }
 
 public struct MoveStatChange: Decodable {
-    
     /// The amount of change
     public let change: Int
     /// The stat being affected
@@ -152,7 +145,6 @@ public struct MoveStatChange: Decodable {
 }
 
 public struct PastMoveStatValues: Decodable {
-    
     /// The percent value of how likely this move is to be successful
     public let accuracy: Int
     /// The percent value of how likely it is this moves effect will take effect
@@ -167,7 +159,7 @@ public struct PastMoveStatValues: Decodable {
     public let type: NamedAPIResource
     /// The version group in which these move stat values were in effect
     public let versionGroup: NamedAPIResource
-    
+
     private enum CodingKeys: String, CodingKey {
         case accuracy, power, type
         case effectChance = "effect_chance"

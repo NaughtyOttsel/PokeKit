@@ -9,9 +9,9 @@ public struct BerryFlavor: LocalizableEntity, Decodable {
     public let berries: [FlavorBerryMap]
     /// The contest type that correlates with this berry flavor.
     public let contestType: NamedAPIResource
-    ///The name of this resource listed in different languages.
+    /// The name of this resource listed in different languages.
     public let names: [Name]
-    
+
     private enum CodingKeys: String, CodingKey {
         case id, name, berries, names
         case contestType = "contest_type"

@@ -13,8 +13,8 @@ public protocol ResourceLocatableList: ResourceList {
     var results: [Resource] { get }
 }
 
-public protocol NamedResourceLocatableList: ResourceList  {
-    associatedtype Resource: Named&ResourceLocatable
+public protocol NamedResourceLocatableList: ResourceList {
+    associatedtype Resource: Named & ResourceLocatable
     var results: [Resource] { get }
 }
 

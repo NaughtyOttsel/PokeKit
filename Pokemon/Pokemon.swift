@@ -1,7 +1,6 @@
 
 /// Pokémon are the creatures that inhabit the world of the pokemon games. They can be caught using pokéballs and trained by battling with other pokémon
 public struct Pokemon: Entity, Decodable {
-    
     public let id: Int
     public let name: String
     /// The base experience gained for defeating this pokémon
@@ -34,7 +33,7 @@ public struct Pokemon: Entity, Decodable {
     public let stats: [PokemonStat]
     /// A list of details showing types this pokémon has
     public let types: [PokemonType]
-    
+
     private enum CodingKeys: String, CodingKey {
         case id, name, height, order, weight, abilities, forms, moves, sprites, species, stats, types
         case baseExperience = "base_experience"
@@ -46,14 +45,13 @@ public struct Pokemon: Entity, Decodable {
 }
 
 public struct PokemonAbility: Decodable {
-    
     /// Whether or not this is a hidden ability
     public let isHidden: Bool
     /// The slot this ability occupies in this pokémon species
     public let slot: Int
     /// The ability the pokémon may have
     public let ability: NamedAPIResource
-    
+
     private enum CodingKeys: String, CodingKey {
         case slot, ability
         case isHidden = "is_hidden"
@@ -61,7 +59,6 @@ public struct PokemonAbility: Decodable {
 }
 
 public struct PokemonType: Decodable {
-    
     /// The order the pokémon types are listed in
     public let slot: Int
     /// The type the referenced pokémon has
@@ -69,12 +66,11 @@ public struct PokemonType: Decodable {
 }
 
 public struct PokemonHeldItem: Decodable {
-    
     /// The item the referenced Pokémon holds
     public let item: NamedAPIResource
     /// The details of the different versions in which the item is held
     public let versionDetails: [PokemonHeldItemVersion]
-    
+
     private enum CodingKeys: String, CodingKey {
         case item
         case versionDetails = "version_details"
@@ -82,7 +78,6 @@ public struct PokemonHeldItem: Decodable {
 }
 
 public struct PokemonHeldItemVersion: Decodable {
-    
     /// The version in which the item is held
     public let version: NamedAPIResource
     /// How often the item is held
@@ -90,12 +85,11 @@ public struct PokemonHeldItemVersion: Decodable {
 }
 
 public struct PokemonMove: Decodable {
-    
     /// The move the Pokémon can learn
     public let move: NamedAPIResource
     /// The details of the version in which the Pokémon can learn the move
     public let versionGroupDetails: [PokemonMoveVersion]
-    
+
     private enum CodingKeys: String, CodingKey {
         case move
         case versionGroupDetails = "version_group_details"
@@ -103,14 +97,13 @@ public struct PokemonMove: Decodable {
 }
 
 public struct PokemonMoveVersion: Decodable {
-    
     /// The method by which the move is learned
     public let moveLearnMethod: NamedAPIResource
     /// The version group in which the move is learned
-    public let versionGroup : NamedAPIResource
+    public let versionGroup: NamedAPIResource
     /// The minimum level to learn the move
     public let levelLearnedAt: Int
-    
+
     private enum CodingKeys: String, CodingKey {
         case moveLearnMethod = "move_learn_method"
         case versionGroup = "version_group"
@@ -119,14 +112,13 @@ public struct PokemonMoveVersion: Decodable {
 }
 
 public struct PokemonStat: Decodable {
-    
     /// The stat the Pokémon has
     public let stat: NamedAPIResource
     /// The effort points (EV) the Pokémon has in the stat
     public let effort: Int
     /// The base value of the stat
     public let baseStatValue: Int
-    
+
     private enum CodingKeys: String, CodingKey {
         case stat, effort
         case baseStatValue = "base_stat"
@@ -134,7 +126,6 @@ public struct PokemonStat: Decodable {
 }
 
 public struct PokemonSprites: Decodable {
-    
     /// The default depiction of this Pokémon from the front in battle
     public let frontDefault: String
     /// The shiny depiction of this Pokémon from the front in battle
@@ -151,7 +142,7 @@ public struct PokemonSprites: Decodable {
     public let backFemale: String
     /// The shiny female depiction of this Pokémon from the back in battle
     public let backShinyFemale: String
-    
+
     private enum CodingKeys: String, CodingKey {
         case frontDefault = "font_default"
         case frontShiny = "front_shiny"
@@ -165,12 +156,11 @@ public struct PokemonSprites: Decodable {
 }
 
 public struct LocationAreaEncounter: Decodable {
-    
     /// The location area the referenced pokémon can be encountered in
     public let locationArea: NamedAPIResource
     /// A list of versions and encounters with the referenced pokémon that might happen
     public let versionDetails: [VersionEncounterDetail]
-    
+
     private enum CodingKeys: String, CodingKey {
         case locationArea = "location_area"
         case versionDetails = "version_details"

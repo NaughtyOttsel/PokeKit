@@ -1,7 +1,6 @@
 
 /// Stats determine certain aspects of battles. Each Pokémon has a value for each stat which grows as they gain levels and can be altered momentarily by effects in battles
 public struct Stat: LocalizableEntity, Decodable {
-    
     public let id: Int
     public let name: String
     /// ID the games use for this stat
@@ -17,7 +16,7 @@ public struct Stat: LocalizableEntity, Decodable {
     /// The class of damage this stat is directly related to
     public let moveDamageClass: NamedAPIResource
     public let names: [Name]
-    
+
     private enum CodingKeys: String, CodingKey {
         case id, name, names, characteristics
         case gameIndex = "game_index"
@@ -29,7 +28,6 @@ public struct Stat: LocalizableEntity, Decodable {
 }
 
 public struct MoveStatAffectSets: Decodable {
-    
     /// A list of moves and how they change the referenced stat
     public let increase: [MoveStatAffect]
     /// A list of moves and how they change the referenced stat
@@ -37,7 +35,6 @@ public struct MoveStatAffectSets: Decodable {
 }
 
 public struct MoveStatAffect: Decodable {
-    
     /// The maximum amount of change to the referenced stat
     public let change: Int
     /// The move causing the change
@@ -45,7 +42,6 @@ public struct MoveStatAffect: Decodable {
 }
 
 public struct NatureStatAffectSets: Decodable {
-    
     /// A list of natures and how they change the referenced stat
     public let increase: [NamedAPIResource]
     /// A list of nature sand how they change the referenced stat.

@@ -1,7 +1,6 @@
 
 /// Some Pokémon may appear in one of multiple, visually different forms. These differences are purely cosmetic. For variations within a Pokémon species, which do differ in more than just visuals, the 'Pokémon' entity is used to represent such a variety
 public struct PokemonForm: LocalizableEntity, Decodable {
-    
     public let id: Int
     public let name: String
     /// The order in which forms should be sorted within all forms. Multiple forms may have equal order, in which case they should fall back on sorting by name
@@ -25,7 +24,7 @@ public struct PokemonForm: LocalizableEntity, Decodable {
     public let names: [Name]
     /// The form specific form name of this Pokémon form, or empty if the form does not have a specific name.
     public let formNames: [Name]
-    
+
     private enum CodingKeys: String, CodingKey {
         case id, name, order, pokemon, sprites, names
         case formOrder = "form_order"
@@ -39,7 +38,6 @@ public struct PokemonForm: LocalizableEntity, Decodable {
 }
 
 public struct PokemonFormSprites: Decodable {
-    
     /// The default depiction of this Pokémon form from the front in battle
     public let frontDefault: String
     /// The shiny depiction of this Pokémon form from the front in battle
@@ -48,7 +46,7 @@ public struct PokemonFormSprites: Decodable {
     public let backDefault: String
     /// The shiny depiction of this Pokémon form from the back in battle
     public let backShiny: String
-    
+
     private enum CodingKeys: String, CodingKey {
         case frontDefault = "front_default"
         case frontShiny = "front_shiny"

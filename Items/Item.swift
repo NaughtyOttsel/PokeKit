@@ -1,7 +1,6 @@
 
 /// An item is an object in the games which the player can pick up, keep in their bag, and use in some manner. They have various uses, including healing, powering up, helping catch Pokémon, or to access a new area.
 public struct Item: LocalizableEntity, Decodable {
-    
     public let id: Int
     public let name: String
     /// The price of this item in stores
@@ -30,7 +29,7 @@ public struct Item: LocalizableEntity, Decodable {
     public let babyTriggerFor: NamedAPIResource
     /// A list of the machines related to this item
     public let machines: [MachineVersionDetail]
-    
+
     private enum CodingKeys: String, CodingKey {
         case id, name, cost, attributes, category, names, sprites, machines
         case flingPower = "fling_power"
@@ -44,22 +43,20 @@ public struct Item: LocalizableEntity, Decodable {
 }
 
 public struct ItemSprites: Decodable {
-    
     /// The default depiction of this item
     public let `default`: String
-    
+
     private enum CodingKeys: String, CodingKey {
         case `default` = "default"
     }
 }
 
 public struct ItemHolderPokemon: Decodable {
-    
     /// The Pokémon that holds this item
     public let pokemon: String
     /// The details for the version that this item is held in by the Pokémon
     public let versionDetails: ItemHolderPokemonVersionDetail
-    
+
     private enum CodingKeys: String, CodingKey {
         case pokemon
         case versionDetails = "version_details"
@@ -67,7 +64,7 @@ public struct ItemHolderPokemon: Decodable {
 }
 
 /// The details for the version that an item is held in by a Pokémon
-public struct ItemHolderPokemonVersionDetail : Decodable {
+public struct ItemHolderPokemonVersionDetail: Decodable {
     /// How often this Pokémon holds this item in this version
     public let rarity: String
     /// The version that this item is held in by the Pokémon

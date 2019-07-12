@@ -1,7 +1,6 @@
 
 /// A Pokémon Species forms the basis for at least one Pokémon. Attributes of a Pokémon species are shared across all varieties of Pokémon within the species. A good example is Wormadam; Wormadam is the species which can be found in three different varieties, Wormadam-Trash, Wormadam-Sandy and Wormadam-Plant.
 public struct PokemonSpecies: LocalizableEntity, Decodable {
-    
     public let id: Int
     public let name: String
     public let names: [Name]
@@ -49,7 +48,7 @@ public struct PokemonSpecies: LocalizableEntity, Decodable {
     public let genera: [Genus]
     /// A list of the Pokémon that exist within this Pokémon species
     public let varieties: [PokemonSpeciesVariety]
-    
+
     private enum CodingKeys: String, CodingKey {
         case id, name, names, order, color, shape, habitat, generation, genera, varieties
         case genderRate = "gender_rate"
@@ -71,7 +70,6 @@ public struct PokemonSpecies: LocalizableEntity, Decodable {
 }
 
 public struct Genus: Multilingual, Decodable {
-    
     /// The localized genus for the referenced Pokémon species
     public let genus: String
     /// The language this genus is in
@@ -79,12 +77,11 @@ public struct Genus: Multilingual, Decodable {
 }
 
 public struct PokemonSpeciesDexEntry: Decodable {
-    
     /// The index number within the Pokédex
     public let entryNumber: Int
     /// The Pokédex the referenced Pokémon species can be found in
     public let pokedex: NamedAPIResource
-    
+
     private enum CodingKeys: String, CodingKey {
         case pokedex
         case entryNumber = "entry_number"
@@ -92,14 +89,13 @@ public struct PokemonSpeciesDexEntry: Decodable {
 }
 
 public struct PalParkEncounterArea: Decodable {
-    
     /// The base score given to the player when the referenced Pokémon is caught during a pal park run
     public let baseScore: Int
     /// The base rate for encountering the referenced Pokémon in this pal park area
     public let rate: Int
     /// The pal park area where this encounter happens
     public let area: NamedAPIResource
-    
+
     private enum CodingKeys: String, CodingKey {
         case rate, area
         case baseScore = "base_score"
@@ -107,12 +103,11 @@ public struct PalParkEncounterArea: Decodable {
 }
 
 public struct PokemonSpeciesVariety: Decodable {
-    
     /// Whether this variety is the default variety
     public let isDefault: Bool
     /// The Pokémon variety
     public let pokemon: NamedAPIResource
-    
+
     private enum CodingKeys: String, CodingKey {
         case pokemon
         case isDefault = "is_default"
