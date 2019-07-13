@@ -6,9 +6,9 @@ public struct Item: LocalizableEntity, Decodable {
     /// The price of this item in stores
     public let cost: Int
     /// The power of the move Fling when used with this item
-    public let flingPower: Int
+    public let flingPower: Int?
     /// The effect of the move Fling when used with this item
-    public let flingEffect: NamedAPIResource
+    public let flingEffect: NamedAPIResource?
     /// A list of attributes this item has.
     public let attributes: [NamedAPIResource]
     /// The category of items this item falls into.
@@ -26,7 +26,7 @@ public struct Item: LocalizableEntity, Decodable {
     /// A list of Pokémon that might be found in the wild holding this item.
     public let heldByPokemon: [ItemHolderPokemon]
     /// An evolution chain this item requires to produce a bay during mating
-    public let babyTriggerFor: APIResource
+    public let babyTriggerFor: APIResource?
     /// A list of the machines related to this item
     public let machines: [MachineVersionDetail]?
 
