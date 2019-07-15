@@ -4,7 +4,7 @@ public struct Characteristic: Identifiable, Decodable {
     /// The remainder of the highest stat/IV divided by 5.
     public let modulo: Int
     /// The possible values of the highest stat that would result in a Pokémon recieving this characteristic when divided by 5.
-    public let possibleIVs: Int
+    public let possibleIVs: [Int]
 
     private enum CodingKeys: String, CodingKey {
         case id

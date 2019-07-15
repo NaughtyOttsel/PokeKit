@@ -5,7 +5,7 @@ public struct PokeathlonStat: LocalizableEntity, Decodable {
     public let name: String
     public let names: [Name]
     /// A detail of natures which affect this pokéathlon stat positively or negatively
-    public let affectingNatures: [NaturePokeathlonStatAffectSets]
+    public let affectingNatures: NaturePokeathlonStatAffectSets
 
     private enum CodingKeys: String, CodingKey {
         case id, name, names

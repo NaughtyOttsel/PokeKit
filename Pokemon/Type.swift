@@ -6,7 +6,7 @@ public struct Type: LocalizableEntity, Decodable {
     /// A detail of how effective this type is toward others and vice versa
     public let damageRelations: TypeRelations
     /// A list of game indices relevent to this item by generation
-    public let gameIndicies: [GenerationGameIndex]
+    public let gameIndicies: [GenerationGameIndex]?
     /// The generation this type was introduced in
     public let generationIntroduced: NamedAPIResource
     /// The class of damage inflicted by this type

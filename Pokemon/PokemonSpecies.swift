@@ -31,7 +31,7 @@ public struct PokemonSpecies: LocalizableEntity, Decodable {
     /// The shape of this Pokémon for Pokédex search
     public let shape: NamedAPIResource
     /// The Pokémon species that evolves into this PokemonSpecies
-    public let evolvesFrom: NamedAPIResource
+    public let evolvesFrom: NamedAPIResource?
     /// The evolution chain this Pokémon species is a member of
     public let evolutionChain: APIResource
     /// The habitat this Pokémon species can be encountered in

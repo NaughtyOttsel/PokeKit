@@ -12,9 +12,9 @@ public struct Stat: LocalizableEntity, Decodable {
     /// A detail of natures which affect this stat positively or negatively.
     public let affectingNatures: NatureStatAffectSets
     /// A list of characteristics that are set on a Pokémon when its highest base stat is this stat.
-    public let characteristics: APIResource
+    public let characteristics: [APIResource]
     /// The class of damage this stat is directly related to
-    public let moveDamageClass: NamedAPIResource
+    public let moveDamageClass: NamedAPIResource?
     public let names: [Name]
 
     private enum CodingKeys: String, CodingKey {
@@ -31,7 +31,7 @@ public struct MoveStatAffectSets: Decodable {
     /// A list of moves and how they change the referenced stat
     public let increase: [MoveStatAffect]
     /// A list of moves and how they change the referenced stat
-    public let descrease: [MoveStatAffect]
+    public let decrease: [MoveStatAffect]
 }
 
 public struct MoveStatAffect: Decodable {
@@ -45,5 +45,5 @@ public struct NatureStatAffectSets: Decodable {
     /// A list of natures and how they change the referenced stat
     public let increase: [NamedAPIResource]
     /// A list of nature sand how they change the referenced stat.
-    public let descrease: [NamedAPIResource]
+    public let decrease: [NamedAPIResource]
 }

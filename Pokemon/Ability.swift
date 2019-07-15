@@ -15,7 +15,7 @@ public struct Ability: LocalizableEntity, Decodable {
     /// The flavor text of this ability listed in different languages
     public let flavorTextEntries: [AbilityFlavorText]
     /// A list of pokémon that could potentially have this ability
-    public let pokemon: AbilityPokemon
+    public let pokemon: [AbilityPokemon]
 
     private enum CodingKeys: String, CodingKey {
         case id, name, generation, names, pokemon
