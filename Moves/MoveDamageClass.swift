@@ -6,6 +6,6 @@ public struct MoveDamageClass: LocalizableEntity, Decodable {
     /// The description of this resource listed in different languages
     public let descriptions: [Description]
     /// A list of moves that fall into this damage class
-    public let moves: [NamedAPIResourceList]
+    public let moves: [NamedAPIResource]
     public let names: [Name]
 }

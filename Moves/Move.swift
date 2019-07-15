@@ -6,7 +6,7 @@ public struct Move: LocalizableEntity, Decodable {
     /// The percent value of how likely this move is to be successful
     public let accuracy: Int
     /// The percent value of how likely it is this moves effect will happen
-    public let effectChance: Int
+    public let effectChance: Int?
     /// The number of times this move can be used
     public let powerPoints: Int
     /// A value between -8 and 8. Sets the order in which moves are executed during battle
@@ -14,7 +14,7 @@ public struct Move: LocalizableEntity, Decodable {
     /// The base power of this move with a value of 0 if it does not have a base power
     public let power: Int
     /// A detail of normal and super contest combos that require this move
-    public let contestCombos: ContestComboSets
+    public let contestCombos: ContestComboSets?
     /// The type of appeal this move gives a pokémon when used in a contest
     public let contestType: NamedAPIResource
     /// The effect the move has when used in a contest
@@ -24,11 +24,11 @@ public struct Move: LocalizableEntity, Decodable {
     /// The effect of this move listed in different languages
     public let effectEntries: [VerboseEffect]
     /// The list of previous effects this move has had across version groups of the games
-    public let effectChanges: [AbilityEffectChange]
-    public let flavorTextEntries: [MoveFlavorText]
+    public let effectChanges: [AbilityEffectChange]?
+    public let flavorTextEntries: [MoveFlavorText]?
     /// The generation in which this move was introduced
     public let generation: NamedAPIResource
-    public let machines: [MachineVersionDetail]
+    public let machines: [MachineVersionDetail]?
     /// Meta data about this move
     public let metaData: MoveMetaData
     public let names: [Name]
@@ -37,7 +37,7 @@ public struct Move: LocalizableEntity, Decodable {
     /// A list of stats this moves effects and how much it effects them
     public let statChanges: [MoveStatChange]
     /// The effect the move has when used in a super contest
-    public let superContestEffect: NamedAPIResource
+    public let superContestEffect: APIResource
     /// The type of target that will recieve the effects of the attack
     public let target: NamedAPIResource
     /// The elemental type of this move
@@ -63,9 +63,9 @@ public struct Move: LocalizableEntity, Decodable {
 
 public struct ContestComboSets: Decodable {
     /// A detail of moves this move can be used before or after, granting additional appeal points in contests
-    public let normal: ContestComboDetail
+    public let normal: ContestComboDetail?
     /// A detail of moves this move can be used before or after, granting additional appeal points in super contests
-    public let `super`: ContestComboDetail
+    public let `super`: ContestComboDetail?
 
     private enum CodingKeys: String, CodingKey {
         case normal
@@ -75,9 +75,9 @@ public struct ContestComboSets: Decodable {
 
 public struct ContestComboDetail: Decodable {
     /// A list of moves to use before this move
-    public let useBefore: [NamedAPIResource]
+    public let useBefore: [NamedAPIResource]?
     /// A list of moves to use after this move
-    public let useAfter: [NamedAPIResource]
+    public let useAfter: [NamedAPIResource]?
 
     private enum CodingKeys: String, CodingKey {
         case useBefore = "use_before"
@@ -125,7 +125,7 @@ public struct MoveMetaData: Decodable {
 
     private enum CodingKeys: String, CodingKey {
         case category, drain, healing
-        case moveAilment = "move_ailment"
+        case moveAilment = "ailment"
         case minimumNumberOfHits = "min_hits"
         case maximumNumberOfHits = "max_hits"
         case minimumNumberOfTurns = "min_turns"

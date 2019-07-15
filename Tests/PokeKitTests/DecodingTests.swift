@@ -245,6 +245,166 @@ class DecodingTests: XCTestCase {
         }
     }
 
+    func testDecodingItemCategory() {
+        let itemCategoryJSON = #"{"id":1,"name":"stat-boosts","items":[{"name":"guard-spec","url":"http://pokeapi.co/api/v2/item/55/"}],"names":[{"name":"Stat boosts","language":{"name":"en","url":"http://pokeapi.co/api/v2/language/9/"}}],"pocket":{"name":"battle","url":"http://pokeapi.co/api/v2/item-pocket/7/"}}"#
+
+        guard let itemCategoryData = itemCategoryJSON.data(using: .utf8) else {
+            XCTFail("Failed to convert JSON Text into Data")
+            return
+        }
+
+        do {
+            let itemCategory = try decoder.decode(ItemCategory.self, from: itemCategoryData)
+            XCTAssertNotNil(itemCategory)
+        } catch {
+            XCTFail("Failed to Decode JSON Data into \(ItemCategory.self) Object. Error: \(error)")
+        }
+    }
+
+    func testDecodingItemFlingEffect() {
+        let itemFlingEffectJSON = #"{"id":1,"name":"badly-poison","effect_entries":[{"effect":"Badly poisons the target.","language":{"name":"en","url":"http://pokeapi.co/api/v2/language/9/"}}],"items":[{"name":"toxic-orb","url":"http://pokeapi.co/api/v2/item/249/"}]}"#
+
+        guard let itemFlingEffectData = itemFlingEffectJSON.data(using: .utf8) else {
+            XCTFail("Failed to convert JSON Text into Data")
+            return
+        }
+
+        do {
+            let itemFlingEffect = try decoder.decode(ItemFlingEffect.self, from: itemFlingEffectData)
+            XCTAssertNotNil(itemFlingEffect)
+        } catch {
+            XCTFail("Failed to Decode JSON Data into \(ItemFlingEffect.self) Object. Error: \(error)")
+        }
+    }
+
+    func testDecodingItemPocket() {
+        let itemPocketJSON = #"{"id":1,"name":"misc","categories":[{"name":"collectibles","url":"http://pokeapi.co/api/v2/item-category/9/"}],"names":[{"name":"Items","language":{"name":"en","url":"http://pokeapi.co/api/v2/language/9/"}}]}"#
+
+        guard let itemPocketData = itemPocketJSON.data(using: .utf8) else {
+            XCTFail("Failed to convert JSON Text into Data")
+            return
+        }
+
+        do {
+            let itemPocket = try decoder.decode(ItemPocket.self, from: itemPocketData)
+            XCTAssertNotNil(itemPocket)
+        } catch {
+            XCTFail("Failed to Decode JSON Data into \(ItemPocket.self) Object. Error: \(error)")
+        }
+    }
+
+    func testDecodingMove() {
+        let moveJSON = #"{"id":1,"name":"pound","accuracy":100,"effect_chance":null,"pp":35,"priority":0,"power":40,"contest_combos":{"normal":{"use_before":[{"name":"double-slap","url":"http://pokeapi.co/api/v2/move/3/"},{"name":"headbutt","url":"http://pokeapi.co/api/v2/move/29/"},{"name":"feint-attack","url":"http://pokeapi.co/api/v2/move/185/"}],"use_after":null},"super":{"use_before":null,"use_after":null}},"contest_type":{"name":"tough","url":"http://pokeapi.co/api/v2/contest-type/5/"},"contest_effect":{"url":"http://pokeapi.co/api/v2/contest-effect/1/"},"damage_class":{"name":"physical","url":"http://pokeapi.co/api/v2/move-damage-class/2/"},"effect_entries":[{"effect":"Inflicts [regular damage]{mechanic:regular-damage}.","short_effect":"Inflicts regular damage with no additional effect.","language":{"name":"en","url":"http://pokeapi.co/api/v2/language/9/"}}],"effect_changes":[],"generation":{"name":"generation-i","url":"http://pokeapi.co/api/v2/generation/1/"},"meta":{"ailment":{"name":"none","url":"http://pokeapi.co/api/v2/move-ailment/0/"},"category":{"name":"damage","url":"http://pokeapi.co/api/v2/move-category/0/"},"min_hits":null,"max_hits":null,"min_turns":null,"max_turns":null,"drain":0,"healing":0,"crit_rate":0,"ailment_chance":0,"flinch_chance":0,"stat_chance":0},"names":[{"name":"Pound","language":{"name":"en","url":"http://pokeapi.co/api/v2/language/9/"}}],"past_values":[],"stat_changes":[],"super_contest_effect":{"url":"http://pokeapi.co/api/v2/super-contest-effect/5/"},"target":{"name":"selected-pokemon","url":"http://pokeapi.co/api/v2/move-target/10/"},"type":{"name":"normal","url":"http://pokeapi.co/api/v2/type/1/"}}"#
+
+        guard let moveData = moveJSON.data(using: .utf8) else {
+            XCTFail("Failed to convert JSON Text into Data")
+            return
+        }
+
+        do {
+            let move = try decoder.decode(Move.self, from: moveData)
+            XCTAssertNotNil(move)
+        } catch {
+            XCTFail("Failed to Decode JSON Data into \(Move.self) Object. Error: \(error)")
+        }
+    }
+
+    func testDecodingMoveAilment() {
+        let moveAilmentJSON = #"{"id":1,"name":"paralysis","moves":[{"name":"thunder-punch","url":"http://pokeapi.co/api/v2/move/9/"}],"names":[{"name":"Paralysis","language":{"name":"en","url":"http://pokeapi.co/api/v2/language/9/"}}]}"#
+
+        guard let moveAilmentData = moveAilmentJSON.data(using: .utf8) else {
+            XCTFail("Failed to convert JSON Text into Data")
+            return
+        }
+
+        do {
+            let moveAilment = try decoder.decode(MoveAilment.self, from: moveAilmentData)
+            XCTAssertNotNil(moveAilment)
+        } catch {
+            XCTFail("Failed to Decode JSON Data into \(MoveAilment.self) Object. Error: \(error)")
+        }
+    }
+
+    func testDecodingMoveBattleStyle() {
+        let moveBattleStyleJSON = #"{"id":1,"name":"attack","names":[{"name":"Attack","language":{"name":"en","url":"http://pokeapi.co/api/v2/language/9/"}}]}"#
+
+        guard let moveBattleStyleData = moveBattleStyleJSON.data(using: .utf8) else {
+            XCTFail("Failed to convert JSON Text into Data")
+            return
+        }
+
+        do {
+            let moveBattleStyle = try decoder.decode(MoveBattleStyle.self, from: moveBattleStyleData)
+            XCTAssertNotNil(moveBattleStyle)
+        } catch {
+            XCTFail("Failed to Decode JSON Data into \(MoveBattleStyle.self) Object. Error: \(error)")
+        }
+    }
+
+    func testDecodingMoveCategory() {
+        let moveCategoryJSON = #"{"id":1,"name":"ailment","descriptions":[{"description":"No damage; inflicts status ailment","language":{"name":"en","url":"http://pokeapi.co/api/v2/language/9/"}}],"moves":[{"name":"sing","url":"http://pokeapi.co/api/v2/move/47/"}]}"#
+
+        guard let moveCategoryData = moveCategoryJSON.data(using: .utf8) else {
+            XCTFail("Failed to convert JSON Text into Data")
+            return
+        }
+
+        do {
+            let moveCategory = try decoder.decode(MoveCategory.self, from: moveCategoryData)
+            XCTAssertNotNil(moveCategory)
+        } catch {
+            XCTFail("Failed to Decode JSON Data into \(MoveCategory.self) Object. Error: \(error)")
+        }
+    }
+
+    func testDecodingMoveDamageClass() {
+        let moveDamageClassJSON = #"{"descriptions":[{"description":"No damage","language":{"name":"en","url":"https://pokeapi.co/api/v2/language/9/"}},{"description":"Sin Daño","language":{"name":"es","url":"https://pokeapi.co/api/v2/language/7/"}},{"description":"Kein Schaden","language":{"name":"de","url":"https://pokeapi.co/api/v2/language/6/"}},{"description":"Aucun dégât","language":{"name":"fr","url":"https://pokeapi.co/api/v2/language/5/"}},{"description":"ダメージない","language":{"name":"ja-Hrkt","url":"https://pokeapi.co/api/v2/language/1/"}}],"id":1,"moves":[{"name":"swords-dance","url":"https://pokeapi.co/api/v2/move/14/"},{"name":"whirlwind","url":"https://pokeapi.co/api/v2/move/18/"},{"name":"sand-attack","url":"https://pokeapi.co/api/v2/move/28/"},{"name":"tail-whip","url":"https://pokeapi.co/api/v2/move/39/"},{"name":"leer","url":"https://pokeapi.co/api/v2/move/43/"},{"name":"growl","url":"https://pokeapi.co/api/v2/move/45/"},{"name":"roar","url":"https://pokeapi.co/api/v2/move/46/"},{"name":"sing","url":"https://pokeapi.co/api/v2/move/47/"},{"name":"supersonic","url":"https://pokeapi.co/api/v2/move/48/"},{"name":"disable","url":"https://pokeapi.co/api/v2/move/50/"},{"name":"mist","url":"https://pokeapi.co/api/v2/move/54/"},{"name":"leech-seed","url":"https://pokeapi.co/api/v2/move/73/"},{"name":"growth","url":"https://pokeapi.co/api/v2/move/74/"},{"name":"poison-powder","url":"https://pokeapi.co/api/v2/move/77/"},{"name":"stun-spore","url":"https://pokeapi.co/api/v2/move/78/"},{"name":"sleep-powder","url":"https://pokeapi.co/api/v2/move/79/"},{"name":"string-shot","url":"https://pokeapi.co/api/v2/move/81/"},{"name":"thunder-wave","url":"https://pokeapi.co/api/v2/move/86/"},{"name":"toxic","url":"https://pokeapi.co/api/v2/move/92/"},{"name":"hypnosis","url":"https://pokeapi.co/api/v2/move/95/"},{"name":"meditate","url":"https://pokeapi.co/api/v2/move/96/"},{"name":"agility","url":"https://pokeapi.co/api/v2/move/97/"},{"name":"teleport","url":"https://pokeapi.co/api/v2/move/100/"},{"name":"mimic","url":"https://pokeapi.co/api/v2/move/102/"},{"name":"screech","url":"https://pokeapi.co/api/v2/move/103/"},{"name":"double-team","url":"https://pokeapi.co/api/v2/move/104/"},{"name":"recover","url":"https://pokeapi.co/api/v2/move/105/"},{"name":"harden","url":"https://pokeapi.co/api/v2/move/106/"},{"name":"minimize","url":"https://pokeapi.co/api/v2/move/107/"},{"name":"smokescreen","url":"https://pokeapi.co/api/v2/move/108/"},{"name":"confuse-ray","url":"https://pokeapi.co/api/v2/move/109/"},{"name":"withdraw","url":"https://pokeapi.co/api/v2/move/110/"},{"name":"defense-curl","url":"https://pokeapi.co/api/v2/move/111/"},{"name":"barrier","url":"https://pokeapi.co/api/v2/move/112/"},{"name":"light-screen","url":"https://pokeapi.co/api/v2/move/113/"},{"name":"haze","url":"https://pokeapi.co/api/v2/move/114/"},{"name":"reflect","url":"https://pokeapi.co/api/v2/move/115/"},{"name":"focus-energy","url":"https://pokeapi.co/api/v2/move/116/"},{"name":"metronome","url":"https://pokeapi.co/api/v2/move/118/"},{"name":"mirror-move","url":"https://pokeapi.co/api/v2/move/119/"},{"name":"amnesia","url":"https://pokeapi.co/api/v2/move/133/"},{"name":"kinesis","url":"https://pokeapi.co/api/v2/move/134/"},{"name":"soft-boiled","url":"https://pokeapi.co/api/v2/move/135/"},{"name":"glare","url":"https://pokeapi.co/api/v2/move/137/"},{"name":"poison-gas","url":"https://pokeapi.co/api/v2/move/139/"},{"name":"lovely-kiss","url":"https://pokeapi.co/api/v2/move/142/"},{"name":"transform","url":"https://pokeapi.co/api/v2/move/144/"},{"name":"spore","url":"https://pokeapi.co/api/v2/move/147/"},{"name":"flash","url":"https://pokeapi.co/api/v2/move/148/"},{"name":"splash","url":"https://pokeapi.co/api/v2/move/150/"},{"name":"acid-armor","url":"https://pokeapi.co/api/v2/move/151/"},{"name":"rest","url":"https://pokeapi.co/api/v2/move/156/"},{"name":"sharpen","url":"https://pokeapi.co/api/v2/move/159/"},{"name":"conversion","url":"https://pokeapi.co/api/v2/move/160/"},{"name":"substitute","url":"https://pokeapi.co/api/v2/move/164/"},{"name":"sketch","url":"https://pokeapi.co/api/v2/move/166/"},{"name":"spider-web","url":"https://pokeapi.co/api/v2/move/169/"},{"name":"mind-reader","url":"https://pokeapi.co/api/v2/move/170/"},{"name":"nightmare","url":"https://pokeapi.co/api/v2/move/171/"},{"name":"curse","url":"https://pokeapi.co/api/v2/move/174/"},{"name":"conversion-2","url":"https://pokeapi.co/api/v2/move/176/"},{"name":"cotton-spore","url":"https://pokeapi.co/api/v2/move/178/"},{"name":"spite","url":"https://pokeapi.co/api/v2/move/180/"},{"name":"protect","url":"https://pokeapi.co/api/v2/move/182/"},{"name":"scary-face","url":"https://pokeapi.co/api/v2/move/184/"},{"name":"sweet-kiss","url":"https://pokeapi.co/api/v2/move/186/"},{"name":"belly-drum","url":"https://pokeapi.co/api/v2/move/187/"},{"name":"spikes","url":"https://pokeapi.co/api/v2/move/191/"},{"name":"foresight","url":"https://pokeapi.co/api/v2/move/193/"},{"name":"destiny-bond","url":"https://pokeapi.co/api/v2/move/194/"},{"name":"perish-song","url":"https://pokeapi.co/api/v2/move/195/"},{"name":"detect","url":"https://pokeapi.co/api/v2/move/197/"},{"name":"lock-on","url":"https://pokeapi.co/api/v2/move/199/"},{"name":"sandstorm","url":"https://pokeapi.co/api/v2/move/201/"},{"name":"endure","url":"https://pokeapi.co/api/v2/move/203/"},{"name":"charm","url":"https://pokeapi.co/api/v2/move/204/"},{"name":"swagger","url":"https://pokeapi.co/api/v2/move/207/"},{"name":"milk-drink","url":"https://pokeapi.co/api/v2/move/208/"},{"name":"mean-look","url":"https://pokeapi.co/api/v2/move/212/"},{"name":"attract","url":"https://pokeapi.co/api/v2/move/213/"},{"name":"sleep-talk","url":"https://pokeapi.co/api/v2/move/214/"},{"name":"heal-bell","url":"https://pokeapi.co/api/v2/move/215/"},{"name":"safeguard","url":"https://pokeapi.co/api/v2/move/219/"},{"name":"pain-split","url":"https://pokeapi.co/api/v2/move/220/"},{"name":"baton-pass","url":"https://pokeapi.co/api/v2/move/226/"},{"name":"encore","url":"https://pokeapi.co/api/v2/move/227/"},{"name":"sweet-scent","url":"https://pokeapi.co/api/v2/move/230/"},{"name":"morning-sun","url":"https://pokeapi.co/api/v2/move/234/"},{"name":"synthesis","url":"https://pokeapi.co/api/v2/move/235/"},{"name":"moonlight","url":"https://pokeapi.co/api/v2/move/236/"},{"name":"rain-dance","url":"https://pokeapi.co/api/v2/move/240/"},{"name":"sunny-day","url":"https://pokeapi.co/api/v2/move/241/"},{"name":"psych-up","url":"https://pokeapi.co/api/v2/move/244/"},{"name":"stockpile","url":"https://pokeapi.co/api/v2/move/254/"},{"name":"swallow","url":"https://pokeapi.co/api/v2/move/256/"},{"name":"hail","url":"https://pokeapi.co/api/v2/move/258/"},{"name":"torment","url":"https://pokeapi.co/api/v2/move/259/"},{"name":"flatter","url":"https://pokeapi.co/api/v2/move/260/"},{"name":"will-o-wisp","url":"https://pokeapi.co/api/v2/move/261/"},{"name":"memento","url":"https://pokeapi.co/api/v2/move/262/"},{"name":"follow-me","url":"https://pokeapi.co/api/v2/move/266/"},{"name":"nature-power","url":"https://pokeapi.co/api/v2/move/267/"},{"name":"charge","url":"https://pokeapi.co/api/v2/move/268/"},{"name":"taunt","url":"https://pokeapi.co/api/v2/move/269/"},{"name":"helping-hand","url":"https://pokeapi.co/api/v2/move/270/"},{"name":"trick","url":"https://pokeapi.co/api/v2/move/271/"},{"name":"role-play","url":"https://pokeapi.co/api/v2/move/272/"},{"name":"wish","url":"https://pokeapi.co/api/v2/move/273/"},{"name":"assist","url":"https://pokeapi.co/api/v2/move/274/"},{"name":"ingrain","url":"https://pokeapi.co/api/v2/move/275/"},{"name":"magic-coat","url":"https://pokeapi.co/api/v2/move/277/"},{"name":"recycle","url":"https://pokeapi.co/api/v2/move/278/"},{"name":"yawn","url":"https://pokeapi.co/api/v2/move/281/"},{"name":"skill-swap","url":"https://pokeapi.co/api/v2/move/285/"},{"name":"imprison","url":"https://pokeapi.co/api/v2/move/286/"},{"name":"refresh","url":"https://pokeapi.co/api/v2/move/287/"},{"name":"grudge","url":"https://pokeapi.co/api/v2/move/288/"},{"name":"snatch","url":"https://pokeapi.co/api/v2/move/289/"},{"name":"camouflage","url":"https://pokeapi.co/api/v2/move/293/"},{"name":"tail-glow","url":"https://pokeapi.co/api/v2/move/294/"},{"name":"feather-dance","url":"https://pokeapi.co/api/v2/move/297/"},{"name":"teeter-dance","url":"https://pokeapi.co/api/v2/move/298/"},{"name":"mud-sport","url":"https://pokeapi.co/api/v2/move/300/"},{"name":"slack-off","url":"https://pokeapi.co/api/v2/move/303/"},{"name":"aromatherapy","url":"https://pokeapi.co/api/v2/move/312/"},{"name":"fake-tears","url":"https://pokeapi.co/api/v2/move/313/"},{"name":"odor-sleuth","url":"https://pokeapi.co/api/v2/move/316/"},{"name":"metal-sound","url":"https://pokeapi.co/api/v2/move/319/"},{"name":"grass-whistle","url":"https://pokeapi.co/api/v2/move/320/"},{"name":"tickle","url":"https://pokeapi.co/api/v2/move/321/"},{"name":"cosmic-power","url":"https://pokeapi.co/api/v2/move/322/"},{"name":"iron-defense","url":"https://pokeapi.co/api/v2/move/334/"},{"name":"block","url":"https://pokeapi.co/api/v2/move/335/"},{"name":"howl","url":"https://pokeapi.co/api/v2/move/336/"},{"name":"bulk-up","url":"https://pokeapi.co/api/v2/move/339/"},{"name":"water-sport","url":"https://pokeapi.co/api/v2/move/346/"},{"name":"calm-mind","url":"https://pokeapi.co/api/v2/move/347/"},{"name":"dragon-dance","url":"https://pokeapi.co/api/v2/move/349/"},{"name":"roost","url":"https://pokeapi.co/api/v2/move/355/"},{"name":"gravity","url":"https://pokeapi.co/api/v2/move/356/"},{"name":"miracle-eye","url":"https://pokeapi.co/api/v2/move/357/"},{"name":"healing-wish","url":"https://pokeapi.co/api/v2/move/361/"},{"name":"tailwind","url":"https://pokeapi.co/api/v2/move/366/"},{"name":"acupressure","url":"https://pokeapi.co/api/v2/move/367/"},{"name":"embargo","url":"https://pokeapi.co/api/v2/move/373/"},{"name":"psycho-shift","url":"https://pokeapi.co/api/v2/move/375/"},{"name":"heal-block","url":"https://pokeapi.co/api/v2/move/377/"},{"name":"power-trick","url":"https://pokeapi.co/api/v2/move/379/"},{"name":"gastro-acid","url":"https://pokeapi.co/api/v2/move/380/"},{"name":"lucky-chant","url":"https://pokeapi.co/api/v2/move/381/"},{"name":"me-first","url":"https://pokeapi.co/api/v2/move/382/"},{"name":"copycat","url":"https://pokeapi.co/api/v2/move/383/"},{"name":"power-swap","url":"https://pokeapi.co/api/v2/move/384/"},{"name":"guard-swap","url":"https://pokeapi.co/api/v2/move/385/"},{"name":"worry-seed","url":"https://pokeapi.co/api/v2/move/388/"},{"name":"toxic-spikes","url":"https://pokeapi.co/api/v2/move/390/"},{"name":"heart-swap","url":"https://pokeapi.co/api/v2/move/391/"},{"name":"aqua-ring","url":"https://pokeapi.co/api/v2/move/392/"},{"name":"magnet-rise","url":"https://pokeapi.co/api/v2/move/393/"},{"name":"rock-polish","url":"https://pokeapi.co/api/v2/move/397/"},{"name":"switcheroo","url":"https://pokeapi.co/api/v2/move/415/"},{"name":"nasty-plot","url":"https://pokeapi.co/api/v2/move/417/"},{"name":"defog","url":"https://pokeapi.co/api/v2/move/432/"},{"name":"trick-room","url":"https://pokeapi.co/api/v2/move/433/"},{"name":"captivate","url":"https://pokeapi.co/api/v2/move/445/"},{"name":"stealth-rock","url":"https://pokeapi.co/api/v2/move/446/"},{"name":"defend-order","url":"https://pokeapi.co/api/v2/move/455/"},{"name":"heal-order","url":"https://pokeapi.co/api/v2/move/456/"},{"name":"lunar-dance","url":"https://pokeapi.co/api/v2/move/461/"},{"name":"dark-void","url":"https://pokeapi.co/api/v2/move/464/"},{"name":"hone-claws","url":"https://pokeapi.co/api/v2/move/468/"},{"name":"wide-guard","url":"https://pokeapi.co/api/v2/move/469/"},{"name":"guard-split","url":"https://pokeapi.co/api/v2/move/470/"},{"name":"power-split","url":"https://pokeapi.co/api/v2/move/471/"},{"name":"wonder-room","url":"https://pokeapi.co/api/v2/move/472/"},{"name":"autotomize","url":"https://pokeapi.co/api/v2/move/475/"},{"name":"rage-powder","url":"https://pokeapi.co/api/v2/move/476/"},{"name":"telekinesis","url":"https://pokeapi.co/api/v2/move/477/"},{"name":"magic-room","url":"https://pokeapi.co/api/v2/move/478/"},{"name":"quiver-dance","url":"https://pokeapi.co/api/v2/move/483/"},{"name":"soak","url":"https://pokeapi.co/api/v2/move/487/"},{"name":"coil","url":"https://pokeapi.co/api/v2/move/489/"},{"name":"simple-beam","url":"https://pokeapi.co/api/v2/move/493/"},{"name":"entrainment","url":"https://pokeapi.co/api/v2/move/494/"},{"name":"after-you","url":"https://pokeapi.co/api/v2/move/495/"},{"name":"quick-guard","url":"https://pokeapi.co/api/v2/move/501/"},{"name":"ally-switch","url":"https://pokeapi.co/api/v2/move/502/"},{"name":"shell-smash","url":"https://pokeapi.co/api/v2/move/504/"},{"name":"heal-pulse","url":"https://pokeapi.co/api/v2/move/505/"},{"name":"shift-gear","url":"https://pokeapi.co/api/v2/move/508/"},{"name":"quash","url":"https://pokeapi.co/api/v2/move/511/"},{"name":"reflect-type","url":"https://pokeapi.co/api/v2/move/513/"},{"name":"bestow","url":"https://pokeapi.co/api/v2/move/516/"},{"name":"work-up","url":"https://pokeapi.co/api/v2/move/526/"},{"name":"cotton-guard","url":"https://pokeapi.co/api/v2/move/538/"},{"name":"mat-block","url":"https://pokeapi.co/api/v2/move/561/"},{"name":"rototiller","url":"https://pokeapi.co/api/v2/move/563/"},{"name":"sticky-web","url":"https://pokeapi.co/api/v2/move/564/"},{"name":"trick-or-treat","url":"https://pokeapi.co/api/v2/move/567/"},{"name":"noble-roar","url":"https://pokeapi.co/api/v2/move/568/"},{"name":"ion-deluge","url":"https://pokeapi.co/api/v2/move/569/"},{"name":"forests-curse","url":"https://pokeapi.co/api/v2/move/571/"},{"name":"parting-shot","url":"https://pokeapi.co/api/v2/move/575/"},{"name":"topsy-turvy","url":"https://pokeapi.co/api/v2/move/576/"},{"name":"crafty-shield","url":"https://pokeapi.co/api/v2/move/578/"},{"name":"flower-shield","url":"https://pokeapi.co/api/v2/move/579/"},{"name":"grassy-terrain","url":"https://pokeapi.co/api/v2/move/580/"},{"name":"misty-terrain","url":"https://pokeapi.co/api/v2/move/581/"},{"name":"electrify","url":"https://pokeapi.co/api/v2/move/582/"},{"name":"fairy-lock","url":"https://pokeapi.co/api/v2/move/587/"},{"name":"kings-shield","url":"https://pokeapi.co/api/v2/move/588/"},{"name":"play-nice","url":"https://pokeapi.co/api/v2/move/589/"},{"name":"confide","url":"https://pokeapi.co/api/v2/move/590/"},{"name":"spiky-shield","url":"https://pokeapi.co/api/v2/move/596/"},{"name":"aromatic-mist","url":"https://pokeapi.co/api/v2/move/597/"},{"name":"eerie-impulse","url":"https://pokeapi.co/api/v2/move/598/"},{"name":"venom-drench","url":"https://pokeapi.co/api/v2/move/599/"},{"name":"powder","url":"https://pokeapi.co/api/v2/move/600/"},{"name":"geomancy","url":"https://pokeapi.co/api/v2/move/601/"},{"name":"magnetic-flux","url":"https://pokeapi.co/api/v2/move/602/"},{"name":"happy-hour","url":"https://pokeapi.co/api/v2/move/603/"},{"name":"electric-terrain","url":"https://pokeapi.co/api/v2/move/604/"},{"name":"celebrate","url":"https://pokeapi.co/api/v2/move/606/"},{"name":"hold-hands","url":"https://pokeapi.co/api/v2/move/607/"},{"name":"baby-doll-eyes","url":"https://pokeapi.co/api/v2/move/608/"},{"name":"shore-up","url":"https://pokeapi.co/api/v2/move/659/"},{"name":"baneful-bunker","url":"https://pokeapi.co/api/v2/move/661/"},{"name":"floral-healing","url":"https://pokeapi.co/api/v2/move/666/"},{"name":"strength-sap","url":"https://pokeapi.co/api/v2/move/668/"},{"name":"spotlight","url":"https://pokeapi.co/api/v2/move/671/"},{"name":"toxic-thread","url":"https://pokeapi.co/api/v2/move/672/"},{"name":"laser-focus","url":"https://pokeapi.co/api/v2/move/673/"},{"name":"gear-up","url":"https://pokeapi.co/api/v2/move/674/"},{"name":"psychic-terrain","url":"https://pokeapi.co/api/v2/move/678/"},{"name":"speed-swap","url":"https://pokeapi.co/api/v2/move/683/"},{"name":"purify","url":"https://pokeapi.co/api/v2/move/685/"},{"name":"instruct","url":"https://pokeapi.co/api/v2/move/689/"},{"name":"aurora-veil","url":"https://pokeapi.co/api/v2/move/694/"},{"name":"extreme-evoboost","url":"https://pokeapi.co/api/v2/move/702/"},{"name":"tearful-look","url":"https://pokeapi.co/api/v2/move/715/"},{"name":"shadow-down","url":"https://pokeapi.co/api/v2/move/10012/"},{"name":"shadow-hold","url":"https://pokeapi.co/api/v2/move/10014/"},{"name":"shadow-mist","url":"https://pokeapi.co/api/v2/move/10015/"},{"name":"shadow-panic","url":"https://pokeapi.co/api/v2/move/10016/"},{"name":"shadow-shed","url":"https://pokeapi.co/api/v2/move/10017/"},{"name":"shadow-sky","url":"https://pokeapi.co/api/v2/move/10018/"}],"name":"status","names":[{"language":{"name":"ja-Hrkt","url":"https://pokeapi.co/api/v2/language/1/"},"name":"へんか"},{"language":{"name":"fr","url":"https://pokeapi.co/api/v2/language/5/"},"name":"statut"},{"language":{"name":"de","url":"https://pokeapi.co/api/v2/language/6/"},"name":"status"},{"language":{"name":"es","url":"https://pokeapi.co/api/v2/language/7/"},"name":"estado"},{"language":{"name":"en","url":"https://pokeapi.co/api/v2/language/9/"},"name":"status"}]}"#
+
+        guard let moveDamageClassData = moveDamageClassJSON.data(using: .utf8) else {
+            XCTFail("Failed to convert JSON Text into Data")
+            return
+        }
+
+        do {
+            let moveDamageClass = try decoder.decode(MoveDamageClass.self, from: moveDamageClassData)
+            XCTAssertNotNil(moveDamageClass)
+        } catch {
+            XCTFail("Failed to Decode JSON Data into \(MoveDamageClass.self) Object. Error: \(error)")
+        }
+    }
+
+    func testDecodingMoveLearnMethod() {
+        let moveLearnMethodJSON = #"{"id":1,"name":"level-up","names":[{"name":"Level up","language":{"name":"de","url":"http://pokeapi.co/api/v2/language/6/"}}],"descriptions":[{"description":"Wird gelernt, wenn ein Pokémon ein bestimmtes Level erreicht.","language":{"name":"de","url":"http://pokeapi.co/api/v2/language/6/"}}],"version_groups":[{"name":"red-blue","url":"http://pokeapi.co/api/v2/version-group/1/"}]}"#
+
+        guard let moveLearnMethodData = moveLearnMethodJSON.data(using: .utf8) else {
+            XCTFail("Failed to convert JSON Text into Data")
+            return
+        }
+
+        do {
+            let moveLearnMethod = try decoder.decode(MoveLearnMethod.self, from: moveLearnMethodData)
+            XCTAssertNotNil(moveLearnMethod)
+        } catch {
+            XCTFail("Failed to Decode JSON Data into \(MoveLearnMethod.self) Object. Error: \(error)")
+        }
+    }
+
+    func testDecodingMoveTarget() {
+        let moveTargetJSON = #"{"id":1,"name":"specific-move","descriptions":[{"description":"Eine spezifische FÃ¤higkeit.  Wie diese FÃ¤higkeit genutzt wird hÃ¤ngt von den genutzten FÃ¤higkeiten ab.","language":{"name":"de","url":"http://pokeapi.co/api/v2/language/6/"}}],"moves":[{"name":"counter","url":"http://pokeapi.co/api/v2/move/68/"}],"names":[{"name":"Spezifische FÃ¤higkeit","language":{"name":"de","url":"http://pokeapi.co/api/v2/language/6/"}}]}"#
+
+        guard let moveTargetData = moveTargetJSON.data(using: .utf8) else {
+            XCTFail("Failed to convert JSON Text into Data")
+            return
+        }
+
+        do {
+            let moveTarget = try decoder.decode(MoveTarget.self, from: moveTargetData)
+            XCTAssertNotNil(moveTarget)
+        } catch {
+            XCTFail("Failed to Decode JSON Data into \(MoveTarget.self) Object. Error: \(error)")
+        }
+    }
+
     func testDecodingLanguage() {
         let languageJSON = #"{"id":1,"iso3166":"jp","iso639":"ja","name":"ja-Hrkt","names":[{"language":{"name":"ja-Hrkt","url":"https://pokeapi.co/api/v2/language/1/"},"name":"日本語"},{"language":{"name":"fr","url":"https://pokeapi.co/api/v2/language/5/"},"name":"Japonais"},{"language":{"name":"de","url":"https://pokeapi.co/api/v2/language/6/"},"name":"Japanisch"},{"language":{"name":"en","url":"https://pokeapi.co/api/v2/language/9/"},"name":"Japanese"}],"official":true}"#
 
