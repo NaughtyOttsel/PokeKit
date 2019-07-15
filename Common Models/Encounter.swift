@@ -7,7 +7,7 @@ public struct Encounter: Decodable {
     /// The highest level the Pokémon could be encountered at.
     public let maximumLevel: Int
     /// A list of condition values that must be in effect for this encounter to occur.
-    public let conditionValues: NamedAPIResource
+    public let conditionValues: [NamedAPIResource]?
     /// Percent chance that this encounter will occur.
     public let chance: Int
     /// The method by which this encounter happens.

@@ -405,6 +405,54 @@ class DecodingTests: XCTestCase {
         }
     }
 
+    func testDecodingLocation() {
+        let locationJSON = #"{"id":1,"name":"canalave-city","region":{"name":"sinnoh","url":"http://pokeapi.co/api/v2/region/4/"},"names":[{"name":"Canalave City","language":{"name":"en","url":"http://pokeapi.co/api/v2/language/9/"}}],"game_indices":[{"game_index":7,"generation":{"name":"generation-iv","url":"http://pokeapi.co/api/v2/generation/4/"}}],"areas":[{"name":"canalave-city-area","url":"http://pokeapi.co/api/v2/location-area/1/"}]}"#
+
+        guard let locationData = locationJSON.data(using: .utf8) else {
+            XCTFail("Failed to convert JSON Text into Data")
+            return
+        }
+
+        do {
+            let location = try decoder.decode(Location.self, from: locationData)
+            XCTAssertNotNil(location)
+        } catch {
+            XCTFail("Failed to Decode JSON Data into \(Location.self) Object. Error: \(error)")
+        }
+    }
+
+    func testDecodingLocationArea() {
+        let locationAreaJSON = #"{"id":1,"name":"canalave-city-area","game_index":1,"encounter_method_rates":[{"encounter_method":{"name":"old-rod","url":"http://pokeapi.co/api/v2/encounter-method/2/"},"version_details":[{"rate":25,"version":{"name":"platinum","url":"http://pokeapi.co/api/v2/version/14/"}}]}],"location":{"name":"canalave-city","url":"http://pokeapi.co/api/v2/location/1/"},"names":[{"name":"","language":{"name":"en","url":"http://pokeapi.co/api/v2/language/9/"}}],"pokemon_encounters":[{"pokemon":{"name":"tentacool","url":"http://pokeapi.co/api/v2/pokemon/72/"},"version_details":[{"version":{"name":"diamond","url":"http://pokeapi.co/api/v2/version/12/"},"max_chance":60,"encounter_details":[{"min_level":20,"max_level":30,"condition_values":[],"chance":60,"method":{"name":"surf","url":"http://pokeapi.co/api/v2/encounter-method/5/"}}]}]}]}"#
+
+        guard let locationAreaData = locationAreaJSON.data(using: .utf8) else {
+            XCTFail("Failed to convert JSON Text into Data")
+            return
+        }
+
+        do {
+            let locationArea = try decoder.decode(LocationArea.self, from: locationAreaData)
+            XCTAssertNotNil(locationArea)
+        } catch {
+            XCTFail("Failed to Decode JSON Data into \(LocationArea.self) Object. Error: \(error)")
+        }
+    }
+
+    func testDecodingPalParkArea() {
+        let palParkAreaJSON = #"{"id":1,"name":"forest","names":[{"name":"Forest","language":{"name":"en","url":"http://pokeapi.co/api/v2/language/9/"}}],"pokemon_encounters":[{"base_score":30,"rate":50,"pokemon_species":{"name":"caterpie","url":"http://pokeapi.co/api/v2/pokemon-species/10/"}}]}"#
+
+        guard let palParkAreaData = palParkAreaJSON.data(using: .utf8) else {
+            XCTFail("Failed to convert JSON Text into Data")
+            return
+        }
+
+        do {
+            let palParkArea = try decoder.decode(PalParkArea.self, from: palParkAreaData)
+            XCTAssertNotNil(palParkArea)
+        } catch {
+            XCTFail("Failed to Decode JSON Data into \(PalParkArea.self) Object. Error: \(error)")
+        }
+    }
+
     func testDecodingLanguage() {
         let languageJSON = #"{"id":1,"iso3166":"jp","iso639":"ja","name":"ja-Hrkt","names":[{"language":{"name":"ja-Hrkt","url":"https://pokeapi.co/api/v2/language/1/"},"name":"日本語"},{"language":{"name":"fr","url":"https://pokeapi.co/api/v2/language/5/"},"name":"Japonais"},{"language":{"name":"de","url":"https://pokeapi.co/api/v2/language/6/"},"name":"Japanisch"},{"language":{"name":"en","url":"https://pokeapi.co/api/v2/language/9/"},"name":"Japanese"}],"official":true}"#
 

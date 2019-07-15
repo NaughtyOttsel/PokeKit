@@ -44,7 +44,7 @@ public struct PokemonEncounter: Decodable {
     /// The pokémon being encountered
     public let pokemon: NamedAPIResource
     /// A list of versions and encounters with pokémon that might happen in the referenced location area
-    public let versionDetails: VersionEncounterDetail
+    public let versionDetails: [VersionEncounterDetail]
 
     private enum CodingKeys: String, CodingKey {
         case pokemon

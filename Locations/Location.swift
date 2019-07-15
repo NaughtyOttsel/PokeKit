@@ -13,6 +13,6 @@ public struct Location: LocalizableEntity, Decodable {
 
     private enum CodingKeys: String, CodingKey {
         case id, name, region, names, areas
-        case gameIndicies = "game_indicies"
+        case gameIndicies = "game_indices"
     }
 }

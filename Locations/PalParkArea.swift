@@ -5,7 +5,7 @@ public struct PalParkArea: LocalizableEntity, Decodable {
     public let name: String
     public let names: [Name]
     /// A list of pokémon encountered in thi pal park area along with details
-    public let pokemonEncounters: PalParkEncounterSpecies
+    public let pokemonEncounters: [PalParkEncounterSpecies]
 
     private enum CodingKeys: String, CodingKey {
         case id, name, names
