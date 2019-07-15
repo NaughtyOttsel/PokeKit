@@ -1,7 +1,3 @@
-//
-//  APIResourceList.swift
-//  PokeKit
-
 public protocol ResourceList: Decodable {
     var count: Int { get }
     var next: String { get }

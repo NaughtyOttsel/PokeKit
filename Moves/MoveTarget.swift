@@ -1,4 +1,5 @@
 
+
 /// Targets moves can be directed at during battle. Targets can be Pokémon, environments or even other moves.
 public struct MoveTarget: LocalizableEntity, Decodable {
     public let id: Int

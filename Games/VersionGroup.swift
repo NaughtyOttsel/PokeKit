@@ -1,4 +1,5 @@
 
+
 /// Version groups categorize highly similar versions of the games
 public struct VersionGroup: Entity, Decodable {
     public let id: Int

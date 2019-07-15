@@ -1,4 +1,5 @@
 
+
 /// Localized Flavor Text for a specific Version Group
 public struct VersionGroupFlavorText: Multilingual, Decodable {
     /// The localized name for an API resource in a specific language.

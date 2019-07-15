@@ -1,4 +1,3 @@
-
 @testable import PokeKit
 import XCTest
 

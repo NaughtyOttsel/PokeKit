@@ -1,4 +1,3 @@
-
 public struct APIResource: _APIResource, Decodable {
     public let url: String
 }

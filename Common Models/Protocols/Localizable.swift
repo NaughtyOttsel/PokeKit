@@ -1,4 +1,3 @@
-
 public protocol Multilingual: Decodable {
     /// The language this resource is in.
     var language: NamedAPIResource { get }

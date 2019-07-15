@@ -1,4 +1,5 @@
 
+
 /// Growth rates are the speed with which Pokémon gain levels through experience
 public struct GrowthRate: Entity, Decodable {
     public let id: Int

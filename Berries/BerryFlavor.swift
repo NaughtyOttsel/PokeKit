@@ -1,4 +1,5 @@
 
+
 /// Flavors determine whether a pokemon will benefit or suffer from eating a berry based on their nature.
 public struct BerryFlavor: LocalizableEntity, Decodable {
     /// The identifier for this resource.

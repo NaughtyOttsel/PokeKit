@@ -1,4 +1,5 @@
 
+
 /// Colors used for sorting Pokémon in a Pokédex. The color listed in the Pokédex is usually the color most apparent or covering each Pokémon's body. No orange category exists; Pokémon that are primarily orange are listed as red or brown
 public struct PokemonColor: LocalizableEntity, Decodable {
     public let id: Int

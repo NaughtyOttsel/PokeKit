@@ -1,4 +1,5 @@
 
+
 /// Mapping between the API Game Index and Generations.
 public struct GenerationGameIndex: Decodable {
     /// The internal id of an API resource within game data.

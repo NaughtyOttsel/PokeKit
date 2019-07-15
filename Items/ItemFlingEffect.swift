@@ -1,4 +1,5 @@
 
+
 /// The various effects of the move "Fling" when used with different items.
 public struct ItemFlingEffect: Entity, Decodable {
     public let id: Int

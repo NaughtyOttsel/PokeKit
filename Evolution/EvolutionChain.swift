@@ -1,4 +1,5 @@
 
+
 /// Evolution chains are essentially family trees. They start with the lowest stage within a family and detail evolution conditions for each as well as pokémon they can evolve into up through the hierarchy.
 public struct EvolutionChain: Identifiable, Decodable {
     public let id: Int

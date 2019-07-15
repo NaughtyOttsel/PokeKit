@@ -1,4 +1,5 @@
 
+
 /// Contest types are categories judges used to weigh a pokémon's condition in pokemon contests
 public struct ContestType: LocalizableEntity, Decodable {
     public let id: Int

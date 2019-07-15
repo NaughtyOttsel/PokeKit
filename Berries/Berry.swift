@@ -1,4 +1,5 @@
 
+
 /// Berries are small fruits that can provide HP and status condition restoration, stat enhancement, and even damage negation when eaten by pokemon
 public struct Berry: Entity, Decodable {
     public let id: Int
@@ -19,6 +20,7 @@ public struct Berry: Entity, Decodable {
     public let firmness: NamedAPIResource
     /// A list of references to each flavor a berry can have and the potency of each of those flavors in regard to this berry.
     public let flavors: [BerryFlavorMap]
+
     /// Berries are actually items. This is a reference to the item specific data for this berry.
     public let item: NamedAPIResource
     /// The type inherited by "Natural Gift" when used with this Berry.

@@ -1,4 +1,5 @@
 
+
 /// Moves are the skills of pokémon in battle. In battle, a Pokémon uses one move each turn. Some moves (including those learned by Hidden Machine) can be used outside of battle as well, usually for the purpose of removing obstacles or exploring new areas.
 public struct Move: LocalizableEntity, Decodable {
     public let id: Int

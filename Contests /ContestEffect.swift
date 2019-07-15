@@ -1,4 +1,5 @@
 
+
 /// Contest effects refer to the effects of moves when used in contests
 public struct ContestEffect: Identifiable, Decodable {
     public let id: Int

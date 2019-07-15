@@ -1,4 +1,5 @@
 
+
 /// Styles of moves when used in the Battle Palace
 public struct MoveBattleStyle: LocalizableEntity, Decodable {
     public let id: Int

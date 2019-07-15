@@ -1,4 +1,5 @@
 
+
 /// Very general categories that loosely group move effects
 public struct MoveCategory: Entity, Decodable {
     public let id: Int
