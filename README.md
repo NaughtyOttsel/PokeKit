@@ -7,7 +7,7 @@ A Swift 5 Wrapper for the [PokeApi](https://pokeapi.co)
 Currently the package is only available for [Swift Package Manager](https://swift.org/package-manager/) add the following package to your Package.swift file.
 
 ``` swift
-.package(url: "https://github.com/NaughtyOttsel/PokeKit.git", .upToNextMajor(from: "1.0.0")),
+.package(url: "https://github.com/NaughtyOttsel/PokeKit.git", .upToNextMajor(from: "0.0.1")),
 ```
 
 ### Usage
