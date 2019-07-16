@@ -1,3 +1,4 @@
+@testable import PokeKit
 import XCTest
 
 #if !canImport(ObjectiveC)
