@@ -1,0 +1,188 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ResourceList"
+- "ResourceLocatableList"
+- "NamedResourceLocatableList"
+- "APIResourceList"
+- "NamedAPIResourceList"
+provides-nominal:
+- "7PokeKit12ResourceListP"
+- "7PokeKit21ResourceLocatableListP"
+- "7PokeKit26NamedResourceLocatableListP"
+- "7PokeKit15APIResourceListV"
+- "7PokeKit20NamedAPIResourceListV"
+provides-member:
+- ["7PokeKit12ResourceListP", ""]
+- ["7PokeKit21ResourceLocatableListP", ""]
+- ["7PokeKit26NamedResourceLocatableListP", ""]
+- ["7PokeKit15APIResourceListV", ""]
+- ["7PokeKit20NamedAPIResourceListV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- "APIResource"
+- "APIResourceList"
+- "Bool"
+- "Decodable"
+- !private "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- "Named"
+- "NamedAPIResource"
+- "NamedAPIResourceList"
+- "NamedResourceLocatableList"
+- "ResourceList"
+- "ResourceLocatable"
+- "ResourceLocatableList"
+- "String"
+- !private "StringLiteralType"
+- !private "~="
+depends-member:
+- ["7PokeKit11APIResourceV", "deinit"]
+- ["7PokeKit15APIResourceListV", "APIResource"]
+- ["7PokeKit15APIResourceListV", "Bool"]
+- ["7PokeKit15APIResourceListV", "Int"]
+- ["7PokeKit15APIResourceListV", "Resource"]
+- ["7PokeKit15APIResourceListV", "String"]
+- ["7PokeKit15APIResourceListV", "_Default_Resource"]
+- ["7PokeKit15APIResourceListV", "count"]
+- ["7PokeKit15APIResourceListV", "deinit"]
+- ["7PokeKit15APIResourceListV", "init"]
+- ["7PokeKit15APIResourceListV", "next"]
+- ["7PokeKit15APIResourceListV", "previous"]
+- ["7PokeKit15APIResourceListV", "results"]
+- ["s9CodingKeyP", "=="]
+- !private ["s9CodingKeyP", ""]
+- ["s9CodingKeyP", "_rawHashValue"]
+- ["s9CodingKeyP", "debugDescription"]
+- ["s9CodingKeyP", "description"]
+- ["s9CodingKeyP", "hash"]
+- ["s9CodingKeyP", "hashValue"]
+- ["s9CodingKeyP", "init"]
+- ["s9CodingKeyP", "intValue"]
+- ["s9CodingKeyP", "stringValue"]
+- ["s28CustomDebugStringConvertibleP", "=="]
+- !private ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "_rawHashValue"]
+- ["s28CustomDebugStringConvertibleP", "debugDescription"]
+- ["s28CustomDebugStringConvertibleP", "description"]
+- ["s28CustomDebugStringConvertibleP", "hash"]
+- ["s28CustomDebugStringConvertibleP", "hashValue"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "intValue"]
+- ["s28CustomDebugStringConvertibleP", "stringValue"]
+- ["s23CustomStringConvertibleP", "=="]
+- !private ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_rawHashValue"]
+- ["s23CustomStringConvertibleP", "debugDescription"]
+- ["s23CustomStringConvertibleP", "description"]
+- ["s23CustomStringConvertibleP", "hash"]
+- ["s23CustomStringConvertibleP", "hashValue"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "intValue"]
+- ["s23CustomStringConvertibleP", "stringValue"]
+- ["Se", "Bool"]
+- ["Se", "Int"]
+- ["Se", "Named"]
+- ["Se", "Resource"]
+- ["Se", "ResourceLocatable"]
+- ["Se", "String"]
+- ["Se", ""]
+- ["Se", "_Default_Resource"]
+- ["Se", "count"]
+- ["Se", "init"]
+- ["Se", "next"]
+- ["Se", "previous"]
+- ["Se", "results"]
+- !private ["s7DecoderP", "container"]
+- ["SQ", "=="]
+- !private ["SQ", ""]
+- ["SQ", "_rawHashValue"]
+- ["SQ", "debugDescription"]
+- ["SQ", "description"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- ["SQ", "intValue"]
+- ["SQ", "stringValue"]
+- ["SH", "=="]
+- !private ["SH", ""]
+- ["SH", "_rawHashValue"]
+- ["SH", "debugDescription"]
+- ["SH", "description"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- ["SH", "intValue"]
+- ["SH", "stringValue"]
+- !private ["s6HasherV", "combine"]
+- !private ["s22KeyedDecodingContainerV", "decode"]
+- !private ["s30KeyedDecodingContainerProtocolP", "decode"]
+- ["7PokeKit16NamedAPIResourceV", "deinit"]
+- ["7PokeKit20NamedAPIResourceListV", "Bool"]
+- ["7PokeKit20NamedAPIResourceListV", "Int"]
+- ["7PokeKit20NamedAPIResourceListV", "NamedAPIResource"]
+- ["7PokeKit20NamedAPIResourceListV", "Resource"]
+- ["7PokeKit20NamedAPIResourceListV", "String"]
+- ["7PokeKit20NamedAPIResourceListV", "_Default_Resource"]
+- ["7PokeKit20NamedAPIResourceListV", "count"]
+- ["7PokeKit20NamedAPIResourceListV", "deinit"]
+- ["7PokeKit20NamedAPIResourceListV", "init"]
+- ["7PokeKit20NamedAPIResourceListV", "next"]
+- ["7PokeKit20NamedAPIResourceListV", "previous"]
+- ["7PokeKit20NamedAPIResourceListV", "results"]
+- ["7PokeKit26NamedResourceLocatableListP", "Named"]
+- ["7PokeKit26NamedResourceLocatableListP", "Resource"]
+- ["7PokeKit26NamedResourceLocatableListP", "ResourceLocatable"]
+- ["7PokeKit26NamedResourceLocatableListP", ""]
+- ["7PokeKit26NamedResourceLocatableListP", "_Default_Resource"]
+- ["7PokeKit26NamedResourceLocatableListP", "count"]
+- ["7PokeKit26NamedResourceLocatableListP", "init"]
+- ["7PokeKit26NamedResourceLocatableListP", "next"]
+- ["7PokeKit26NamedResourceLocatableListP", "previous"]
+- ["7PokeKit26NamedResourceLocatableListP", "results"]
+- ["7PokeKit12ResourceListP", "Bool"]
+- ["7PokeKit12ResourceListP", "Int"]
+- ["7PokeKit12ResourceListP", "Named"]
+- ["7PokeKit12ResourceListP", "Resource"]
+- ["7PokeKit12ResourceListP", "ResourceLocatable"]
+- ["7PokeKit12ResourceListP", "String"]
+- ["7PokeKit12ResourceListP", ""]
+- ["7PokeKit12ResourceListP", "_Default_Resource"]
+- ["7PokeKit12ResourceListP", "count"]
+- ["7PokeKit12ResourceListP", "init"]
+- ["7PokeKit12ResourceListP", "next"]
+- ["7PokeKit12ResourceListP", "previous"]
+- ["7PokeKit12ResourceListP", "results"]
+- ["7PokeKit21ResourceLocatableListP", "Resource"]
+- ["7PokeKit21ResourceLocatableListP", "ResourceLocatable"]
+- ["7PokeKit21ResourceLocatableListP", ""]
+- ["7PokeKit21ResourceLocatableListP", "_Default_Resource"]
+- ["7PokeKit21ResourceLocatableListP", "count"]
+- ["7PokeKit21ResourceLocatableListP", "init"]
+- ["7PokeKit21ResourceLocatableListP", "next"]
+- ["7PokeKit21ResourceLocatableListP", "previous"]
+- ["7PokeKit21ResourceLocatableListP", "results"]
+depends-nominal:
+- "7PokeKit11APIResourceV"
+- "7PokeKit15APIResourceListV"
+- "s9CodingKeyP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- !private "s7DecoderP"
+- "SQ"
+- "SH"
+- !private "s6HasherV"
+- !private "s22KeyedDecodingContainerV"
+- !private "s30KeyedDecodingContainerProtocolP"
+- "7PokeKit16NamedAPIResourceV"
+- "7PokeKit20NamedAPIResourceListV"
+- "7PokeKit26NamedResourceLocatableListP"
+- "7PokeKit12ResourceListP"
+- "7PokeKit21ResourceLocatableListP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+interface-hash: "dceb532b70cbdc4d6fe357b91b787e2a"

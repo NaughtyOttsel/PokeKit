@@ -1,0 +1,40 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Multilingual"
+- "Localizable"
+provides-nominal:
+- "7PokeKit12MultilingualP"
+- "7PokeKit11LocalizableP"
+provides-member:
+- ["7PokeKit12MultilingualP", ""]
+- ["7PokeKit11LocalizableP", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Decodable"
+- "Localizable"
+- "Multilingual"
+- "Named"
+- "NamedAPIResource"
+depends-member:
+- ["Se", "Multilingual"]
+- ["Se", "Named"]
+- ["Se", "NamedAPIResource"]
+- ["Se", "NamedMultilingual"]
+- ["Se", ""]
+- ["Se", "language"]
+- ["Se", "names"]
+- ["7PokeKit11LocalizableP", "Multilingual"]
+- ["7PokeKit11LocalizableP", "Named"]
+- ["7PokeKit11LocalizableP", "NamedMultilingual"]
+- ["7PokeKit11LocalizableP", "names"]
+- ["7PokeKit12MultilingualP", "NamedAPIResource"]
+- ["7PokeKit12MultilingualP", "language"]
+depends-nominal:
+- "Se"
+- "7PokeKit11LocalizableP"
+- "7PokeKit12MultilingualP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "d0e4b7dff58431d5408ef2d0ae8e243f"

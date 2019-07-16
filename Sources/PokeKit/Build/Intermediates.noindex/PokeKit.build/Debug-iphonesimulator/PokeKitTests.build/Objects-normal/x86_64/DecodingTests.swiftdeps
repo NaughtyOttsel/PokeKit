@@ -1,0 +1,1636 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DecodingTests"
+provides-nominal:
+- "12PokeKitTests08DecodingC0C"
+provides-member:
+- ["12PokeKitTests08DecodingC0C", ""]
+provides-dynamic-lookup:
+- "testDecodingAbility"
+- "testDecodingBerryFirmness"
+- "testDecodingBerryFlavor"
+- "testDecodingBery"
+- "testDecodingCharacteristic"
+- "testDecodingContestType"
+- "testDecodingEggGroup"
+- "testDecodingEncounterCondition"
+- "testDecodingEncounterConditionValue"
+- "testDecodingEncounterMethod"
+- "testDecodingEvolutionChain"
+- "testDecodingEvolutionTrigger"
+- "testDecodingGender"
+- "testDecodingGeneration"
+- "testDecodingGrowthRate"
+- "testDecodingItem"
+- "testDecodingItemAttribute"
+- "testDecodingItemCategory"
+- "testDecodingItemFlingEffect"
+- "testDecodingItemPocket"
+- "testDecodingLanguage"
+- "testDecodingLocation"
+- "testDecodingLocationArea"
+- "testDecodingMove"
+- "testDecodingMoveAilment"
+- "testDecodingMoveBattleStyle"
+- "testDecodingMoveCategory"
+- "testDecodingMoveDamageClass"
+- "testDecodingMoveLearnMethod"
+- "testDecodingMoveTarget"
+- "testDecodingNature"
+- "testDecodingPalParkArea"
+- "testDecodingPokeathlonStat"
+- "testDecodingPokedex"
+- "testDecodingPokemon"
+- "testDecodingPokemonColor"
+- "testDecodingPokemonForm"
+- "testDecodingPokemonHabitat"
+- "testDecodingPokemonShape"
+- "testDecodingPokemonSpecies"
+- "testDecodingRegion"
+- "testDecodingStat"
+- "testDecodingSuperContestEffect"
+- "testDecodingType"
+- "testDecodingVersion"
+- "testDecodingVersionGroups"
+depends-top-level:
+- !private "Ability"
+- !private "Berry"
+- !private "BerryFirmness"
+- !private "BerryFlavor"
+- !private "Characteristic"
+- !private "ContestType"
+- "DecodingTests"
+- !private "EggGroup"
+- !private "EncounterCondition"
+- !private "EncounterConditionValue"
+- !private "EncounterMethod"
+- !private "EvolutionChain"
+- !private "EvolutionTrigger"
+- !private "FloatLiteralType"
+- !private "Gender"
+- !private "Generation"
+- !private "GrowthRate"
+- !private "IntegerLiteralType"
+- !private "Item"
+- !private "ItemAttribute"
+- !private "ItemCategory"
+- !private "ItemFlingEffect"
+- !private "ItemPocket"
+- "JSONDecoder"
+- !private "Language"
+- !private "Location"
+- !private "LocationArea"
+- !private "Move"
+- !private "MoveAilment"
+- !private "MoveBattleStyle"
+- !private "MoveCategory"
+- !private "MoveDamageClass"
+- !private "MoveLearnMethod"
+- !private "MoveTarget"
+- !private "Nature"
+- !private "PalParkArea"
+- !private "PokeathlonStat"
+- !private "Pokedex"
+- !private "Pokemon"
+- !private "PokemonColor"
+- !private "PokemonForm"
+- !private "PokemonHabitat"
+- !private "PokemonShape"
+- !private "PokemonSpecies"
+- !private "Region"
+- !private "Stat"
+- "StringLiteralType"
+- !private "SuperContestEffect"
+- !private "Type"
+- !private "Version"
+- !private "VersionGroup"
+- !private "XCTAssertNotNil"
+- !private "XCTFail"
+- "XCTestCase"
+depends-member:
+- !private ["SK", "data"]
+- !private ["s7CVarArgP", "Ability"]
+- !private ["s7CVarArgP", "Berry"]
+- !private ["s7CVarArgP", "BerryFirmness"]
+- !private ["s7CVarArgP", "BerryFlavor"]
+- !private ["s7CVarArgP", "Characteristic"]
+- !private ["s7CVarArgP", "ContestType"]
+- !private ["s7CVarArgP", "EggGroup"]
+- !private ["s7CVarArgP", "EncounterCondition"]
+- !private ["s7CVarArgP", "EncounterConditionValue"]
+- !private ["s7CVarArgP", "EncounterMethod"]
+- !private ["s7CVarArgP", "EvolutionChain"]
+- !private ["s7CVarArgP", "EvolutionTrigger"]
+- !private ["s7CVarArgP", "Gender"]
+- !private ["s7CVarArgP", "Generation"]
+- !private ["s7CVarArgP", "GrowthRate"]
+- !private ["s7CVarArgP", "Item"]
+- !private ["s7CVarArgP", "ItemAttribute"]
+- !private ["s7CVarArgP", "ItemCategory"]
+- !private ["s7CVarArgP", "ItemFlingEffect"]
+- !private ["s7CVarArgP", "ItemPocket"]
+- ["s7CVarArgP", "JSONDecoder"]
+- !private ["s7CVarArgP", "Language"]
+- !private ["s7CVarArgP", "Location"]
+- !private ["s7CVarArgP", "LocationArea"]
+- !private ["s7CVarArgP", "Move"]
+- !private ["s7CVarArgP", "MoveAilment"]
+- !private ["s7CVarArgP", "MoveBattleStyle"]
+- !private ["s7CVarArgP", "MoveCategory"]
+- !private ["s7CVarArgP", "MoveDamageClass"]
+- !private ["s7CVarArgP", "MoveLearnMethod"]
+- !private ["s7CVarArgP", "MoveTarget"]
+- !private ["s7CVarArgP", "Nature"]
+- !private ["s7CVarArgP", "PalParkArea"]
+- !private ["s7CVarArgP", "PokeathlonStat"]
+- !private ["s7CVarArgP", "Pokedex"]
+- !private ["s7CVarArgP", "Pokemon"]
+- !private ["s7CVarArgP", "PokemonColor"]
+- !private ["s7CVarArgP", "PokemonForm"]
+- !private ["s7CVarArgP", "PokemonHabitat"]
+- !private ["s7CVarArgP", "PokemonShape"]
+- !private ["s7CVarArgP", "PokemonSpecies"]
+- !private ["s7CVarArgP", "Region"]
+- !private ["s7CVarArgP", "Stat"]
+- !private ["s7CVarArgP", "SuperContestEffect"]
+- !private ["s7CVarArgP", "Type"]
+- !private ["s7CVarArgP", "Version"]
+- !private ["s7CVarArgP", "VersionGroup"]
+- !private ["s7CVarArgP", "XCTAssertNotNil"]
+- !private ["s7CVarArgP", "XCTFail"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "data"]
+- !private ["s7CVarArgP", "decoder"]
+- !private ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "testDecodingBerryFirmness"]
+- ["s7CVarArgP", "testDecodingBery"]
+- ["s7CVarArgP", "testDecodingEvolutionChain"]
+- ["s7CVarArgP", "testDecodingEvolutionTrigger"]
+- ["s7CVarArgP", "testDecodingLanguage"]
+- !private ["Sl", "data"]
+- !private ["SL", "data"]
+- !private ["s28CustomDebugStringConvertibleP", "Ability"]
+- !private ["s28CustomDebugStringConvertibleP", "Berry"]
+- !private ["s28CustomDebugStringConvertibleP", "BerryFirmness"]
+- !private ["s28CustomDebugStringConvertibleP", "BerryFlavor"]
+- !private ["s28CustomDebugStringConvertibleP", "Characteristic"]
+- !private ["s28CustomDebugStringConvertibleP", "ContestType"]
+- !private ["s28CustomDebugStringConvertibleP", "EggGroup"]
+- !private ["s28CustomDebugStringConvertibleP", "EncounterCondition"]
+- !private ["s28CustomDebugStringConvertibleP", "EncounterConditionValue"]
+- !private ["s28CustomDebugStringConvertibleP", "EncounterMethod"]
+- !private ["s28CustomDebugStringConvertibleP", "EvolutionChain"]
+- !private ["s28CustomDebugStringConvertibleP", "EvolutionTrigger"]
+- !private ["s28CustomDebugStringConvertibleP", "Gender"]
+- !private ["s28CustomDebugStringConvertibleP", "Generation"]
+- !private ["s28CustomDebugStringConvertibleP", "GrowthRate"]
+- !private ["s28CustomDebugStringConvertibleP", "Item"]
+- !private ["s28CustomDebugStringConvertibleP", "ItemAttribute"]
+- !private ["s28CustomDebugStringConvertibleP", "ItemCategory"]
+- !private ["s28CustomDebugStringConvertibleP", "ItemFlingEffect"]
+- !private ["s28CustomDebugStringConvertibleP", "ItemPocket"]
+- ["s28CustomDebugStringConvertibleP", "JSONDecoder"]
+- !private ["s28CustomDebugStringConvertibleP", "Language"]
+- !private ["s28CustomDebugStringConvertibleP", "Location"]
+- !private ["s28CustomDebugStringConvertibleP", "LocationArea"]
+- !private ["s28CustomDebugStringConvertibleP", "Move"]
+- !private ["s28CustomDebugStringConvertibleP", "MoveAilment"]
+- !private ["s28CustomDebugStringConvertibleP", "MoveBattleStyle"]
+- !private ["s28CustomDebugStringConvertibleP", "MoveCategory"]
+- !private ["s28CustomDebugStringConvertibleP", "MoveDamageClass"]
+- !private ["s28CustomDebugStringConvertibleP", "MoveLearnMethod"]
+- !private ["s28CustomDebugStringConvertibleP", "MoveTarget"]
+- !private ["s28CustomDebugStringConvertibleP", "Nature"]
+- !private ["s28CustomDebugStringConvertibleP", "PalParkArea"]
+- !private ["s28CustomDebugStringConvertibleP", "PokeathlonStat"]
+- !private ["s28CustomDebugStringConvertibleP", "Pokedex"]
+- !private ["s28CustomDebugStringConvertibleP", "Pokemon"]
+- !private ["s28CustomDebugStringConvertibleP", "PokemonColor"]
+- !private ["s28CustomDebugStringConvertibleP", "PokemonForm"]
+- !private ["s28CustomDebugStringConvertibleP", "PokemonHabitat"]
+- !private ["s28CustomDebugStringConvertibleP", "PokemonShape"]
+- !private ["s28CustomDebugStringConvertibleP", "PokemonSpecies"]
+- !private ["s28CustomDebugStringConvertibleP", "Region"]
+- !private ["s28CustomDebugStringConvertibleP", "Stat"]
+- !private ["s28CustomDebugStringConvertibleP", "SuperContestEffect"]
+- !private ["s28CustomDebugStringConvertibleP", "Type"]
+- !private ["s28CustomDebugStringConvertibleP", "Version"]
+- !private ["s28CustomDebugStringConvertibleP", "VersionGroup"]
+- !private ["s28CustomDebugStringConvertibleP", "XCTAssertNotNil"]
+- !private ["s28CustomDebugStringConvertibleP", "XCTFail"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "data"]
+- !private ["s28CustomDebugStringConvertibleP", "decoder"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "testDecodingBerryFirmness"]
+- ["s28CustomDebugStringConvertibleP", "testDecodingBery"]
+- ["s28CustomDebugStringConvertibleP", "testDecodingEvolutionChain"]
+- ["s28CustomDebugStringConvertibleP", "testDecodingEvolutionTrigger"]
+- ["s28CustomDebugStringConvertibleP", "testDecodingLanguage"]
+- !private ["s17CustomReflectableP", "data"]
+- !private ["s23CustomStringConvertibleP", "Ability"]
+- !private ["s23CustomStringConvertibleP", "Berry"]
+- !private ["s23CustomStringConvertibleP", "BerryFirmness"]
+- !private ["s23CustomStringConvertibleP", "BerryFlavor"]
+- !private ["s23CustomStringConvertibleP", "Characteristic"]
+- !private ["s23CustomStringConvertibleP", "ContestType"]
+- !private ["s23CustomStringConvertibleP", "EggGroup"]
+- !private ["s23CustomStringConvertibleP", "EncounterCondition"]
+- !private ["s23CustomStringConvertibleP", "EncounterConditionValue"]
+- !private ["s23CustomStringConvertibleP", "EncounterMethod"]
+- !private ["s23CustomStringConvertibleP", "EvolutionChain"]
+- !private ["s23CustomStringConvertibleP", "EvolutionTrigger"]
+- !private ["s23CustomStringConvertibleP", "Gender"]
+- !private ["s23CustomStringConvertibleP", "Generation"]
+- !private ["s23CustomStringConvertibleP", "GrowthRate"]
+- !private ["s23CustomStringConvertibleP", "Item"]
+- !private ["s23CustomStringConvertibleP", "ItemAttribute"]
+- !private ["s23CustomStringConvertibleP", "ItemCategory"]
+- !private ["s23CustomStringConvertibleP", "ItemFlingEffect"]
+- !private ["s23CustomStringConvertibleP", "ItemPocket"]
+- ["s23CustomStringConvertibleP", "JSONDecoder"]
+- !private ["s23CustomStringConvertibleP", "Language"]
+- !private ["s23CustomStringConvertibleP", "Location"]
+- !private ["s23CustomStringConvertibleP", "LocationArea"]
+- !private ["s23CustomStringConvertibleP", "Move"]
+- !private ["s23CustomStringConvertibleP", "MoveAilment"]
+- !private ["s23CustomStringConvertibleP", "MoveBattleStyle"]
+- !private ["s23CustomStringConvertibleP", "MoveCategory"]
+- !private ["s23CustomStringConvertibleP", "MoveDamageClass"]
+- !private ["s23CustomStringConvertibleP", "MoveLearnMethod"]
+- !private ["s23CustomStringConvertibleP", "MoveTarget"]
+- !private ["s23CustomStringConvertibleP", "Nature"]
+- !private ["s23CustomStringConvertibleP", "PalParkArea"]
+- !private ["s23CustomStringConvertibleP", "PokeathlonStat"]
+- !private ["s23CustomStringConvertibleP", "Pokedex"]
+- !private ["s23CustomStringConvertibleP", "Pokemon"]
+- !private ["s23CustomStringConvertibleP", "PokemonColor"]
+- !private ["s23CustomStringConvertibleP", "PokemonForm"]
+- !private ["s23CustomStringConvertibleP", "PokemonHabitat"]
+- !private ["s23CustomStringConvertibleP", "PokemonShape"]
+- !private ["s23CustomStringConvertibleP", "PokemonSpecies"]
+- !private ["s23CustomStringConvertibleP", "Region"]
+- !private ["s23CustomStringConvertibleP", "Stat"]
+- !private ["s23CustomStringConvertibleP", "SuperContestEffect"]
+- !private ["s23CustomStringConvertibleP", "Type"]
+- !private ["s23CustomStringConvertibleP", "Version"]
+- !private ["s23CustomStringConvertibleP", "VersionGroup"]
+- !private ["s23CustomStringConvertibleP", "XCTAssertNotNil"]
+- !private ["s23CustomStringConvertibleP", "XCTFail"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "data"]
+- !private ["s23CustomStringConvertibleP", "decoder"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "testDecodingBerryFirmness"]
+- ["s23CustomStringConvertibleP", "testDecodingBery"]
+- ["s23CustomStringConvertibleP", "testDecodingEvolutionChain"]
+- ["s23CustomStringConvertibleP", "testDecodingEvolutionTrigger"]
+- ["s23CustomStringConvertibleP", "testDecodingLanguage"]
+- !private ["s23CustomStringConvertibleP", "utf8"]
+- !private ["Se", "data"]
+- !private ["12PokeKitTests08DecodingC0C", "Ability"]
+- !private ["12PokeKitTests08DecodingC0C", "Berry"]
+- !private ["12PokeKitTests08DecodingC0C", "BerryFirmness"]
+- !private ["12PokeKitTests08DecodingC0C", "BerryFlavor"]
+- !private ["12PokeKitTests08DecodingC0C", "Characteristic"]
+- !private ["12PokeKitTests08DecodingC0C", "ContestType"]
+- !private ["12PokeKitTests08DecodingC0C", "EggGroup"]
+- !private ["12PokeKitTests08DecodingC0C", "EncounterCondition"]
+- !private ["12PokeKitTests08DecodingC0C", "EncounterConditionValue"]
+- !private ["12PokeKitTests08DecodingC0C", "EncounterMethod"]
+- !private ["12PokeKitTests08DecodingC0C", "EvolutionChain"]
+- !private ["12PokeKitTests08DecodingC0C", "EvolutionTrigger"]
+- !private ["12PokeKitTests08DecodingC0C", "Gender"]
+- !private ["12PokeKitTests08DecodingC0C", "Generation"]
+- !private ["12PokeKitTests08DecodingC0C", "GrowthRate"]
+- !private ["12PokeKitTests08DecodingC0C", "Item"]
+- !private ["12PokeKitTests08DecodingC0C", "ItemAttribute"]
+- !private ["12PokeKitTests08DecodingC0C", "ItemCategory"]
+- !private ["12PokeKitTests08DecodingC0C", "ItemFlingEffect"]
+- !private ["12PokeKitTests08DecodingC0C", "ItemPocket"]
+- ["12PokeKitTests08DecodingC0C", "JSONDecoder"]
+- !private ["12PokeKitTests08DecodingC0C", "Language"]
+- !private ["12PokeKitTests08DecodingC0C", "Location"]
+- !private ["12PokeKitTests08DecodingC0C", "LocationArea"]
+- !private ["12PokeKitTests08DecodingC0C", "Move"]
+- !private ["12PokeKitTests08DecodingC0C", "MoveAilment"]
+- !private ["12PokeKitTests08DecodingC0C", "MoveBattleStyle"]
+- !private ["12PokeKitTests08DecodingC0C", "MoveCategory"]
+- !private ["12PokeKitTests08DecodingC0C", "MoveDamageClass"]
+- !private ["12PokeKitTests08DecodingC0C", "MoveLearnMethod"]
+- !private ["12PokeKitTests08DecodingC0C", "MoveTarget"]
+- !private ["12PokeKitTests08DecodingC0C", "Nature"]
+- !private ["12PokeKitTests08DecodingC0C", "PalParkArea"]
+- !private ["12PokeKitTests08DecodingC0C", "PokeathlonStat"]
+- !private ["12PokeKitTests08DecodingC0C", "Pokedex"]
+- !private ["12PokeKitTests08DecodingC0C", "Pokemon"]
+- !private ["12PokeKitTests08DecodingC0C", "PokemonColor"]
+- !private ["12PokeKitTests08DecodingC0C", "PokemonForm"]
+- !private ["12PokeKitTests08DecodingC0C", "PokemonHabitat"]
+- !private ["12PokeKitTests08DecodingC0C", "PokemonShape"]
+- !private ["12PokeKitTests08DecodingC0C", "PokemonSpecies"]
+- !private ["12PokeKitTests08DecodingC0C", "Region"]
+- !private ["12PokeKitTests08DecodingC0C", "Stat"]
+- !private ["12PokeKitTests08DecodingC0C", "SuperContestEffect"]
+- !private ["12PokeKitTests08DecodingC0C", "Type"]
+- !private ["12PokeKitTests08DecodingC0C", "Version"]
+- !private ["12PokeKitTests08DecodingC0C", "VersionGroup"]
+- !private ["12PokeKitTests08DecodingC0C", "XCTAssertNotNil"]
+- !private ["12PokeKitTests08DecodingC0C", "XCTFail"]
+- ["12PokeKitTests08DecodingC0C", "allTests"]
+- ["12PokeKitTests08DecodingC0C", "decoder"]
+- ["12PokeKitTests08DecodingC0C", "deinit"]
+- ["12PokeKitTests08DecodingC0C", "init"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingAbility"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingBerryFirmness"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingBerryFlavor"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingBery"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingCharacteristic"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingContestType"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingEggGroup"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingEncounterCondition"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingEncounterConditionValue"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingEncounterMethod"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingEvolutionChain"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingEvolutionTrigger"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingGender"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingGeneration"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingGrowthRate"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingItem"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingItemAttribute"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingItemCategory"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingItemFlingEffect"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingItemPocket"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingLanguage"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingLocation"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingLocationArea"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingMove"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingMoveAilment"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingMoveBattleStyle"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingMoveCategory"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingMoveDamageClass"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingMoveLearnMethod"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingMoveTarget"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingNature"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingPalParkArea"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingPokeathlonStat"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingPokedex"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingPokemon"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingPokemonColor"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingPokemonForm"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingPokemonHabitat"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingPokemonShape"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingPokemonSpecies"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingRegion"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingStat"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingSuperContestEffect"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingType"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingVersion"]
+- ["12PokeKitTests08DecodingC0C", "testDecodingVersionGroups"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "data"]
+- !private ["SS10FoundationE8EncodingV", "utf8"]
+- !private ["SQ", "Ability"]
+- !private ["SQ", "Berry"]
+- !private ["SQ", "BerryFirmness"]
+- !private ["SQ", "BerryFlavor"]
+- !private ["SQ", "Characteristic"]
+- !private ["SQ", "ContestType"]
+- !private ["SQ", "EggGroup"]
+- !private ["SQ", "EncounterCondition"]
+- !private ["SQ", "EncounterConditionValue"]
+- !private ["SQ", "EncounterMethod"]
+- !private ["SQ", "EvolutionChain"]
+- !private ["SQ", "EvolutionTrigger"]
+- !private ["SQ", "Gender"]
+- !private ["SQ", "Generation"]
+- !private ["SQ", "GrowthRate"]
+- !private ["SQ", "Item"]
+- !private ["SQ", "ItemAttribute"]
+- !private ["SQ", "ItemCategory"]
+- !private ["SQ", "ItemFlingEffect"]
+- !private ["SQ", "ItemPocket"]
+- ["SQ", "JSONDecoder"]
+- !private ["SQ", "Language"]
+- !private ["SQ", "Location"]
+- !private ["SQ", "LocationArea"]
+- !private ["SQ", "Move"]
+- !private ["SQ", "MoveAilment"]
+- !private ["SQ", "MoveBattleStyle"]
+- !private ["SQ", "MoveCategory"]
+- !private ["SQ", "MoveDamageClass"]
+- !private ["SQ", "MoveLearnMethod"]
+- !private ["SQ", "MoveTarget"]
+- !private ["SQ", "Nature"]
+- !private ["SQ", "PalParkArea"]
+- !private ["SQ", "PokeathlonStat"]
+- !private ["SQ", "Pokedex"]
+- !private ["SQ", "Pokemon"]
+- !private ["SQ", "PokemonColor"]
+- !private ["SQ", "PokemonForm"]
+- !private ["SQ", "PokemonHabitat"]
+- !private ["SQ", "PokemonShape"]
+- !private ["SQ", "PokemonSpecies"]
+- !private ["SQ", "Region"]
+- !private ["SQ", "Stat"]
+- !private ["SQ", "SuperContestEffect"]
+- !private ["SQ", "Type"]
+- !private ["SQ", "Version"]
+- !private ["SQ", "VersionGroup"]
+- !private ["SQ", "XCTAssertNotNil"]
+- !private ["SQ", "XCTFail"]
+- ["SQ", ""]
+- !private ["SQ", "data"]
+- !private ["SQ", "decoder"]
+- !private ["SQ", "init"]
+- ["SQ", "testDecodingBerryFirmness"]
+- ["SQ", "testDecodingBery"]
+- ["SQ", "testDecodingEvolutionChain"]
+- ["SQ", "testDecodingEvolutionTrigger"]
+- ["SQ", "testDecodingLanguage"]
+- !private ["SQ", "utf8"]
+- !private ["s5ErrorP", "localizedDescription"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "data"]
+- !private ["s32ExpressibleByStringInterpolationP", "data"]
+- !private ["s26ExpressibleByStringLiteralP", "data"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "data"]
+- !private ["SH", "Ability"]
+- !private ["SH", "Berry"]
+- !private ["SH", "BerryFirmness"]
+- !private ["SH", "BerryFlavor"]
+- !private ["SH", "Characteristic"]
+- !private ["SH", "ContestType"]
+- !private ["SH", "EggGroup"]
+- !private ["SH", "EncounterCondition"]
+- !private ["SH", "EncounterConditionValue"]
+- !private ["SH", "EncounterMethod"]
+- !private ["SH", "EvolutionChain"]
+- !private ["SH", "EvolutionTrigger"]
+- !private ["SH", "Gender"]
+- !private ["SH", "Generation"]
+- !private ["SH", "GrowthRate"]
+- !private ["SH", "Item"]
+- !private ["SH", "ItemAttribute"]
+- !private ["SH", "ItemCategory"]
+- !private ["SH", "ItemFlingEffect"]
+- !private ["SH", "ItemPocket"]
+- ["SH", "JSONDecoder"]
+- !private ["SH", "Language"]
+- !private ["SH", "Location"]
+- !private ["SH", "LocationArea"]
+- !private ["SH", "Move"]
+- !private ["SH", "MoveAilment"]
+- !private ["SH", "MoveBattleStyle"]
+- !private ["SH", "MoveCategory"]
+- !private ["SH", "MoveDamageClass"]
+- !private ["SH", "MoveLearnMethod"]
+- !private ["SH", "MoveTarget"]
+- !private ["SH", "Nature"]
+- !private ["SH", "PalParkArea"]
+- !private ["SH", "PokeathlonStat"]
+- !private ["SH", "Pokedex"]
+- !private ["SH", "Pokemon"]
+- !private ["SH", "PokemonColor"]
+- !private ["SH", "PokemonForm"]
+- !private ["SH", "PokemonHabitat"]
+- !private ["SH", "PokemonShape"]
+- !private ["SH", "PokemonSpecies"]
+- !private ["SH", "Region"]
+- !private ["SH", "Stat"]
+- !private ["SH", "SuperContestEffect"]
+- !private ["SH", "Type"]
+- !private ["SH", "Version"]
+- !private ["SH", "VersionGroup"]
+- !private ["SH", "XCTAssertNotNil"]
+- !private ["SH", "XCTFail"]
+- ["SH", ""]
+- !private ["SH", "data"]
+- !private ["SH", "decoder"]
+- !private ["SH", "init"]
+- ["SH", "testDecodingBerryFirmness"]
+- ["SH", "testDecodingBery"]
+- ["SH", "testDecodingEvolutionChain"]
+- ["SH", "testDecodingEvolutionTrigger"]
+- ["SH", "testDecodingLanguage"]
+- !private ["SH", "utf8"]
+- !private ["10Foundation11JSONDecoderC", "decode"]
+- ["10Foundation11JSONDecoderC", "init"]
+- !private ["s25LosslessStringConvertibleP", "data"]
+- !private ["s10MirrorPathP", "data"]
+- !private ["So8NSCodingP", "data"]
+- !private ["So9NSCopyingP", "data"]
+- !private ["So21NSItemProviderReadingP", "data"]
+- !private ["So21NSItemProviderWritingP", "data"]
+- !private ["So16NSMutableCopyingP", "data"]
+- !private ["So8NSObjectC", "Ability"]
+- !private ["So8NSObjectC", "Berry"]
+- !private ["So8NSObjectC", "BerryFirmness"]
+- !private ["So8NSObjectC", "BerryFlavor"]
+- !private ["So8NSObjectC", "Characteristic"]
+- !private ["So8NSObjectC", "ContestType"]
+- !private ["So8NSObjectC", "EggGroup"]
+- !private ["So8NSObjectC", "EncounterCondition"]
+- !private ["So8NSObjectC", "EncounterConditionValue"]
+- !private ["So8NSObjectC", "EncounterMethod"]
+- !private ["So8NSObjectC", "EvolutionChain"]
+- !private ["So8NSObjectC", "EvolutionTrigger"]
+- !private ["So8NSObjectC", "Gender"]
+- !private ["So8NSObjectC", "Generation"]
+- !private ["So8NSObjectC", "GrowthRate"]
+- !private ["So8NSObjectC", "Item"]
+- !private ["So8NSObjectC", "ItemAttribute"]
+- !private ["So8NSObjectC", "ItemCategory"]
+- !private ["So8NSObjectC", "ItemFlingEffect"]
+- !private ["So8NSObjectC", "ItemPocket"]
+- ["So8NSObjectC", "JSONDecoder"]
+- !private ["So8NSObjectC", "Language"]
+- !private ["So8NSObjectC", "Location"]
+- !private ["So8NSObjectC", "LocationArea"]
+- !private ["So8NSObjectC", "Move"]
+- !private ["So8NSObjectC", "MoveAilment"]
+- !private ["So8NSObjectC", "MoveBattleStyle"]
+- !private ["So8NSObjectC", "MoveCategory"]
+- !private ["So8NSObjectC", "MoveDamageClass"]
+- !private ["So8NSObjectC", "MoveLearnMethod"]
+- !private ["So8NSObjectC", "MoveTarget"]
+- !private ["So8NSObjectC", "Nature"]
+- !private ["So8NSObjectC", "PalParkArea"]
+- !private ["So8NSObjectC", "PokeathlonStat"]
+- !private ["So8NSObjectC", "Pokedex"]
+- !private ["So8NSObjectC", "Pokemon"]
+- !private ["So8NSObjectC", "PokemonColor"]
+- !private ["So8NSObjectC", "PokemonForm"]
+- !private ["So8NSObjectC", "PokemonHabitat"]
+- !private ["So8NSObjectC", "PokemonShape"]
+- !private ["So8NSObjectC", "PokemonSpecies"]
+- !private ["So8NSObjectC", "Region"]
+- !private ["So8NSObjectC", "Stat"]
+- !private ["So8NSObjectC", "SuperContestEffect"]
+- !private ["So8NSObjectC", "Type"]
+- !private ["So8NSObjectC", "Version"]
+- !private ["So8NSObjectC", "VersionGroup"]
+- !private ["So8NSObjectC", "XCTAssertNotNil"]
+- !private ["So8NSObjectC", "XCTFail"]
+- ["So8NSObjectC", "allTests"]
+- !private ["So8NSObjectC", "data"]
+- ["So8NSObjectC", "decoder"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "testDecodingAbility"]
+- ["So8NSObjectC", "testDecodingBerryFirmness"]
+- ["So8NSObjectC", "testDecodingBerryFlavor"]
+- ["So8NSObjectC", "testDecodingBery"]
+- ["So8NSObjectC", "testDecodingCharacteristic"]
+- ["So8NSObjectC", "testDecodingContestType"]
+- ["So8NSObjectC", "testDecodingEggGroup"]
+- ["So8NSObjectC", "testDecodingEncounterCondition"]
+- ["So8NSObjectC", "testDecodingEncounterConditionValue"]
+- ["So8NSObjectC", "testDecodingEncounterMethod"]
+- ["So8NSObjectC", "testDecodingEvolutionChain"]
+- ["So8NSObjectC", "testDecodingEvolutionTrigger"]
+- ["So8NSObjectC", "testDecodingGender"]
+- ["So8NSObjectC", "testDecodingGeneration"]
+- ["So8NSObjectC", "testDecodingGrowthRate"]
+- ["So8NSObjectC", "testDecodingItem"]
+- ["So8NSObjectC", "testDecodingItemAttribute"]
+- ["So8NSObjectC", "testDecodingItemCategory"]
+- ["So8NSObjectC", "testDecodingItemFlingEffect"]
+- ["So8NSObjectC", "testDecodingItemPocket"]
+- ["So8NSObjectC", "testDecodingLanguage"]
+- ["So8NSObjectC", "testDecodingLocation"]
+- ["So8NSObjectC", "testDecodingLocationArea"]
+- ["So8NSObjectC", "testDecodingMove"]
+- ["So8NSObjectC", "testDecodingMoveAilment"]
+- ["So8NSObjectC", "testDecodingMoveBattleStyle"]
+- ["So8NSObjectC", "testDecodingMoveCategory"]
+- ["So8NSObjectC", "testDecodingMoveDamageClass"]
+- ["So8NSObjectC", "testDecodingMoveLearnMethod"]
+- ["So8NSObjectC", "testDecodingMoveTarget"]
+- ["So8NSObjectC", "testDecodingNature"]
+- ["So8NSObjectC", "testDecodingPalParkArea"]
+- ["So8NSObjectC", "testDecodingPokeathlonStat"]
+- ["So8NSObjectC", "testDecodingPokedex"]
+- ["So8NSObjectC", "testDecodingPokemon"]
+- ["So8NSObjectC", "testDecodingPokemonColor"]
+- ["So8NSObjectC", "testDecodingPokemonForm"]
+- ["So8NSObjectC", "testDecodingPokemonHabitat"]
+- ["So8NSObjectC", "testDecodingPokemonShape"]
+- ["So8NSObjectC", "testDecodingPokemonSpecies"]
+- ["So8NSObjectC", "testDecodingRegion"]
+- ["So8NSObjectC", "testDecodingStat"]
+- ["So8NSObjectC", "testDecodingSuperContestEffect"]
+- ["So8NSObjectC", "testDecodingType"]
+- ["So8NSObjectC", "testDecodingVersion"]
+- ["So8NSObjectC", "testDecodingVersionGroups"]
+- !private ["So8NSObjectP", "Ability"]
+- !private ["So8NSObjectP", "Berry"]
+- !private ["So8NSObjectP", "BerryFirmness"]
+- !private ["So8NSObjectP", "BerryFlavor"]
+- !private ["So8NSObjectP", "Characteristic"]
+- !private ["So8NSObjectP", "ContestType"]
+- !private ["So8NSObjectP", "EggGroup"]
+- !private ["So8NSObjectP", "EncounterCondition"]
+- !private ["So8NSObjectP", "EncounterConditionValue"]
+- !private ["So8NSObjectP", "EncounterMethod"]
+- !private ["So8NSObjectP", "EvolutionChain"]
+- !private ["So8NSObjectP", "EvolutionTrigger"]
+- !private ["So8NSObjectP", "Gender"]
+- !private ["So8NSObjectP", "Generation"]
+- !private ["So8NSObjectP", "GrowthRate"]
+- !private ["So8NSObjectP", "Item"]
+- !private ["So8NSObjectP", "ItemAttribute"]
+- !private ["So8NSObjectP", "ItemCategory"]
+- !private ["So8NSObjectP", "ItemFlingEffect"]
+- !private ["So8NSObjectP", "ItemPocket"]
+- ["So8NSObjectP", "JSONDecoder"]
+- !private ["So8NSObjectP", "Language"]
+- !private ["So8NSObjectP", "Location"]
+- !private ["So8NSObjectP", "LocationArea"]
+- !private ["So8NSObjectP", "Move"]
+- !private ["So8NSObjectP", "MoveAilment"]
+- !private ["So8NSObjectP", "MoveBattleStyle"]
+- !private ["So8NSObjectP", "MoveCategory"]
+- !private ["So8NSObjectP", "MoveDamageClass"]
+- !private ["So8NSObjectP", "MoveLearnMethod"]
+- !private ["So8NSObjectP", "MoveTarget"]
+- !private ["So8NSObjectP", "Nature"]
+- !private ["So8NSObjectP", "PalParkArea"]
+- !private ["So8NSObjectP", "PokeathlonStat"]
+- !private ["So8NSObjectP", "Pokedex"]
+- !private ["So8NSObjectP", "Pokemon"]
+- !private ["So8NSObjectP", "PokemonColor"]
+- !private ["So8NSObjectP", "PokemonForm"]
+- !private ["So8NSObjectP", "PokemonHabitat"]
+- !private ["So8NSObjectP", "PokemonShape"]
+- !private ["So8NSObjectP", "PokemonSpecies"]
+- !private ["So8NSObjectP", "Region"]
+- !private ["So8NSObjectP", "Stat"]
+- !private ["So8NSObjectP", "SuperContestEffect"]
+- !private ["So8NSObjectP", "Type"]
+- !private ["So8NSObjectP", "Version"]
+- !private ["So8NSObjectP", "VersionGroup"]
+- !private ["So8NSObjectP", "XCTAssertNotNil"]
+- !private ["So8NSObjectP", "XCTFail"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "data"]
+- !private ["So8NSObjectP", "decoder"]
+- !private ["So8NSObjectP", "init"]
+- ["So8NSObjectP", "testDecodingBerryFirmness"]
+- ["So8NSObjectP", "testDecodingBery"]
+- ["So8NSObjectP", "testDecodingEvolutionChain"]
+- ["So8NSObjectP", "testDecodingEvolutionTrigger"]
+- ["So8NSObjectP", "testDecodingLanguage"]
+- !private ["So14NSSecureCodingP", "data"]
+- !private ["So8NSStringC", "data"]
+- !private ["Sm", "data"]
+- !private ["SY", "utf8"]
+- !private ["ST", "data"]
+- !private ["SS", "data"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["Sy", "data"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "data"]
+- !private ["s20TextOutputStreamableP", "data"]
+- !private ["7Combine15TopLevelDecoderP", "decode"]
+- ["7Combine15TopLevelDecoderP", "init"]
+- !private ["So11XCTActivityP", "Ability"]
+- !private ["So11XCTActivityP", "Berry"]
+- !private ["So11XCTActivityP", "BerryFirmness"]
+- !private ["So11XCTActivityP", "BerryFlavor"]
+- !private ["So11XCTActivityP", "Characteristic"]
+- !private ["So11XCTActivityP", "ContestType"]
+- !private ["So11XCTActivityP", "EggGroup"]
+- !private ["So11XCTActivityP", "EncounterCondition"]
+- !private ["So11XCTActivityP", "EncounterConditionValue"]
+- !private ["So11XCTActivityP", "EncounterMethod"]
+- !private ["So11XCTActivityP", "EvolutionChain"]
+- !private ["So11XCTActivityP", "EvolutionTrigger"]
+- !private ["So11XCTActivityP", "Gender"]
+- !private ["So11XCTActivityP", "Generation"]
+- !private ["So11XCTActivityP", "GrowthRate"]
+- !private ["So11XCTActivityP", "Item"]
+- !private ["So11XCTActivityP", "ItemAttribute"]
+- !private ["So11XCTActivityP", "ItemCategory"]
+- !private ["So11XCTActivityP", "ItemFlingEffect"]
+- !private ["So11XCTActivityP", "ItemPocket"]
+- ["So11XCTActivityP", "JSONDecoder"]
+- !private ["So11XCTActivityP", "Language"]
+- !private ["So11XCTActivityP", "Location"]
+- !private ["So11XCTActivityP", "LocationArea"]
+- !private ["So11XCTActivityP", "Move"]
+- !private ["So11XCTActivityP", "MoveAilment"]
+- !private ["So11XCTActivityP", "MoveBattleStyle"]
+- !private ["So11XCTActivityP", "MoveCategory"]
+- !private ["So11XCTActivityP", "MoveDamageClass"]
+- !private ["So11XCTActivityP", "MoveLearnMethod"]
+- !private ["So11XCTActivityP", "MoveTarget"]
+- !private ["So11XCTActivityP", "Nature"]
+- !private ["So11XCTActivityP", "PalParkArea"]
+- !private ["So11XCTActivityP", "PokeathlonStat"]
+- !private ["So11XCTActivityP", "Pokedex"]
+- !private ["So11XCTActivityP", "Pokemon"]
+- !private ["So11XCTActivityP", "PokemonColor"]
+- !private ["So11XCTActivityP", "PokemonForm"]
+- !private ["So11XCTActivityP", "PokemonHabitat"]
+- !private ["So11XCTActivityP", "PokemonShape"]
+- !private ["So11XCTActivityP", "PokemonSpecies"]
+- !private ["So11XCTActivityP", "Region"]
+- !private ["So11XCTActivityP", "Stat"]
+- !private ["So11XCTActivityP", "SuperContestEffect"]
+- !private ["So11XCTActivityP", "Type"]
+- !private ["So11XCTActivityP", "Version"]
+- !private ["So11XCTActivityP", "VersionGroup"]
+- !private ["So11XCTActivityP", "XCTAssertNotNil"]
+- !private ["So11XCTActivityP", "XCTFail"]
+- ["So11XCTActivityP", ""]
+- !private ["So11XCTActivityP", "decoder"]
+- !private ["So11XCTActivityP", "init"]
+- ["So11XCTActivityP", "testDecodingBerryFirmness"]
+- ["So11XCTActivityP", "testDecodingBery"]
+- ["So11XCTActivityP", "testDecodingEvolutionChain"]
+- ["So11XCTActivityP", "testDecodingEvolutionTrigger"]
+- ["So11XCTActivityP", "testDecodingLanguage"]
+- !private ["So17XCTWaiterDelegateP", "Ability"]
+- !private ["So17XCTWaiterDelegateP", "Berry"]
+- !private ["So17XCTWaiterDelegateP", "BerryFirmness"]
+- !private ["So17XCTWaiterDelegateP", "BerryFlavor"]
+- !private ["So17XCTWaiterDelegateP", "Characteristic"]
+- !private ["So17XCTWaiterDelegateP", "ContestType"]
+- !private ["So17XCTWaiterDelegateP", "EggGroup"]
+- !private ["So17XCTWaiterDelegateP", "EncounterCondition"]
+- !private ["So17XCTWaiterDelegateP", "EncounterConditionValue"]
+- !private ["So17XCTWaiterDelegateP", "EncounterMethod"]
+- !private ["So17XCTWaiterDelegateP", "EvolutionChain"]
+- !private ["So17XCTWaiterDelegateP", "EvolutionTrigger"]
+- !private ["So17XCTWaiterDelegateP", "Gender"]
+- !private ["So17XCTWaiterDelegateP", "Generation"]
+- !private ["So17XCTWaiterDelegateP", "GrowthRate"]
+- !private ["So17XCTWaiterDelegateP", "Item"]
+- !private ["So17XCTWaiterDelegateP", "ItemAttribute"]
+- !private ["So17XCTWaiterDelegateP", "ItemCategory"]
+- !private ["So17XCTWaiterDelegateP", "ItemFlingEffect"]
+- !private ["So17XCTWaiterDelegateP", "ItemPocket"]
+- ["So17XCTWaiterDelegateP", "JSONDecoder"]
+- !private ["So17XCTWaiterDelegateP", "Language"]
+- !private ["So17XCTWaiterDelegateP", "Location"]
+- !private ["So17XCTWaiterDelegateP", "LocationArea"]
+- !private ["So17XCTWaiterDelegateP", "Move"]
+- !private ["So17XCTWaiterDelegateP", "MoveAilment"]
+- !private ["So17XCTWaiterDelegateP", "MoveBattleStyle"]
+- !private ["So17XCTWaiterDelegateP", "MoveCategory"]
+- !private ["So17XCTWaiterDelegateP", "MoveDamageClass"]
+- !private ["So17XCTWaiterDelegateP", "MoveLearnMethod"]
+- !private ["So17XCTWaiterDelegateP", "MoveTarget"]
+- !private ["So17XCTWaiterDelegateP", "Nature"]
+- !private ["So17XCTWaiterDelegateP", "PalParkArea"]
+- !private ["So17XCTWaiterDelegateP", "PokeathlonStat"]
+- !private ["So17XCTWaiterDelegateP", "Pokedex"]
+- !private ["So17XCTWaiterDelegateP", "Pokemon"]
+- !private ["So17XCTWaiterDelegateP", "PokemonColor"]
+- !private ["So17XCTWaiterDelegateP", "PokemonForm"]
+- !private ["So17XCTWaiterDelegateP", "PokemonHabitat"]
+- !private ["So17XCTWaiterDelegateP", "PokemonShape"]
+- !private ["So17XCTWaiterDelegateP", "PokemonSpecies"]
+- !private ["So17XCTWaiterDelegateP", "Region"]
+- !private ["So17XCTWaiterDelegateP", "Stat"]
+- !private ["So17XCTWaiterDelegateP", "SuperContestEffect"]
+- !private ["So17XCTWaiterDelegateP", "Type"]
+- !private ["So17XCTWaiterDelegateP", "Version"]
+- !private ["So17XCTWaiterDelegateP", "VersionGroup"]
+- !private ["So17XCTWaiterDelegateP", "XCTAssertNotNil"]
+- !private ["So17XCTWaiterDelegateP", "XCTFail"]
+- ["So17XCTWaiterDelegateP", ""]
+- !private ["So17XCTWaiterDelegateP", "decoder"]
+- !private ["So17XCTWaiterDelegateP", "init"]
+- ["So17XCTWaiterDelegateP", "testDecodingBerryFirmness"]
+- ["So17XCTWaiterDelegateP", "testDecodingBery"]
+- ["So17XCTWaiterDelegateP", "testDecodingEvolutionChain"]
+- ["So17XCTWaiterDelegateP", "testDecodingEvolutionTrigger"]
+- ["So17XCTWaiterDelegateP", "testDecodingLanguage"]
+- !private ["So6XCTestC", "Ability"]
+- !private ["So6XCTestC", "Berry"]
+- !private ["So6XCTestC", "BerryFirmness"]
+- !private ["So6XCTestC", "BerryFlavor"]
+- !private ["So6XCTestC", "Characteristic"]
+- !private ["So6XCTestC", "ContestType"]
+- !private ["So6XCTestC", "EggGroup"]
+- !private ["So6XCTestC", "EncounterCondition"]
+- !private ["So6XCTestC", "EncounterConditionValue"]
+- !private ["So6XCTestC", "EncounterMethod"]
+- !private ["So6XCTestC", "EvolutionChain"]
+- !private ["So6XCTestC", "EvolutionTrigger"]
+- !private ["So6XCTestC", "Gender"]
+- !private ["So6XCTestC", "Generation"]
+- !private ["So6XCTestC", "GrowthRate"]
+- !private ["So6XCTestC", "Item"]
+- !private ["So6XCTestC", "ItemAttribute"]
+- !private ["So6XCTestC", "ItemCategory"]
+- !private ["So6XCTestC", "ItemFlingEffect"]
+- !private ["So6XCTestC", "ItemPocket"]
+- ["So6XCTestC", "JSONDecoder"]
+- !private ["So6XCTestC", "Language"]
+- !private ["So6XCTestC", "Location"]
+- !private ["So6XCTestC", "LocationArea"]
+- !private ["So6XCTestC", "Move"]
+- !private ["So6XCTestC", "MoveAilment"]
+- !private ["So6XCTestC", "MoveBattleStyle"]
+- !private ["So6XCTestC", "MoveCategory"]
+- !private ["So6XCTestC", "MoveDamageClass"]
+- !private ["So6XCTestC", "MoveLearnMethod"]
+- !private ["So6XCTestC", "MoveTarget"]
+- !private ["So6XCTestC", "Nature"]
+- !private ["So6XCTestC", "PalParkArea"]
+- !private ["So6XCTestC", "PokeathlonStat"]
+- !private ["So6XCTestC", "Pokedex"]
+- !private ["So6XCTestC", "Pokemon"]
+- !private ["So6XCTestC", "PokemonColor"]
+- !private ["So6XCTestC", "PokemonForm"]
+- !private ["So6XCTestC", "PokemonHabitat"]
+- !private ["So6XCTestC", "PokemonShape"]
+- !private ["So6XCTestC", "PokemonSpecies"]
+- !private ["So6XCTestC", "Region"]
+- !private ["So6XCTestC", "Stat"]
+- !private ["So6XCTestC", "SuperContestEffect"]
+- !private ["So6XCTestC", "Type"]
+- !private ["So6XCTestC", "Version"]
+- !private ["So6XCTestC", "VersionGroup"]
+- !private ["So6XCTestC", "XCTAssertNotNil"]
+- !private ["So6XCTestC", "XCTFail"]
+- ["So6XCTestC", "allTests"]
+- ["So6XCTestC", "decoder"]
+- ["So6XCTestC", "init"]
+- ["So6XCTestC", "testDecodingAbility"]
+- ["So6XCTestC", "testDecodingBerryFirmness"]
+- ["So6XCTestC", "testDecodingBerryFlavor"]
+- ["So6XCTestC", "testDecodingBery"]
+- ["So6XCTestC", "testDecodingCharacteristic"]
+- ["So6XCTestC", "testDecodingContestType"]
+- ["So6XCTestC", "testDecodingEggGroup"]
+- ["So6XCTestC", "testDecodingEncounterCondition"]
+- ["So6XCTestC", "testDecodingEncounterConditionValue"]
+- ["So6XCTestC", "testDecodingEncounterMethod"]
+- ["So6XCTestC", "testDecodingEvolutionChain"]
+- ["So6XCTestC", "testDecodingEvolutionTrigger"]
+- ["So6XCTestC", "testDecodingGender"]
+- ["So6XCTestC", "testDecodingGeneration"]
+- ["So6XCTestC", "testDecodingGrowthRate"]
+- ["So6XCTestC", "testDecodingItem"]
+- ["So6XCTestC", "testDecodingItemAttribute"]
+- ["So6XCTestC", "testDecodingItemCategory"]
+- ["So6XCTestC", "testDecodingItemFlingEffect"]
+- ["So6XCTestC", "testDecodingItemPocket"]
+- ["So6XCTestC", "testDecodingLanguage"]
+- ["So6XCTestC", "testDecodingLocation"]
+- ["So6XCTestC", "testDecodingLocationArea"]
+- ["So6XCTestC", "testDecodingMove"]
+- ["So6XCTestC", "testDecodingMoveAilment"]
+- ["So6XCTestC", "testDecodingMoveBattleStyle"]
+- ["So6XCTestC", "testDecodingMoveCategory"]
+- ["So6XCTestC", "testDecodingMoveDamageClass"]
+- ["So6XCTestC", "testDecodingMoveLearnMethod"]
+- ["So6XCTestC", "testDecodingMoveTarget"]
+- ["So6XCTestC", "testDecodingNature"]
+- ["So6XCTestC", "testDecodingPalParkArea"]
+- ["So6XCTestC", "testDecodingPokeathlonStat"]
+- ["So6XCTestC", "testDecodingPokedex"]
+- ["So6XCTestC", "testDecodingPokemon"]
+- ["So6XCTestC", "testDecodingPokemonColor"]
+- ["So6XCTestC", "testDecodingPokemonForm"]
+- ["So6XCTestC", "testDecodingPokemonHabitat"]
+- ["So6XCTestC", "testDecodingPokemonShape"]
+- ["So6XCTestC", "testDecodingPokemonSpecies"]
+- ["So6XCTestC", "testDecodingRegion"]
+- ["So6XCTestC", "testDecodingStat"]
+- ["So6XCTestC", "testDecodingSuperContestEffect"]
+- ["So6XCTestC", "testDecodingType"]
+- ["So6XCTestC", "testDecodingVersion"]
+- ["So6XCTestC", "testDecodingVersionGroups"]
+- !private ["So10XCTestCaseC", "Ability"]
+- !private ["So10XCTestCaseC", "Berry"]
+- !private ["So10XCTestCaseC", "BerryFirmness"]
+- !private ["So10XCTestCaseC", "BerryFlavor"]
+- !private ["So10XCTestCaseC", "Characteristic"]
+- !private ["So10XCTestCaseC", "ContestType"]
+- !private ["So10XCTestCaseC", "EggGroup"]
+- !private ["So10XCTestCaseC", "EncounterCondition"]
+- !private ["So10XCTestCaseC", "EncounterConditionValue"]
+- !private ["So10XCTestCaseC", "EncounterMethod"]
+- !private ["So10XCTestCaseC", "EvolutionChain"]
+- !private ["So10XCTestCaseC", "EvolutionTrigger"]
+- !private ["So10XCTestCaseC", "Gender"]
+- !private ["So10XCTestCaseC", "Generation"]
+- !private ["So10XCTestCaseC", "GrowthRate"]
+- !private ["So10XCTestCaseC", "Item"]
+- !private ["So10XCTestCaseC", "ItemAttribute"]
+- !private ["So10XCTestCaseC", "ItemCategory"]
+- !private ["So10XCTestCaseC", "ItemFlingEffect"]
+- !private ["So10XCTestCaseC", "ItemPocket"]
+- ["So10XCTestCaseC", "JSONDecoder"]
+- !private ["So10XCTestCaseC", "Language"]
+- !private ["So10XCTestCaseC", "Location"]
+- !private ["So10XCTestCaseC", "LocationArea"]
+- !private ["So10XCTestCaseC", "Move"]
+- !private ["So10XCTestCaseC", "MoveAilment"]
+- !private ["So10XCTestCaseC", "MoveBattleStyle"]
+- !private ["So10XCTestCaseC", "MoveCategory"]
+- !private ["So10XCTestCaseC", "MoveDamageClass"]
+- !private ["So10XCTestCaseC", "MoveLearnMethod"]
+- !private ["So10XCTestCaseC", "MoveTarget"]
+- !private ["So10XCTestCaseC", "Nature"]
+- !private ["So10XCTestCaseC", "PalParkArea"]
+- !private ["So10XCTestCaseC", "PokeathlonStat"]
+- !private ["So10XCTestCaseC", "Pokedex"]
+- !private ["So10XCTestCaseC", "Pokemon"]
+- !private ["So10XCTestCaseC", "PokemonColor"]
+- !private ["So10XCTestCaseC", "PokemonForm"]
+- !private ["So10XCTestCaseC", "PokemonHabitat"]
+- !private ["So10XCTestCaseC", "PokemonShape"]
+- !private ["So10XCTestCaseC", "PokemonSpecies"]
+- !private ["So10XCTestCaseC", "Region"]
+- !private ["So10XCTestCaseC", "Stat"]
+- !private ["So10XCTestCaseC", "SuperContestEffect"]
+- !private ["So10XCTestCaseC", "Type"]
+- !private ["So10XCTestCaseC", "Version"]
+- !private ["So10XCTestCaseC", "VersionGroup"]
+- !private ["So10XCTestCaseC", "XCTAssertNotNil"]
+- !private ["So10XCTestCaseC", "XCTFail"]
+- ["So10XCTestCaseC", ""]
+- ["So10XCTestCaseC", "allTests"]
+- ["So10XCTestCaseC", "decoder"]
+- ["So10XCTestCaseC", "init"]
+- ["So10XCTestCaseC", "testDecodingAbility"]
+- ["So10XCTestCaseC", "testDecodingBerryFirmness"]
+- ["So10XCTestCaseC", "testDecodingBerryFlavor"]
+- ["So10XCTestCaseC", "testDecodingBery"]
+- ["So10XCTestCaseC", "testDecodingCharacteristic"]
+- ["So10XCTestCaseC", "testDecodingContestType"]
+- ["So10XCTestCaseC", "testDecodingEggGroup"]
+- ["So10XCTestCaseC", "testDecodingEncounterCondition"]
+- ["So10XCTestCaseC", "testDecodingEncounterConditionValue"]
+- ["So10XCTestCaseC", "testDecodingEncounterMethod"]
+- ["So10XCTestCaseC", "testDecodingEvolutionChain"]
+- ["So10XCTestCaseC", "testDecodingEvolutionTrigger"]
+- ["So10XCTestCaseC", "testDecodingGender"]
+- ["So10XCTestCaseC", "testDecodingGeneration"]
+- ["So10XCTestCaseC", "testDecodingGrowthRate"]
+- ["So10XCTestCaseC", "testDecodingItem"]
+- ["So10XCTestCaseC", "testDecodingItemAttribute"]
+- ["So10XCTestCaseC", "testDecodingItemCategory"]
+- ["So10XCTestCaseC", "testDecodingItemFlingEffect"]
+- ["So10XCTestCaseC", "testDecodingItemPocket"]
+- ["So10XCTestCaseC", "testDecodingLanguage"]
+- ["So10XCTestCaseC", "testDecodingLocation"]
+- ["So10XCTestCaseC", "testDecodingLocationArea"]
+- ["So10XCTestCaseC", "testDecodingMove"]
+- ["So10XCTestCaseC", "testDecodingMoveAilment"]
+- ["So10XCTestCaseC", "testDecodingMoveBattleStyle"]
+- ["So10XCTestCaseC", "testDecodingMoveCategory"]
+- ["So10XCTestCaseC", "testDecodingMoveDamageClass"]
+- ["So10XCTestCaseC", "testDecodingMoveLearnMethod"]
+- ["So10XCTestCaseC", "testDecodingMoveTarget"]
+- ["So10XCTestCaseC", "testDecodingNature"]
+- ["So10XCTestCaseC", "testDecodingPalParkArea"]
+- ["So10XCTestCaseC", "testDecodingPokeathlonStat"]
+- ["So10XCTestCaseC", "testDecodingPokedex"]
+- ["So10XCTestCaseC", "testDecodingPokemon"]
+- ["So10XCTestCaseC", "testDecodingPokemonColor"]
+- ["So10XCTestCaseC", "testDecodingPokemonForm"]
+- ["So10XCTestCaseC", "testDecodingPokemonHabitat"]
+- ["So10XCTestCaseC", "testDecodingPokemonShape"]
+- ["So10XCTestCaseC", "testDecodingPokemonSpecies"]
+- ["So10XCTestCaseC", "testDecodingRegion"]
+- ["So10XCTestCaseC", "testDecodingStat"]
+- ["So10XCTestCaseC", "testDecodingSuperContestEffect"]
+- ["So10XCTestCaseC", "testDecodingType"]
+- ["So10XCTestCaseC", "testDecodingVersion"]
+- ["So10XCTestCaseC", "testDecodingVersionGroups"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "data"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "data"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "data"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "data"]
+- !private ["s19_HasContiguousBytesP", "data"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "data"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Ability"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Berry"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "BerryFirmness"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "BerryFlavor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Characteristic"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ContestType"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "EggGroup"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "EncounterCondition"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "EncounterConditionValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "EncounterMethod"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "EvolutionChain"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "EvolutionTrigger"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Gender"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Generation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "GrowthRate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Item"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ItemAttribute"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ItemCategory"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ItemFlingEffect"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ItemPocket"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "JSONDecoder"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Language"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Location"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "LocationArea"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Move"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MoveAilment"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MoveBattleStyle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MoveCategory"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MoveDamageClass"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MoveLearnMethod"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MoveTarget"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Nature"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "PalParkArea"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "PokeathlonStat"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Pokedex"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Pokemon"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "PokemonColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "PokemonForm"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "PokemonHabitat"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "PokemonShape"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "PokemonSpecies"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Region"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Stat"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SuperContestEffect"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Type"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Version"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "VersionGroup"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "XCTAssertNotNil"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "XCTFail"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "data"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "decoder"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "testDecodingBerryFirmness"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "testDecodingBery"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "testDecodingEvolutionChain"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "testDecodingEvolutionTrigger"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "testDecodingLanguage"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Ability"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Berry"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "BerryFirmness"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "BerryFlavor"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Characteristic"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ContestType"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "EggGroup"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "EncounterCondition"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "EncounterConditionValue"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "EncounterMethod"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "EvolutionChain"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "EvolutionTrigger"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Gender"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Generation"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "GrowthRate"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Item"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ItemAttribute"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ItemCategory"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ItemFlingEffect"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ItemPocket"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "JSONDecoder"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Language"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Location"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "LocationArea"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Move"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "MoveAilment"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "MoveBattleStyle"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "MoveCategory"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "MoveDamageClass"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "MoveLearnMethod"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "MoveTarget"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Nature"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "PalParkArea"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "PokeathlonStat"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Pokedex"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Pokemon"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "PokemonColor"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "PokemonForm"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "PokemonHabitat"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "PokemonShape"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "PokemonSpecies"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Region"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Stat"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "SuperContestEffect"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Type"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Version"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "VersionGroup"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "XCTAssertNotNil"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "XCTFail"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "data"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "decoder"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "testDecodingBerryFirmness"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "testDecodingBery"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "testDecodingEvolutionChain"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "testDecodingEvolutionTrigger"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "testDecodingLanguage"]
+- !private ["s21_ObjectiveCBridgeableP", "data"]
+depends-nominal:
+- !private "SK"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- "12PokeKitTests08DecodingC0C"
+- !private "s26DefaultStringInterpolationV"
+- !private "SE"
+- !private "SS10FoundationE8EncodingV"
+- "SQ"
+- !private "s5ErrorP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- "10Foundation11JSONDecoderC"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "Sm"
+- !private "SY"
+- !private "ST"
+- !private "SS"
+- !private "s27StringInterpolationProtocolP"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- "7Combine15TopLevelDecoderP"
+- "So11XCTActivityP"
+- "So17XCTWaiterDelegateP"
+- "So6XCTestC"
+- "So10XCTestCaseC"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftinterface"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/james/Documents/Development/PokeKit/Build/Products/Debug-iphonesimulator/PokeKit.framework/Modules/PokeKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/XCTest.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_timeval32.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_timeval64.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_ucontext64.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/netinet6/in6.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/alloca.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/quota.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/netdb.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/timeb.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/stdlib.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/xlocale/_stdlib.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/glob.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_timespec.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/libkern/OSAtomic.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/sync.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/vm_sync.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_o_sync.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_o_dsync.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/malloc/malloc.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/malloc/_malloc.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/proc.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/ipc.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/i386/rpc.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/machine/rpc.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/rpc.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/exc.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/pthread/pthread.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/pthread/sched.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/ucred.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/libkern/OSAtomicDeprecated.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/libkern/OSSpinLockDeprecated.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/_ctermid.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/uuid/uuid.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/gethostuuid.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/kmod.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/unistd.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/unistd.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/pwd.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/mach_interface.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/resource.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/rbtree.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/message.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/locale.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/_locale.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/xlocale.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/_xlocale.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/vm_purgable.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_posix_vdisable.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/file.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/clonefile.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/copyfile.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/utsname.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/time.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/time.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/xlocale/_time.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/mach_time.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/utime.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/machine.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_os_inline.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/ctype.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/_ctype.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/xlocale/_ctype.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/wctype.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/_wctype.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/xlocale/_wctype.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/__wctype.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/xlocale/__wctype.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/runetype.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/semaphore.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/semaphore.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/semaphore.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/os/base.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/readpassphrase.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/i386/thread_state.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/machine/thread_state.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/libkern/OSAtomicQueue.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/queue.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/time_value.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/vm_page_size.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_fd_setsize.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_fd_def.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/net/if.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_offsetof.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/i386/fp_reg.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/mig.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/string.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/xlocale/_string.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/secure/_string.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_symbol_aliasing.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/syslog.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/syslog.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/msg.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/fmtmsg.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach_debug/mach_debug.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/mach.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/search.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/fnmatch.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/thread_switch.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/math.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/tgmath.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/kauth.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/port_obj.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_sigaltstack.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/os/lock.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/lock.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/Block.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/clock.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/task.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/vm_task.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/i386/signal.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/signal.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/machine/signal.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/signal.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/AvailabilityInternal.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_timeval.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/acl.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/net/if_dl.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/dyld_kernel.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/util.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/syscall.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/poll.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/poll.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_null.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/pthread/pthread_impl.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/ioctl.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/sysctl.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/fcntl.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/fcntl.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/i386/param.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/machine/param.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/param.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/i386/_param.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/machine/_param.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/mach_param.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/i386/vm_param.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/machine/vm_param.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/vm_param.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/ndbm.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/sem.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/_types/_nl_item.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/shm.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/ioccom.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/ttycom.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/vm.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/i386/boolean.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/machine/boolean.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/boolean.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/i386/endian.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/machine/endian.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_endian.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/mman.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/dlfcn.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/libgen.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/netinet/in.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/vm_region.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/i386/exception.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/machine/exception.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/exception.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/secure/_common.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/i386/kern_return.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/machine/kern_return.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/kern_return.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/un.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/pthread/spawn.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/spawn.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/spawn.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach_debug/ipc_info.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/thread_info.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach_debug/page_info.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach_debug/zone_info.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach_debug/hash_info.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/task_info.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach_debug/vm_info.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach_debug/lockgroup_info.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/i386/processor_info.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/machine/processor_info.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/processor_info.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/host_info.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/langinfo.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/xlocale/_langinfo.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/aio.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/aio.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/stdio.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/stdio.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/_stdio.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/xlocale/_stdio.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/secure/_stdio.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/sockio.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/filio.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/cpio.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/uio.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/errno.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/errno.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_fd_zero.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/vm_map.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/bootstrap.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/netinet/tcp.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/setjmp.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/grp.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/wordexp.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_u_char.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/wchar.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/xlocale/_wchar.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/tar.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/net/if_var.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/ndr.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/libkern/i386/OSByteOrder.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/libkern/OSByteOrder.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/libkern/i386/_OSByteOrder.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/libkern/_OSByteOrder.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/architecture/byte_order.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_fd_clr.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/vm_behavior.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/error.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/mach_error.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/processor.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/err.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/attr.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/xattr.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/vm_statistics.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/times.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/MacTypes.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/i386/types.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/machine/types.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/types.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/i386/_types.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/_types.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/machine/_types.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_pthread/_pthread_types.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/std_types.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/net/if_types.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach_debug/mach_debug_types.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/mach_types.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/clock_types.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/nl_types.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/i386/vm_types.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/machine/vm_types.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/vm_types.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/exception_types.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/mach_voucher_types.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/memory_object_types.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/inttypes.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/xlocale/_inttypes.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/vm_attributes.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/cdefs.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/statvfs.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/xattr_flags.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/i386/eflags.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/strings.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/secure/_strings.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/paths.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/pthread_spis.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/TargetConditionals.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/mach_syscalls.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/termios.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/termios.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/pthread/qos.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/qos.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/ConditionalMacros.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/AssertMacros.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/AvailabilityMacros.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/mach_traps.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/ifaddrs.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/mig_errors.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/i386/_structs.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/machine/_structs.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/i386/limits.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/limits.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/machine/limits.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/i386/_limits.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/syslimits.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sysexits.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/ttydefaults.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/bsm/audit_uevents.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/appleapiopts.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/thread_special_ports.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/task_special_ports.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/host_special_ports.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/i386/thread_status.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/machine/thread_status.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/thread_status.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_int32_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_u_int32_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/_types/_uint32_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_ino64_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_int64_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_u_int64_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/_types/_uint64_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_int16_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_u_int16_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/_types/_uint16_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_int8_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_u_int8_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/_types/_uint8_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_filesec_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_iovec_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_pthread/_pthread_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_id_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_fsobj_id_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_gid_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_pid_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_fsid_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_uid_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_guid_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_uuid_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_pthread/_pthread_cond_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_pthread/_pthread_once_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_mode_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_time_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_rune_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_ct_rune_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/_types/_wctype_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_mbstate_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_size_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_blksize_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_rsize_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_ssize_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_ptrdiff_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_off_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_clock_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_pthread/_pthread_rwlock_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_nlink_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_socklen_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_ino_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_errno_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_wchar_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_in_addr_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_caddr_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_intptr_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_uintptr_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_pthread/_pthread_attr_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_pthread/_pthread_condattr_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_pthread/_pthread_mutexattr_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_useconds_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_suseconds_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/_types/_wctrans_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_sigset_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_blkcnt_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_fsblkcnt_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_fsfilcnt_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_wint_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_mach_port_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_in_port_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_dev_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/_types/_intmax_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/_types/_uintmax_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_pthread/_pthread_mutex_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_key_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_pthread/_pthread_key_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_sa_family_t.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/float.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/stat.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/thread_act.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/select.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_select.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/task_inspect.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/socket.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/arpa/inet.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_fd_set.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/lock_set.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_seek_set.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/processor_set.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_fd_isset.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/wait.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/bsm/audit.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/ulimit.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/mach_init.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/vm_inherit.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_s_ifmt.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/dirent.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/dirent.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/event.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_u_int.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/stdint.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/mount.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/host_reboot.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/vm_prot.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/getopt.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_u_short.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/port.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/mach_port.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_va_list.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/mach_host.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/kdebug_signpost.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/i386/_mcontext.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/machine/_mcontext.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/ucontext.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_ucontext.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/net/net_kev.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/clock_priv.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/host_priv.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/fenv.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/iconv.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/ftw.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/regex.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/_regex.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/xlocale/_regex.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/complex.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/utmpx.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/lctx.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/policy.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/sync_policy.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/thread_policy.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/task_policy.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/notify.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/host_notify.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/clock_reply.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_types/_fd_copy.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/monetary.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/xlocale/_monetary.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/Availability.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/os/availability.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/sys/_posix_availability.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/mach/host_security.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Modules/module.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTest.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "2d77a279b7b9e10cb4b23c0a74982991"

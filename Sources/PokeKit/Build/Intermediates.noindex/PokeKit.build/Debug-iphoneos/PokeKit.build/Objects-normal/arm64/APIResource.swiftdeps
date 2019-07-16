@@ -1,0 +1,126 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "APIResource"
+- "NamedAPIResource"
+provides-nominal:
+- "7PokeKit11APIResourceV"
+- "7PokeKit16NamedAPIResourceV"
+provides-member:
+- ["7PokeKit11APIResourceV", ""]
+- ["7PokeKit16NamedAPIResourceV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- "APIResource"
+- "Decodable"
+- "NamedAPIResource"
+- "String"
+- "_APIResource"
+- "_NamedAPIResource"
+- !private "~="
+depends-member:
+- ["7PokeKit11APIResourceV", "String"]
+- ["7PokeKit11APIResourceV", "deinit"]
+- ["7PokeKit11APIResourceV", "init"]
+- ["7PokeKit11APIResourceV", "url"]
+- ["s9CodingKeyP", "=="]
+- !private ["s9CodingKeyP", ""]
+- ["s9CodingKeyP", "_rawHashValue"]
+- ["s9CodingKeyP", "debugDescription"]
+- ["s9CodingKeyP", "description"]
+- ["s9CodingKeyP", "hash"]
+- ["s9CodingKeyP", "hashValue"]
+- ["s9CodingKeyP", "init"]
+- ["s9CodingKeyP", "intValue"]
+- ["s9CodingKeyP", "stringValue"]
+- ["s28CustomDebugStringConvertibleP", "=="]
+- !private ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "_rawHashValue"]
+- ["s28CustomDebugStringConvertibleP", "debugDescription"]
+- ["s28CustomDebugStringConvertibleP", "description"]
+- ["s28CustomDebugStringConvertibleP", "hash"]
+- ["s28CustomDebugStringConvertibleP", "hashValue"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "intValue"]
+- ["s28CustomDebugStringConvertibleP", "stringValue"]
+- ["s23CustomStringConvertibleP", "=="]
+- !private ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_rawHashValue"]
+- ["s23CustomStringConvertibleP", "debugDescription"]
+- ["s23CustomStringConvertibleP", "description"]
+- ["s23CustomStringConvertibleP", "hash"]
+- ["s23CustomStringConvertibleP", "hashValue"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "intValue"]
+- ["s23CustomStringConvertibleP", "stringValue"]
+- ["Se", ""]
+- ["Se", "init"]
+- ["Se", "name"]
+- ["Se", "url"]
+- !private ["s7DecoderP", "container"]
+- ["SQ", "=="]
+- !private ["SQ", ""]
+- ["SQ", "_rawHashValue"]
+- ["SQ", "debugDescription"]
+- ["SQ", "description"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- ["SQ", "intValue"]
+- ["SQ", "stringValue"]
+- ["SH", "=="]
+- !private ["SH", ""]
+- ["SH", "_rawHashValue"]
+- ["SH", "debugDescription"]
+- ["SH", "description"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- ["SH", "intValue"]
+- ["SH", "stringValue"]
+- !private ["s6HasherV", "combine"]
+- !private ["s22KeyedDecodingContainerV", "decode"]
+- !private ["s30KeyedDecodingContainerProtocolP", "decode"]
+- ["7PokeKit5NamedP", ""]
+- ["7PokeKit5NamedP", "init"]
+- ["7PokeKit5NamedP", "name"]
+- ["7PokeKit5NamedP", "url"]
+- !private ["7PokeKit16NamedAPIResourceV", "CodingKeys"]
+- ["7PokeKit16NamedAPIResourceV", "String"]
+- ["7PokeKit16NamedAPIResourceV", "deinit"]
+- ["7PokeKit16NamedAPIResourceV", "init"]
+- ["7PokeKit16NamedAPIResourceV", "name"]
+- ["7PokeKit16NamedAPIResourceV", "url"]
+- ["7PokeKit17ResourceLocatableP", ""]
+- ["7PokeKit17ResourceLocatableP", "init"]
+- ["7PokeKit17ResourceLocatableP", "name"]
+- ["7PokeKit17ResourceLocatableP", "url"]
+- ["7PokeKit12_APIResourceP", ""]
+- ["7PokeKit12_APIResourceP", "init"]
+- ["7PokeKit12_APIResourceP", "url"]
+- ["7PokeKit17_NamedAPIResourceP", ""]
+- ["7PokeKit17_NamedAPIResourceP", "init"]
+- ["7PokeKit17_NamedAPIResourceP", "name"]
+- ["7PokeKit17_NamedAPIResourceP", "url"]
+depends-nominal:
+- "7PokeKit11APIResourceV"
+- "s9CodingKeyP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- !private "s7DecoderP"
+- "SQ"
+- "SH"
+- !private "s6HasherV"
+- !private "s22KeyedDecodingContainerV"
+- !private "s30KeyedDecodingContainerProtocolP"
+- "7PokeKit5NamedP"
+- "7PokeKit16NamedAPIResourceV"
+- "7PokeKit17ResourceLocatableP"
+- "7PokeKit12_APIResourceP"
+- "7PokeKit17_NamedAPIResourceP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "094fcaa6284d4afd945089960477933a"

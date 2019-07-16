@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.1 (swiftlang-1100.0.212.5 clang-1100.0.28.2)"
+options: "06eaf699bf60283975d8c949e0e6116b"
+build_time: [1563299619, 394091000]
+inputs:
+  "/Users/james/Documents/Development/PokeKit/Sources/PokeKit/PokeKit.swift": [1563222839, 518607734]

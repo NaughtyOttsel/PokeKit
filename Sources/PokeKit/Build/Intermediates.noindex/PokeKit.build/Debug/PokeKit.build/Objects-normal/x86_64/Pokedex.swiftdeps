@@ -1,0 +1,258 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Pokedex"
+- "PokemonEntry"
+provides-nominal:
+- "7PokeKit7PokedexV"
+- "7PokeKit12PokemonEntryV"
+provides-member:
+- ["7PokeKit7PokedexV", ""]
+- ["7PokeKit12PokemonEntryV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- "Bool"
+- "CodingKey"
+- "Decodable"
+- "Description"
+- !private "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- "LocalizableEntity"
+- "Name"
+- "NamedAPIResource"
+- "Pokedex"
+- "PokemonEntry"
+- "String"
+- "StringLiteralType"
+- !private "_findStringSwitchCase"
+- !private "~="
+depends-member:
+- ["s9CodingKeyP", "=="]
+- ["s9CodingKeyP", "RawValue"]
+- !private ["s9CodingKeyP", ""]
+- ["s9CodingKeyP", "_Default_RawValue"]
+- !private ["s9CodingKeyP", "_findStringSwitchCase"]
+- ["s9CodingKeyP", "_rawHashValue"]
+- ["s9CodingKeyP", "debugDescription"]
+- ["s9CodingKeyP", "description"]
+- ["s9CodingKeyP", "hash"]
+- ["s9CodingKeyP", "hashValue"]
+- ["s9CodingKeyP", "init"]
+- ["s9CodingKeyP", "intValue"]
+- ["s9CodingKeyP", "rawValue"]
+- ["s9CodingKeyP", "stringValue"]
+- ["s28CustomDebugStringConvertibleP", "=="]
+- ["s28CustomDebugStringConvertibleP", "RawValue"]
+- !private ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "_Default_RawValue"]
+- !private ["s28CustomDebugStringConvertibleP", "_findStringSwitchCase"]
+- ["s28CustomDebugStringConvertibleP", "_rawHashValue"]
+- ["s28CustomDebugStringConvertibleP", "debugDescription"]
+- ["s28CustomDebugStringConvertibleP", "description"]
+- ["s28CustomDebugStringConvertibleP", "hash"]
+- ["s28CustomDebugStringConvertibleP", "hashValue"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "intValue"]
+- ["s28CustomDebugStringConvertibleP", "rawValue"]
+- ["s28CustomDebugStringConvertibleP", "stringValue"]
+- ["s23CustomStringConvertibleP", "=="]
+- ["s23CustomStringConvertibleP", "RawValue"]
+- !private ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_Default_RawValue"]
+- !private ["s23CustomStringConvertibleP", "_findStringSwitchCase"]
+- ["s23CustomStringConvertibleP", "_rawHashValue"]
+- ["s23CustomStringConvertibleP", "debugDescription"]
+- ["s23CustomStringConvertibleP", "description"]
+- ["s23CustomStringConvertibleP", "hash"]
+- ["s23CustomStringConvertibleP", "hashValue"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "intValue"]
+- ["s23CustomStringConvertibleP", "rawValue"]
+- ["s23CustomStringConvertibleP", "stringValue"]
+- ["Se", "NamedMultilingual"]
+- ["Se", ""]
+- ["Se", "_Default_NamedMultilingual"]
+- !private ["Se", "_findStringSwitchCase"]
+- !private ["Se", "descriptions"]
+- !private ["Se", "entryNumber"]
+- ["Se", "id"]
+- ["Se", "init"]
+- !private ["Se", "isMainSeries"]
+- ["Se", "name"]
+- ["Se", "names"]
+- !private ["Se", "pokemonEntries"]
+- !private ["Se", "pokemonSpecies"]
+- !private ["Se", "region"]
+- !private ["Se", "versionGroups"]
+- !private ["s7DecoderP", "container"]
+- ["7PokeKit11DescriptionV", "deinit"]
+- ["7PokeKit6EntityP", "NamedMultilingual"]
+- ["7PokeKit6EntityP", ""]
+- ["7PokeKit6EntityP", "_Default_NamedMultilingual"]
+- !private ["7PokeKit6EntityP", "_findStringSwitchCase"]
+- !private ["7PokeKit6EntityP", "descriptions"]
+- ["7PokeKit6EntityP", "id"]
+- ["7PokeKit6EntityP", "init"]
+- !private ["7PokeKit6EntityP", "isMainSeries"]
+- ["7PokeKit6EntityP", "name"]
+- ["7PokeKit6EntityP", "names"]
+- !private ["7PokeKit6EntityP", "pokemonEntries"]
+- !private ["7PokeKit6EntityP", "region"]
+- !private ["7PokeKit6EntityP", "versionGroups"]
+- ["SQ", "=="]
+- ["SQ", "RawValue"]
+- !private ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- ["SQ", "_rawHashValue"]
+- ["SQ", "debugDescription"]
+- ["SQ", "description"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- ["SQ", "intValue"]
+- ["SQ", "rawValue"]
+- ["SQ", "stringValue"]
+- ["SH", "=="]
+- ["SH", "RawValue"]
+- !private ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- ["SH", "_rawHashValue"]
+- ["SH", "debugDescription"]
+- ["SH", "description"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- ["SH", "intValue"]
+- ["SH", "rawValue"]
+- ["SH", "stringValue"]
+- ["7PokeKit12IdentifiableP", "NamedMultilingual"]
+- ["7PokeKit12IdentifiableP", ""]
+- ["7PokeKit12IdentifiableP", "_Default_NamedMultilingual"]
+- !private ["7PokeKit12IdentifiableP", "_findStringSwitchCase"]
+- !private ["7PokeKit12IdentifiableP", "descriptions"]
+- ["7PokeKit12IdentifiableP", "id"]
+- ["7PokeKit12IdentifiableP", "init"]
+- !private ["7PokeKit12IdentifiableP", "isMainSeries"]
+- ["7PokeKit12IdentifiableP", "name"]
+- ["7PokeKit12IdentifiableP", "names"]
+- !private ["7PokeKit12IdentifiableP", "pokemonEntries"]
+- !private ["7PokeKit12IdentifiableP", "region"]
+- !private ["7PokeKit12IdentifiableP", "versionGroups"]
+- !private ["s22KeyedDecodingContainerV", "decode"]
+- !private ["s30KeyedDecodingContainerProtocolP", "decode"]
+- ["7PokeKit11LocalizableP", "NamedMultilingual"]
+- ["7PokeKit11LocalizableP", ""]
+- ["7PokeKit11LocalizableP", "_Default_NamedMultilingual"]
+- !private ["7PokeKit11LocalizableP", "_findStringSwitchCase"]
+- !private ["7PokeKit11LocalizableP", "descriptions"]
+- ["7PokeKit11LocalizableP", "id"]
+- ["7PokeKit11LocalizableP", "init"]
+- !private ["7PokeKit11LocalizableP", "isMainSeries"]
+- ["7PokeKit11LocalizableP", "name"]
+- ["7PokeKit11LocalizableP", "names"]
+- !private ["7PokeKit11LocalizableP", "pokemonEntries"]
+- !private ["7PokeKit11LocalizableP", "region"]
+- !private ["7PokeKit11LocalizableP", "versionGroups"]
+- ["7PokeKit17LocalizableEntityP", "NamedMultilingual"]
+- ["7PokeKit17LocalizableEntityP", ""]
+- ["7PokeKit17LocalizableEntityP", "_Default_NamedMultilingual"]
+- !private ["7PokeKit17LocalizableEntityP", "_findStringSwitchCase"]
+- !private ["7PokeKit17LocalizableEntityP", "descriptions"]
+- ["7PokeKit17LocalizableEntityP", "id"]
+- ["7PokeKit17LocalizableEntityP", "init"]
+- !private ["7PokeKit17LocalizableEntityP", "isMainSeries"]
+- ["7PokeKit17LocalizableEntityP", "name"]
+- ["7PokeKit17LocalizableEntityP", "names"]
+- !private ["7PokeKit17LocalizableEntityP", "pokemonEntries"]
+- !private ["7PokeKit17LocalizableEntityP", "region"]
+- !private ["7PokeKit17LocalizableEntityP", "versionGroups"]
+- ["7PokeKit4NameV", "deinit"]
+- ["7PokeKit5NamedP", "NamedMultilingual"]
+- ["7PokeKit5NamedP", ""]
+- ["7PokeKit5NamedP", "_Default_NamedMultilingual"]
+- !private ["7PokeKit5NamedP", "_findStringSwitchCase"]
+- !private ["7PokeKit5NamedP", "descriptions"]
+- ["7PokeKit5NamedP", "id"]
+- ["7PokeKit5NamedP", "init"]
+- !private ["7PokeKit5NamedP", "isMainSeries"]
+- ["7PokeKit5NamedP", "name"]
+- ["7PokeKit5NamedP", "names"]
+- !private ["7PokeKit5NamedP", "pokemonEntries"]
+- !private ["7PokeKit5NamedP", "region"]
+- !private ["7PokeKit5NamedP", "versionGroups"]
+- ["7PokeKit16NamedAPIResourceV", "deinit"]
+- ["7PokeKit7PokedexV", "Bool"]
+- ["7PokeKit7PokedexV", "CodingKey"]
+- !private ["7PokeKit7PokedexV", "CodingKeys"]
+- ["7PokeKit7PokedexV", "Description"]
+- ["7PokeKit7PokedexV", "Int"]
+- ["7PokeKit7PokedexV", "Name"]
+- ["7PokeKit7PokedexV", "NamedAPIResource"]
+- ["7PokeKit7PokedexV", "NamedMultilingual"]
+- ["7PokeKit7PokedexV", "PokemonEntry"]
+- ["7PokeKit7PokedexV", "String"]
+- ["7PokeKit7PokedexV", "_Default_NamedMultilingual"]
+- !private ["7PokeKit7PokedexV", "_findStringSwitchCase"]
+- ["7PokeKit7PokedexV", "deinit"]
+- ["7PokeKit7PokedexV", "descriptions"]
+- ["7PokeKit7PokedexV", "id"]
+- ["7PokeKit7PokedexV", "init"]
+- ["7PokeKit7PokedexV", "isMainSeries"]
+- ["7PokeKit7PokedexV", "name"]
+- ["7PokeKit7PokedexV", "names"]
+- ["7PokeKit7PokedexV", "pokemonEntries"]
+- ["7PokeKit7PokedexV", "region"]
+- ["7PokeKit7PokedexV", "versionGroups"]
+- ["7PokeKit12PokemonEntryV", "CodingKey"]
+- !private ["7PokeKit12PokemonEntryV", "CodingKeys"]
+- ["7PokeKit12PokemonEntryV", "Int"]
+- ["7PokeKit12PokemonEntryV", "NamedAPIResource"]
+- ["7PokeKit12PokemonEntryV", "String"]
+- !private ["7PokeKit12PokemonEntryV", "_findStringSwitchCase"]
+- ["7PokeKit12PokemonEntryV", "deinit"]
+- ["7PokeKit12PokemonEntryV", "entryNumber"]
+- ["7PokeKit12PokemonEntryV", "init"]
+- ["7PokeKit12PokemonEntryV", "pokemonSpecies"]
+- ["SY", "=="]
+- ["SY", "RawValue"]
+- !private ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- ["SY", "_rawHashValue"]
+- ["SY", "debugDescription"]
+- ["SY", "description"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "init"]
+- ["SY", "intValue"]
+- ["SY", "rawValue"]
+- ["SY", "stringValue"]
+depends-nominal:
+- "s9CodingKeyP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- !private "s7DecoderP"
+- "7PokeKit11DescriptionV"
+- "7PokeKit6EntityP"
+- "SQ"
+- "SH"
+- "7PokeKit12IdentifiableP"
+- !private "s22KeyedDecodingContainerV"
+- !private "s30KeyedDecodingContainerProtocolP"
+- "7PokeKit11LocalizableP"
+- "7PokeKit17LocalizableEntityP"
+- "7PokeKit4NameV"
+- "7PokeKit5NamedP"
+- "7PokeKit16NamedAPIResourceV"
+- "7PokeKit7PokedexV"
+- "7PokeKit12PokemonEntryV"
+- "SY"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+interface-hash: "9f5860817297da9e94483b652d9e750e"

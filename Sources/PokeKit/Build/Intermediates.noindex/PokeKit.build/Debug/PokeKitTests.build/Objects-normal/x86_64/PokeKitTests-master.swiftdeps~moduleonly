@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.1 (swiftlang-1100.0.212.5 clang-1100.0.28.2)"
+options: "273f17e4c28abe859fdfb5dba1947515"
+build_time: [1563299634, 486658000]
+inputs:
+  "/Users/james/Documents/Development/PokeKit/Tests/PokeKitTests/DecodingTests.swift": !dirty [1563222972, 527219006]
+  "/Users/james/Documents/Development/PokeKit/Tests/PokeKitTests/PokeKitTests.swift": [1563222972, 344163214]
+  "/Users/james/Documents/Development/PokeKit/Tests/PokeKitTests/XCTestManifests.swift": [1563299278, 727249321]

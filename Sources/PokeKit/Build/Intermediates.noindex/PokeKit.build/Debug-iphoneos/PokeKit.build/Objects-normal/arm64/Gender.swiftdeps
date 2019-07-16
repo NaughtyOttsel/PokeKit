@@ -1,0 +1,187 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Gender"
+- "PokemonSpeciesGender"
+provides-nominal:
+- "7PokeKit6GenderV"
+- "7PokeKit20PokemonSpeciesGenderV"
+provides-member:
+- ["7PokeKit6GenderV", ""]
+- ["7PokeKit20PokemonSpeciesGenderV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- "CodingKey"
+- "Decodable"
+- "Entity"
+- "Gender"
+- "Int"
+- "NamedAPIResource"
+- "PokemonSpeciesGender"
+- "String"
+- !private "_findStringSwitchCase"
+- !private "~="
+depends-member:
+- ["s9CodingKeyP", "=="]
+- ["s9CodingKeyP", "RawValue"]
+- !private ["s9CodingKeyP", ""]
+- ["s9CodingKeyP", "_Default_RawValue"]
+- !private ["s9CodingKeyP", "_findStringSwitchCase"]
+- ["s9CodingKeyP", "_rawHashValue"]
+- ["s9CodingKeyP", "debugDescription"]
+- ["s9CodingKeyP", "description"]
+- ["s9CodingKeyP", "hash"]
+- ["s9CodingKeyP", "hashValue"]
+- ["s9CodingKeyP", "init"]
+- ["s9CodingKeyP", "intValue"]
+- ["s9CodingKeyP", "rawValue"]
+- ["s9CodingKeyP", "stringValue"]
+- ["s28CustomDebugStringConvertibleP", "=="]
+- ["s28CustomDebugStringConvertibleP", "RawValue"]
+- !private ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "_Default_RawValue"]
+- !private ["s28CustomDebugStringConvertibleP", "_findStringSwitchCase"]
+- ["s28CustomDebugStringConvertibleP", "_rawHashValue"]
+- ["s28CustomDebugStringConvertibleP", "debugDescription"]
+- ["s28CustomDebugStringConvertibleP", "description"]
+- ["s28CustomDebugStringConvertibleP", "hash"]
+- ["s28CustomDebugStringConvertibleP", "hashValue"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "intValue"]
+- ["s28CustomDebugStringConvertibleP", "rawValue"]
+- ["s28CustomDebugStringConvertibleP", "stringValue"]
+- ["s23CustomStringConvertibleP", "=="]
+- ["s23CustomStringConvertibleP", "RawValue"]
+- !private ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_Default_RawValue"]
+- !private ["s23CustomStringConvertibleP", "_findStringSwitchCase"]
+- ["s23CustomStringConvertibleP", "_rawHashValue"]
+- ["s23CustomStringConvertibleP", "debugDescription"]
+- ["s23CustomStringConvertibleP", "description"]
+- ["s23CustomStringConvertibleP", "hash"]
+- ["s23CustomStringConvertibleP", "hashValue"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "intValue"]
+- ["s23CustomStringConvertibleP", "rawValue"]
+- ["s23CustomStringConvertibleP", "stringValue"]
+- ["Se", ""]
+- !private ["Se", "_findStringSwitchCase"]
+- ["Se", "id"]
+- ["Se", "init"]
+- ["Se", "name"]
+- !private ["Se", "pokemonSpecies"]
+- !private ["Se", "pokemonSpeciesDetails"]
+- !private ["Se", "rate"]
+- !private ["Se", "requiredForEvolution"]
+- !private ["s7DecoderP", "container"]
+- ["7PokeKit6EntityP", ""]
+- !private ["7PokeKit6EntityP", "_findStringSwitchCase"]
+- ["7PokeKit6EntityP", "id"]
+- ["7PokeKit6EntityP", "init"]
+- ["7PokeKit6EntityP", "name"]
+- !private ["7PokeKit6EntityP", "pokemonSpeciesDetails"]
+- !private ["7PokeKit6EntityP", "requiredForEvolution"]
+- ["SQ", "=="]
+- ["SQ", "RawValue"]
+- !private ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- ["SQ", "_rawHashValue"]
+- ["SQ", "debugDescription"]
+- ["SQ", "description"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- ["SQ", "intValue"]
+- ["SQ", "rawValue"]
+- ["SQ", "stringValue"]
+- ["7PokeKit6GenderV", "CodingKey"]
+- !private ["7PokeKit6GenderV", "CodingKeys"]
+- ["7PokeKit6GenderV", "Int"]
+- ["7PokeKit6GenderV", "NamedAPIResource"]
+- ["7PokeKit6GenderV", "PokemonSpeciesGender"]
+- ["7PokeKit6GenderV", "String"]
+- !private ["7PokeKit6GenderV", "_findStringSwitchCase"]
+- ["7PokeKit6GenderV", "deinit"]
+- ["7PokeKit6GenderV", "id"]
+- ["7PokeKit6GenderV", "init"]
+- ["7PokeKit6GenderV", "name"]
+- ["7PokeKit6GenderV", "pokemonSpeciesDetails"]
+- ["7PokeKit6GenderV", "requiredForEvolution"]
+- ["SH", "=="]
+- ["SH", "RawValue"]
+- !private ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- ["SH", "_rawHashValue"]
+- ["SH", "debugDescription"]
+- ["SH", "description"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- ["SH", "intValue"]
+- ["SH", "rawValue"]
+- ["SH", "stringValue"]
+- ["7PokeKit12IdentifiableP", ""]
+- !private ["7PokeKit12IdentifiableP", "_findStringSwitchCase"]
+- ["7PokeKit12IdentifiableP", "id"]
+- ["7PokeKit12IdentifiableP", "init"]
+- ["7PokeKit12IdentifiableP", "name"]
+- !private ["7PokeKit12IdentifiableP", "pokemonSpeciesDetails"]
+- !private ["7PokeKit12IdentifiableP", "requiredForEvolution"]
+- !private ["s22KeyedDecodingContainerV", "decode"]
+- !private ["s30KeyedDecodingContainerProtocolP", "decode"]
+- ["7PokeKit5NamedP", ""]
+- !private ["7PokeKit5NamedP", "_findStringSwitchCase"]
+- ["7PokeKit5NamedP", "id"]
+- ["7PokeKit5NamedP", "init"]
+- ["7PokeKit5NamedP", "name"]
+- !private ["7PokeKit5NamedP", "pokemonSpeciesDetails"]
+- !private ["7PokeKit5NamedP", "requiredForEvolution"]
+- ["7PokeKit16NamedAPIResourceV", "deinit"]
+- ["7PokeKit20PokemonSpeciesGenderV", "CodingKey"]
+- !private ["7PokeKit20PokemonSpeciesGenderV", "CodingKeys"]
+- ["7PokeKit20PokemonSpeciesGenderV", "Int"]
+- ["7PokeKit20PokemonSpeciesGenderV", "NamedAPIResource"]
+- ["7PokeKit20PokemonSpeciesGenderV", "String"]
+- !private ["7PokeKit20PokemonSpeciesGenderV", "_findStringSwitchCase"]
+- ["7PokeKit20PokemonSpeciesGenderV", "deinit"]
+- ["7PokeKit20PokemonSpeciesGenderV", "init"]
+- ["7PokeKit20PokemonSpeciesGenderV", "pokemonSpecies"]
+- ["7PokeKit20PokemonSpeciesGenderV", "rate"]
+- ["SY", "=="]
+- ["SY", "RawValue"]
+- !private ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- ["SY", "_rawHashValue"]
+- ["SY", "debugDescription"]
+- ["SY", "description"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "init"]
+- ["SY", "intValue"]
+- ["SY", "rawValue"]
+- ["SY", "stringValue"]
+depends-nominal:
+- "s9CodingKeyP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- !private "s7DecoderP"
+- "7PokeKit6EntityP"
+- "SQ"
+- "7PokeKit6GenderV"
+- "SH"
+- "7PokeKit12IdentifiableP"
+- !private "s22KeyedDecodingContainerV"
+- !private "s30KeyedDecodingContainerProtocolP"
+- "7PokeKit5NamedP"
+- "7PokeKit16NamedAPIResourceV"
+- "7PokeKit20PokemonSpeciesGenderV"
+- "SY"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "59a74fa750ccf5930ccfcfe9d0a14c5f"
