@@ -1,7 +1,7 @@
 
 
 /// Languages within the Games and the API has been localized for
-struct Language: LocalizableEntity, Decodable {
+public struct Language: LocalizableEntity, Decodable {
     /// The identifier for this resource.
     let id: Int
     /// The name for this resource.
