@@ -1,7 +1,7 @@
 
 
 /// Damage classes moves can have, e.g. physical, special, or non-damaging
-public struct MoveDamageClass: LocalizableEntity, Decodable {
+public struct MoveDamageClass: LocalizableNamedEntity, Decodable {
     public let id: Int
     public let name: String
     /// The description of this resource listed in different languages

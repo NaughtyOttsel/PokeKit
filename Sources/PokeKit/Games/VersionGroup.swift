@@ -1,7 +1,7 @@
 
 
 /// Version groups categorize highly similar versions of the games
-public struct VersionGroup: Entity, Decodable {
+public struct VersionGroup: NamedEntity, Decodable {
     public let id: Int
     public let name: String
     /// Order for sorting. Almost by date of release, except similar versions are grouped together

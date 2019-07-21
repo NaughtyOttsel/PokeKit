@@ -1,4 +1,4 @@
-public struct BerryFirmness: LocalizableEntity, Decodable {
+public struct BerryFirmness: LocalizableNamedEntity, Decodable {
     /// The identifier for this resource.
     public let id: Int
     /// The name for this resource.

@@ -1,7 +1,7 @@
 
 
 /// Versions of the games, e.g., Red, Blue or Yellow
-public struct Version: LocalizableEntity, Decodable {
+public struct Version: LocalizableNamedEntity, Decodable {
     public let id: Int
     public let name: String
     public let names: [Name]

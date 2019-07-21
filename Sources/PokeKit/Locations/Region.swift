@@ -1,7 +1,7 @@
 
 
 /// A region is an organized area of the pokémon world. Most often, the main difference between regions is the species of pokémon that can be encountered within them.
-public struct Region: LocalizableEntity, Decodable {
+public struct Region: LocalizableNamedEntity, Decodable {
     public let id: Int
     /// A list of locations that can be found in this region
     public let locations: [NamedAPIResource]

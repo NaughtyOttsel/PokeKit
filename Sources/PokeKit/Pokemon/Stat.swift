@@ -1,7 +1,7 @@
 
 
 /// Stats determine certain aspects of battles. Each Pokémon has a value for each stat which grows as they gain levels and can be altered momentarily by effects in battles
-public struct Stat: LocalizableEntity, Decodable {
+public struct Stat: LocalizableNamedEntity, Decodable {
     public let id: Int
     public let name: String
     /// ID the games use for this stat

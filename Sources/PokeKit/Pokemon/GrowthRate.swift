@@ -1,7 +1,7 @@
 
 
 /// Growth rates are the speed with which Pokémon gain levels through experience
-public struct GrowthRate: Entity, Decodable {
+public struct GrowthRate: NamedEntity, Decodable {
     public let id: Int
     public let name: String
     /// The formula used to calculate the rate at which the Pokémon species gains level

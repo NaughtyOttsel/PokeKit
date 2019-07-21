@@ -1,7 +1,7 @@
 
 
 /// Item attributes define particular aspects of items, e.g. "usable in battle" or "consumable".
-public struct ItemAttribute: LocalizableEntity, Decodable {
+public struct ItemAttribute: LocalizableNamedEntity, Decodable {
     public let id: Int
     public let name: String
     /// A list of items that have this attribute

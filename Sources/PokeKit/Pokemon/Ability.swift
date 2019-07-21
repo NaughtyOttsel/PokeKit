@@ -1,7 +1,7 @@
 
 
 /// Abilities provide passive effects for pokémon in battle or in the overworld. Pokémon have mutiple possible abilities but can have only one ability at a time
-public struct Ability: LocalizableEntity, Decodable {
+public struct Ability: LocalizableNamedEntity, Decodable {
     public let id: Int
     public let name: String
     /// Whether or not this ability originated in the main series of the video games

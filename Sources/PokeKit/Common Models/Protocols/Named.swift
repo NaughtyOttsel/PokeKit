@@ -3,6 +3,6 @@ public protocol Named: Decodable {
     var name: String { get }
 }
 
-public protocol Entity: Identifiable & Named {}
+public protocol NamedEntity: Identifiable & Named {}
 
-public protocol LocalizableEntity: Entity & Localizable {}
+public protocol LocalizableNamedEntity: NamedEntity & Localizable {}

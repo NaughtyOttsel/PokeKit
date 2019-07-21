@@ -1,7 +1,7 @@
 
 
 /// Pokéathlon Stats are different attributes of a pokémon's performance in pokeathlons. In Pokéathlons, competitions happen on different courses; one for each of the different pokeathlon stats
-public struct PokeathlonStat: LocalizableEntity, Decodable {
+public struct PokeathlonStat: LocalizableNamedEntity, Decodable {
     public let id: Int
     public let name: String
     public let names: [Name]

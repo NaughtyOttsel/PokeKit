@@ -1,7 +1,7 @@
 
 
 /// Habitats are generally different terrain Pokémon can be found in but can also be areas designated for rare or legendary Pokémon
-public struct PokemonHabitat: LocalizableEntity, Decodable {
+public struct PokemonHabitat: LocalizableNamedEntity, Decodable {
     public let id: Int
     public let name: String
     public let names: [Name]

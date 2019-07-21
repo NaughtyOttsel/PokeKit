@@ -1,7 +1,7 @@
 
 
 /// Types are properties for Pokémon and their moves. Each type has three properties: which types of Pokémon it is super effective against, which types of Pokémon it is not very effective against, and which types of Pokémon it is completely ineffective against
-public struct Type: LocalizableEntity, Decodable {
+public struct Type: LocalizableNamedEntity, Decodable {
     public let id: Int
     public let name: String
     /// A detail of how effective this type is toward others and vice versa

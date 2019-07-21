@@ -1,7 +1,7 @@
 
 
 /// Evolution triggers are the events and conditions that cause a pokémon to evolve
-public struct EvolutionTrigger: LocalizableEntity, Decodable {
+public struct EvolutionTrigger: LocalizableNamedEntity, Decodable {
     public let id: Int
     public let name: String
     public let names: [Name]
