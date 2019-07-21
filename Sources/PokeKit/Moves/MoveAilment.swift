@@ -1,6 +1,6 @@
 
 /// Move Ailments are status conditions caused by moves used during battle
-public struct MoveAilment: LocalizableNamedEntity, Decodable {
+public struct MoveAilment: Localizable, Named, Identifiable, Decodable {
     public let id: Int
     public let name: String
     /// A list of moves that cause this ailment

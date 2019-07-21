@@ -1,7 +1,7 @@
 
 
 /// Areas used for grouping pokémon encounters in Pal Park. They're like habitats that are specific to Pal Park
-public struct PalParkArea: LocalizableNamedEntity, Decodable {
+public struct PalParkArea: Localizable, Named, Identifiable, Decodable {
     public let id: Int
     public let name: String
     public let names: [Name]

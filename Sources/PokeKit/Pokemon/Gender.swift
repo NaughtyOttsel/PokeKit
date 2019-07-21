@@ -1,7 +1,7 @@
 
 
 /// Genders were introduced in Generation II for the purposes of breeding Pokémon but can also result in visual differences or even different evolutionary lines
-public struct Gender: NamedEntity, Decodable {
+public struct Gender: Named, Identifiable, Decodable {
     public let id: Int
     public let name: String
     /// A list of Pokémon species that can be this gender and how likely it is that they will be.

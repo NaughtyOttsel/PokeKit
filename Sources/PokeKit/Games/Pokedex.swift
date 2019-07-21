@@ -1,7 +1,7 @@
 
 
 /// A Pokédex is a handheld electronic encyclopedia device; one which is capable of recording and retaining information of the various Pokémon in a given region with the exception of the national dex and some smaller dexes related to portions of a region
-public struct Pokedex: LocalizableNamedEntity, Decodable {
+public struct Pokedex: Localizable, Named, Identifiable, Decodable {
     public let id: Int
     public let name: String
     /// Whether or not this Pokédex originated in the main series of the video games.

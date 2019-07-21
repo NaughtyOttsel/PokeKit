@@ -1,7 +1,7 @@
 
 
 /// A generation is a grouping of the Pokémon games that separates them based on the Pokémon they include. In each generation, a new set of Pokémon, Moves, Abilities and Types that did not exist in the previous generation are released
-public struct Generation: LocalizableNamedEntity, Decodable {
+public struct Generation: Localizable, Named, Identifiable, Decodable {
     public let id: Int
     public let name: String
     /// A list of abilities that were introduced in this generation.

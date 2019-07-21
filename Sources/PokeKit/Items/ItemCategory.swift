@@ -1,7 +1,6 @@
 
-
 /// Item categories determine where items will be placed in the players bag
-public struct ItemCategory: LocalizableNamedEntity, Decodable {
+public struct ItemCategory: Localizable, Named, Identifiable, Decodable {
     public let id: Int
     public let name: String
     /// A list of items that are part of this category.

@@ -1,7 +1,7 @@
 
 
 /// Some Pokémon may appear in one of multiple, visually different forms. These differences are purely cosmetic. For variations within a Pokémon species, which do differ in more than just visuals, the 'Pokémon' entity is used to represent such a variety
-public struct PokemonForm: LocalizableNamedEntity, Decodable {
+public struct PokemonForm: Localizable, Named, Identifiable, Decodable {
     public let id: Int
     public let name: String
     /// The order in which forms should be sorted within all forms. Multiple forms may have equal order, in which case they should fall back on sorting by name

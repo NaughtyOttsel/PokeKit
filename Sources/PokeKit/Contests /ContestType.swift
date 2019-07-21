@@ -1,7 +1,7 @@
 
 
 /// Contest types are categories judges used to weigh a pokémon's condition in pokemon contests
-public struct ContestType: LocalizableNamedEntity, Decodable {
+public struct ContestType: Localizable, Named, Identifiable, Decodable {
     public let id: Int
     public let name: String
     /// The berry flavor that correlates with this contest type.

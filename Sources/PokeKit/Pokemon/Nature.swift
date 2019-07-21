@@ -1,7 +1,7 @@
 
 
 /// Natures influence how a pokémon's stats grow
-public struct Nature: LocalizableNamedEntity, Decodable {
+public struct Nature: Localizable, Named, Identifiable, Decodable {
     public let id: Int
     public let name: String
     /// The stat decreased by 10% in pokémon with this nature

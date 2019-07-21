@@ -1,7 +1,7 @@
 
 
 /// Egg Groups are categories which determine which Pokémon are able to interbreed. Pokémon may belong to either one or two Egg Groups
-public struct EggGroup: LocalizableNamedEntity, Decodable {
+public struct EggGroup: Localizable, Named, Identifiable, Decodable {
     public let id: Int
     public let name: String
     public let names: [Name]

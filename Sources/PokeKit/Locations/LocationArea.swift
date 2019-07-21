@@ -1,7 +1,7 @@
 
 
 /// Location areas are sections of areas, such as floors in a building or cave. Each area has its own set of possible pokemon encounters.
-public struct LocationArea: LocalizableNamedEntity, Decodable {
+public struct LocationArea: Localizable, Named, Identifiable, Decodable {
     public let id: Int
     public let name: String
     /// The internal id of an api resource within game data

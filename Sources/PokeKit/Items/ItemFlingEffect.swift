@@ -1,7 +1,7 @@
 
 
 /// The various effects of the move "Fling" when used with different items.
-public struct ItemFlingEffect: NamedEntity, Decodable {
+public struct ItemFlingEffect: Named, Identifiable, Decodable {
     public let id: Int
     public let name: String
     /// The result of this fling effect listed in different languages

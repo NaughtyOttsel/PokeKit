@@ -1,3 +1,4 @@
+// TODO: Multilingual doesn't follow the naming conventions of Protocol, need to find a better name for this protocol.
 public protocol Multilingual: Decodable {
     /// The language this resource is in.
     var language: NamedAPIResource { get }

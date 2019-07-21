@@ -1,7 +1,7 @@
 
 
 /// Pokémon are the creatures that inhabit the world of the pokemon games. They can be caught using pokéballs and trained by battling with other pokémon
-public struct Pokemon: NamedEntity, Decodable {
+public struct Pokemon: Named, Identifiable, Decodable {
     public let id: Int
     public let name: String
     /// The base experience gained for defeating this pokémon

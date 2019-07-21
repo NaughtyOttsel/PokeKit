@@ -1,7 +1,7 @@
 
 
 /// Shapes used for sorting Pokémon in a Pokédex
-public struct PokemonShape: LocalizableNamedEntity, Decodable {
+public struct PokemonShape: Localizable, Named, Identifiable, Decodable {
     public let id: Int
     public let name: String
     /// The "scientific" name of this Pokémon shape listed in different languages
