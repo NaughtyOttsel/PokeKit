@@ -1,5 +1,3 @@
-
-
 /// Characteristics indicate which stat contains a Pokémon's highest IV. A Pokémon's Characteristic is determined by the remainder of its highest IV divided by 5 (modulo)
 public struct Characteristic: Identifiable, Decodable {
     public let id: Int

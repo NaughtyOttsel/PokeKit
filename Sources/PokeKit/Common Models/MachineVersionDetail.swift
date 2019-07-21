@@ -1,5 +1,3 @@
-
-
 /// Details on Machines in different Versions.
 public struct MachineVersionDetail: Decodable {
     /// The machine that teaches a move from an item.

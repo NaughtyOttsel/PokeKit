@@ -1,4 +1,3 @@
-
 /// Versions of the games, e.g., Red, Blue or Yellow
 public struct Version: Localizable, Named, Identifiable, Decodable {
     public let id: Int

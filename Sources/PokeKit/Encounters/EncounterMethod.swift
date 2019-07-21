@@ -1,5 +1,3 @@
-
-
 /// Methods by which the player might can encounter pokémon in the wild, e.g., walking in tall grass
 public struct EncounterMethod: Localizable, Named, Identifiable, Decodable {
     public let id: Int

@@ -1,5 +1,3 @@
-
-
 /// Locations that can be visited within the games. Locations make up sizable portions of regions, like cities or routes
 public struct Location: Localizable, Named, Identifiable, Decodable {
     public let id: Int

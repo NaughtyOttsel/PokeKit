@@ -1,5 +1,3 @@
-
-
 /// The effect of an API Resource
 public struct Effect: MultiLanguageSupporting, Decodable {
     /// The localized effect text for an API resource in a specific language.

@@ -1,5 +1,3 @@
-
-
 /// Berries are small fruits that can provide HP and status condition restoration, stat enhancement, and even damage negation when eaten by pokemon
 public struct Berry: Named, Identifiable, Decodable {
     public let id: Int

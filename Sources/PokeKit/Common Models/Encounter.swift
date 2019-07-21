@@ -1,5 +1,3 @@
-
-
 /// Details on an Encounter
 public struct Encounter: Decodable {
     /// The lowest level the Pokémon could be encountered at.

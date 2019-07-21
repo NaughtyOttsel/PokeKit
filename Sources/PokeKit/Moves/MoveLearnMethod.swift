@@ -1,5 +1,3 @@
-
-
 /// Methods by which Pokémon can learn moves.
 public struct MoveLearnMethod: Localizable, Named, Identifiable, Decodable {
     public let id: Int

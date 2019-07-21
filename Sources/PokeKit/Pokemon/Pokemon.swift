@@ -1,5 +1,3 @@
-
-
 /// Pokémon are the creatures that inhabit the world of the pokemon games. They can be caught using pokéballs and trained by battling with other pokémon
 public struct Pokemon: Named, Identifiable, Decodable {
     public let id: Int

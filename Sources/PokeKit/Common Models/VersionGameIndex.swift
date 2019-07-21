@@ -1,5 +1,3 @@
-
-
 /// Mapping between the Game Index internal to the API and Game Versions
 public struct VersionGameIndex: Decodable {
     /// The internal id of an API resource within game data.

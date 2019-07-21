@@ -1,4 +1,3 @@
-
 /// A description of a Resource
 public struct Description: MultiLanguageSupporting, Decodable {
     /// The localized description for an API resource in a specific language.

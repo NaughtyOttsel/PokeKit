@@ -1,5 +1,3 @@
-
-
 /// Languages within the Games and the API has been localized for
 public struct Language: Localizable, Named, Identifiable, Decodable {
     /// The identifier for this resource.

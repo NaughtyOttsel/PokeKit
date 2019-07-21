@@ -1,5 +1,3 @@
-
-
 /// Super contest effects refer to the effects of moves when used in super contests
 public struct SuperContestEffect: Identifiable, Decodable {
     public let id: Int

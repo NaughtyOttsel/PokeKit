@@ -1,4 +1,3 @@
-
 /// Item categories determine where items will be placed in the players bag
 public struct ItemCategory: Localizable, Named, Identifiable, Decodable {
     public let id: Int

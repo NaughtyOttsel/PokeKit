@@ -1,5 +1,3 @@
-
-
 /// A region is an organized area of the pokémon world. Most often, the main difference between regions is the species of pokémon that can be encountered within them.
 public struct Region: Localizable, Named, Identifiable, Decodable {
     public let id: Int

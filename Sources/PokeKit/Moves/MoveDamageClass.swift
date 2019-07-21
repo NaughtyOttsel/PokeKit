@@ -1,5 +1,3 @@
-
-
 /// Damage classes moves can have, e.g. physical, special, or non-damaging
 public struct MoveDamageClass: Localizable, Named, Identifiable, Decodable {
     public let id: Int

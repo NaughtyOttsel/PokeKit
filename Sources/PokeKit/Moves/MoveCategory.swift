@@ -1,4 +1,3 @@
-
 /// Very general categories that loosely group move effects
 public struct MoveCategory: Named, Identifiable, Decodable {
     public let id: Int

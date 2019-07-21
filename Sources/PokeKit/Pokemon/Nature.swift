@@ -1,5 +1,3 @@
-
-
 /// Natures influence how a pokémon's stats grow
 public struct Nature: Localizable, Named, Identifiable, Decodable {
     public let id: Int

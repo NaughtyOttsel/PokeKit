@@ -1,5 +1,3 @@
-
-
 /// Details on the flavor of an API Resource, localized.
 public struct FlavorText: MultiLanguageSupporting, Decodable {
     /// The localized flavor text for an API resource in a specific language.

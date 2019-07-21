@@ -1,5 +1,3 @@
-
-
 /// Item attributes define particular aspects of items, e.g. "usable in battle" or "consumable".
 public struct ItemAttribute: Localizable, Named, Identifiable, Decodable {
     public let id: Int

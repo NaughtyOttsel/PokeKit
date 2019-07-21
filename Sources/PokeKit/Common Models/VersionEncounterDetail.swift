@@ -1,5 +1,3 @@
-
-
 /// Details on Encounters for a particular game version
 public struct VersionEncounterDetail: Decodable {
     /// The game version this encounter happens in.

@@ -1,5 +1,3 @@
-
-
 /// Shapes used for sorting Pokémon in a Pokédex
 public struct PokemonShape: Localizable, Named, Identifiable, Decodable {
     public let id: Int

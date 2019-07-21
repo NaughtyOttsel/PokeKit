@@ -1,5 +1,3 @@
-
-
 /// The various effects of the move "Fling" when used with different items.
 public struct ItemFlingEffect: Named, Identifiable, Decodable {
     public let id: Int
