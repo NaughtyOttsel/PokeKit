@@ -70,7 +70,7 @@ public struct PokemonSpecies: Localizable, Named, Identifiable, Decodable {
     }
 }
 
-public struct Genus: Multilingual, Decodable {
+public struct Genus: MultiLanguageSupporting, Decodable {
     /// The localized genus for the referenced Pokémon species
     public let genus: String
     /// The language this genus is in

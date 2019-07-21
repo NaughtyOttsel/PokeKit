@@ -39,7 +39,7 @@ public struct AbilityEffectChange: Decodable {
     }
 }
 
-public struct AbilityFlavorText: Multilingual, Decodable {
+public struct AbilityFlavorText: MultiLanguageSupporting, Decodable {
     /// The localized name for an api resource in a specific language
     public let flavorText: String
     public let language: NamedAPIResource

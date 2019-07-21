@@ -1,7 +1,7 @@
 
 
 /// More detailed descriptions of an Effect
-public struct VerboseEffect: Multilingual, Decodable {
+public struct VerboseEffect: MultiLanguageSupporting, Decodable {
     /// The localized effect text for an API resource in a specific language.
     public let effect: String
     /// The localized effect text in brief.

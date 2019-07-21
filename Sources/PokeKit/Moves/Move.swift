@@ -84,7 +84,7 @@ public struct ContestComboDetail: Decodable {
     }
 }
 
-public struct MoveFlavorText: Multilingual, Decodable {
+public struct MoveFlavorText: MultiLanguageSupporting, Decodable {
     public let flavorText: String
     public let language: NamedAPIResource
     public let versionGroup: NamedAPIResource

@@ -17,7 +17,7 @@ public struct PokemonShape: Localizable, Named, Identifiable, Decodable {
     }
 }
 
-public struct ScientificName: Multilingual, Decodable {
+public struct ScientificName: MultiLanguageSupporting, Decodable {
     /// The language this "scientific" name is in.
     public let language: NamedAPIResource
     /// The localized "scientific" name for an API resource in a specific language

@@ -15,7 +15,7 @@ public struct ContestType: Localizable, Named, Identifiable, Decodable {
     }
 }
 
-public struct ContestName: Named, Multilingual, Decodable {
+public struct ContestName: Named, MultiLanguageSupporting, Decodable {
     public let name: String
     /// The color associated with this contest's name.
     public let color: String
